@@ -1,0 +1,24 @@
+/*fonctions haut de page avec la premiere section*/
+.html {
+    width: 100%;
+    margin: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    background-color: #F3F3F3;
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color:blue;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
