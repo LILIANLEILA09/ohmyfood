@@ -98,14 +98,20 @@ font-family: 'Roboto' sans-serif;
   margin-left:20%;
   border:none;
   font-size:1em;
-  border-radius: 20px 20px 20px;
+  border-radius: 50px 50px 50px;
   background-color:#FF79DA;
-  
 }
-
+.buttonHighlight:hover {
+	font-weight: 800;
+	border-width: 3px;
+}
 .button:hover{
-
-}
+    font-weight:800px;
+    border-width:50%;
+    color:#ffff;
+    box-shadow: 10px 10px 10px #9356DC;
+  }
+  
 
 
 /* Un bouton classique mais avec les angles ronds. */
