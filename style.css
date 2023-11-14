@@ -23,8 +23,9 @@ main {
     background-color:#F3F3F3;
     text-align: center;
     margin:0px;
-    padding-left:20px;
-    margin-left:-2%;
+    padding-right:5%;
+     margin-left:-10px;
+    border-top: 2px solid lightgrey;
     padding-bottom: 10px;
     padding-top: 10px;
 
