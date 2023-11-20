@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
 /*fonctions haut de page avec la premiere section*/
 .root {
   --primary-color: #9356DC;
@@ -8,7 +7,7 @@
 }
 
 /*
---couleur bleu ciel:#c5e2f8;*/
+  --couleur bleu ciel:#c5e2f8;*/
 /*--couleur bleu #89c8fa;*/
 /*  --couleur bleu ciel#d5f0f8;
 /* --couleur bleu fonce   #c5e2f8;
@@ -127,7 +126,7 @@ img {
   padding-left: -5px;
   max-width: 100%;
   border-radius: 50px 50px 50px;
-  background-color: rgb(219, 131, 239);
+  background:linear-gradient( #9356DC, #FF79DA);
   box-shadow: 10px 10px 5px lightblue;
 }
 
@@ -158,14 +157,10 @@ img {
   box-shadow: 10px 10px 5px lightblue;
 }
 
-.button {
-  box-shadow: 10px 10px 5px lightgray;
-}
-
 .btn:hover {
   font-weight: 800px;
   border-width: 50%;
-  color: black;
+  background:linear-gradient( #9356DC,#FF79DA);
   box-shadow: 0px 0px 20px #bdbaba;
 }
 
