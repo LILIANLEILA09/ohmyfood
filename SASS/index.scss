@@ -6,10 +6,11 @@
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
 }
-  /*
+
+/*
   --couleur bleu ciel:#c5e2f8;*/
- /*--couleur bleu #89c8fa;*/
- /*  --couleur bleu ciel#d5f0f8;
+/*--couleur bleu #89c8fa;*/
+/*  --couleur bleu ciel#d5f0f8;
 /* --couleur bleu fonce   #c5e2f8;
 /*---couleur saumon:#fcc0ce*/
 /*---couleur gris clair: #eafbff;
@@ -37,7 +38,7 @@ body {
 }
 
 main {
-  background-color:white;
+  background-color: white;
 }
 
 
@@ -47,18 +48,19 @@ h3 {
   padding-left: 2%;
   font-family: 'Robot', sans-serif;
 }
-.localisation{
+
+.localisation {
   display: flex;
   flex-direction: row;
   height: 100%;
   width: 100%;
-  justify-content:center;
-  padding-left:20px;
-  font-family: 'Robot'sans-serif;
-  font-size:16px;
+  justify-content: center;
+  padding-left: 20px;
+  font-family: 'Robot' sans-serif;
+  font-size: 16px;
   align-items: center;
   gap: 10px;
-  background-color:#ebe8ed;
+  background-color: #ebe8ed;
   text-align: center;
   margin: 0px;
   border-top: 2px solid lightgrey;
@@ -74,7 +76,7 @@ h3 {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color:white;
+  background-color: white;
 
 }
 
@@ -97,8 +99,8 @@ img {
   height: 100%;
   align-items: flex-start;
   margin: auto;
-  background-color:#9356DC; 
-  
+  background-color: #9356DC;
+
 }
 
 .intro__title {
@@ -106,9 +108,9 @@ img {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-left:10%;
+  padding-left: 10%;
   padding-top: 10%;
-  font-size:24px;
+  font-size: 24px;
   font-weight: bold;
   font-family: 'Robot', sans-serif;
 
@@ -122,12 +124,13 @@ img {
   font-family: 'Roboto' sans-serif;
 
 }
+
 .button {
   width: 100%;
   height: 50px;
   color: white;
   border: none;
-  font-size:20px;
+  font-size: 20px;
   align-items: center;
   padding-left: -5px;
   max-width: 100%;
@@ -159,14 +162,16 @@ img {
   max-width: 100%;
   font-size: 16px;
   height: 55px;
-  background-color:#f2F2F2;
+  background-color: #f2F2F2;
   border-radius: 50px 50px 50px;
   box-shadow: 10px 10px 5px lightblue;
 
 }
-.button{
+
+.button {
   box-shadow: 10px 10px 5px lightgray;
 }
+
 .btn:hover {
   font-weight: 800px;
   border-width: 50%;
@@ -174,7 +179,7 @@ img {
   box-shadow: 0px 0px 20px #bdbaba;
 }
 
-.btnrounded  {
+.btnrounded {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,26 +194,27 @@ img {
 .Accueil {
   display: flex;
   justify-content: center;
-  padding-right:30%;
+  padding-right: 30%;
 
   font-family: 'Roboto' sans-serif;
-  font-size:16px;
+  font-size: 16px;
   font-weight: bold;
 }
 
-.homepage{
-  width:100%;
+.homepage {
+  width: 100%;
   height: 100%;
-  padding-bottom:10%;
-  background-color:#f2F2F2;
+  padding-bottom: 10%;
+  background-color: #f2F2F2;
 }
-.homepage__title{
+
+.homepage__title {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-left:10%;
-  font-size:16px;
+  padding-left: 10%;
+  font-size: 16px;
   font-weight: bold;
   font-family: 'Robot', sans-serif;
 
