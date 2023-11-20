@@ -53,6 +53,8 @@ h3 {
   width: 100%;
   justify-content: center;
   padding-left: 20px;
+  font-family: "Robot" sans-serif;
+  font-size: 16px;
   align-items: center;
   gap: 10px;
   background-color: #ebe8ed;
@@ -145,7 +147,6 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-bottom: 40px;
   margin-top: 20px;
   border: none;
   max-width: 100%;
@@ -173,7 +174,6 @@ img {
   align-items: center;
   color: white;
   background-color: #9356DC;
-  margin-top: 30px;
   height: 25px;
   border-radius: 50%;
   width: 25px;
@@ -182,10 +182,9 @@ img {
 .Accueil {
   display: flex;
   justify-content: center;
-  padding-top: 40px;
-  padding-right: 20%;
+  padding-right: 30%;
   font-family: "Roboto" sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
