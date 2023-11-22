@@ -83,11 +83,10 @@ img {
   background:linear-gradient( #9356DC,#FF79DA );
   box-shadow: 10px 10px 5px lightblue;
 }
-
-
-.buttonHighlight:hover {
+.button:hover {
   font-weight: 800;
   border-width: 5px;
+  Background: linear-gradient(white, #FF79DA );
 }
 
 .button:hover {
@@ -95,3 +94,40 @@ img {
   border-width: 100%;
   box-shadow: 0px 0px 10px rgb(56, 54, 54);
 }
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  max-width: 100%;
+  font-size: 16px;
+  height: 55px;
+  background-color: #f2F2F2;
+  border-radius: 50px 50px 50px;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.btn:hover {
+  font-weight: 800px;
+  border-width: 50%;
+  background: linear-gradient(#FF79DA,white);
+  box-shadow: 0px 0px 20px #bdbaba;
+}
+
+.btnrounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #9356DC;
+  height: 25px;
+  border-radius: 50%;
+  width: 25px;
+
+}
+
+

@@ -4,13 +4,13 @@
   --primary-color: #9356DC;
   --secondary-color: #FF79DA;
   --tertiary-color: #99E2D0;
-  ---couleur:#c5e2f8;
+  ---couleur: #c5e2f8;
   --couleur: #89c8fa;
-  --couleur:#d5f0f8;
+  --couleur: #d5f0f8;
   --couleur: #c5e2f8;
-  --couleur:#fcc0ce;
+  --couleur: #fcc0ce;
   ---couleur: #eafbff;
-  --couleur:#d5f0f8;
+  --couleur: #d5f0f8;
 }
 
 * {
@@ -22,31 +22,64 @@
   margin: 0px;
 }
 
-p {
-  display: flex;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  margin: 0px 0px;
-  padding-left: 10px;
+section {
+  background-size: 100%;
+  background-color: #f2F2F2;
 }
 
 h2 {
-  font-size: 16px;
+  font-size: 20px;
   padding-left: 15px;
+  margin-top: 50px;
+  padding-top: 50px;
   font-family: "Robot", sans-serif;
-  margin-top: 20px;
 }
 
 h3 {
   font-size: 16px;
   padding-right: 60%;
+  position: relative;
   font-family: "Robot", sans-serif;
   margin: 0px 0px;
   padding-top: 10px;
 }
 
+h4 {
+  font-size: 16px;
+  padding-right: 70%;
+  font-family: "Robot", sans-serif;
+  font-weight: lighter;
+  margin: 0px 0px;
+  padding-bottom: 10px;
+}
+
+.vecteur-1 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-left: 80%;
+  margin-bottom: 40%;
+}
+
+.vecteur-2 {
+  z-index: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 65%;
+}
+
+.vecteur:hover .vecteur-2 {
+  color: #ff7cf8;
+}
+
+.vecteur:hover .vecteur-1 {
+  color: transparent;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 
 main {
@@ -61,11 +94,11 @@ h1 {
 }
 
 .desc {
-  background-color: white;
-  max-width: 100%;
-  height: 60px;
-  border: 2px solid #ebe8ed;
+  background-color: #99E2D0;
+  width: 100%;
+  height: 80px;
   padding: 0px;
+  border-bottom: 2px solid #f2F2F2;
   border-radius: 0px 0px 12px 12px;
   text-align: center;
 }
@@ -108,7 +141,6 @@ h1 {
   height: 100%;
   align-items: flex-start;
   margin: auto;
-  background-color: #9356DC;
 }
 
 .intro__title {
@@ -146,9 +178,10 @@ h1 {
   box-shadow: 10px 10px 5px lightblue;
 }
 
-.buttonHighlight:hover {
+.button:hover {
   font-weight: 800;
   border-width: 5px;
+  Background: linear-gradient(white, #FF79DA);
 }
 
 .button:hover {
@@ -163,11 +196,10 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
   border: none;
-  max-width: 100%;
   font-size: 16px;
   height: 55px;
+  margin-bottom: 20px;
   background-color: #f2F2F2;
   border-radius: 50px 50px 50px;
   box-shadow: 10px 10px 5px lightblue;
@@ -176,7 +208,7 @@ h1 {
 .btn:hover {
   font-weight: 800px;
   border-width: 50%;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, white);
   box-shadow: 0px 0px 20px #bdbaba;
 }
 
@@ -223,6 +255,7 @@ h1 {
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
+  object-fit: cover;
   height: 180px;
   width: 100%;
   border-radius: 15px 15px 0 0;
@@ -242,7 +275,7 @@ h1 {
 
 span.new {
   background-color: #99E2D0;
-  color: green;
+  color: #057C5F;
   position: absolute;
   top: 10px;
   right: 15px;
