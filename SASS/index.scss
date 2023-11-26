@@ -25,7 +25,7 @@
 section{
   background-size:100%;
   background-color:#f2F2F2;
-  width:100%;
+
 }
 h2 {
   font-size: 20px;
@@ -123,8 +123,8 @@ h1 {
   align-items: flex-start;
   margin: auto;
   align-items: center;
+  padding-left:10px;
   justify-content: center;
-  padding-left:10%;
   padding-bottom:20px;
   padding-top:20px;
   font-size:18px;
@@ -134,9 +134,9 @@ h1 {
 
 .title{
   font-family: 'Roboto'sans-serif;
-  font-size:16px;
+  font-size:20px;
   font-weight:bold;
-  padding-left:10%;
+  padding-left:5%;
   margin-top:40px;
   display: flex;
 }
@@ -202,7 +202,6 @@ h1 {
   height: 25px;
   border-radius: 50%;
   width: 25px;
-
 }
 
 .Accueil {
