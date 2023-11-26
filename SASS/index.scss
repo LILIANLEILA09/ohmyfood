@@ -25,8 +25,8 @@
 section{
   background-size:100%;
   background-color:#f2F2F2;
+  width:100%;
 }
-
 h2 {
   font-size: 20px;
   padding-left: 15px;
@@ -34,60 +34,37 @@ h2 {
   padding-top:50px;
   font-family: 'Robot', sans-serif; 
 }
-
-h3 {
+ h3{
   font-size:16px;
-  padding-right:60%;
-  position:relative;
+  padding-left:20px;
   font-family: 'Robot', sans-serif;
   margin: 0px 0px;
-  padding-top:10px;
+  margin-top:20%;
+  padding-top:10%;
+  padding-bottom:20px;
+ 
+
 }
 h4{
   font-size:16px;
-  padding-right:70%;
+  position:absolute;
+  padding-right:120px;
   font-family: 'Robot', sans-serif;
-  font-weight: lighter;
   margin: 0px 0px;
-  padding-bottom:10px;
-
-
-}
-.vecteur-1 {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  padding-left:80%;
-  margin-bottom:40%;
- 
+  padding-top:20px;
+  padding-bottom:50px;
 }
 
-.vecteur-2 {
-  z-index: 1;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  padding-left:65%;
- 
-  
-  
-}
-
-.vecteur:hover .vecteur-2 {
-  color: #ff7cf8;
-}
-.vecteur:hover .vecteur-1 {
-  color: transparent;
-}
 
 body {
-  font-family: "Roboto", sans-serif;
   width: 100%;
+
 }
 
 main {
   background-color: white;
-}
+ 
+}                                                                                                                                                                                                     
 
 h1 {
   margin-top: 15px;
@@ -97,7 +74,7 @@ h1 {
 }
 
 .desc {
-  background-color:#99E2D0;
+  background-color:#fff;
   width: 100%;
   height:80px;
   padding: 0px;
@@ -128,7 +105,7 @@ h1 {
   font-weight: bold;
 }
 
-.header__logo {
+.header__logo{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -137,55 +114,49 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: white;
-
 }
 
-.intro {
-  display: flex;
+.intro ,.intro__content{
   flex-direction: row;
   width: 100%;
   height: 100%;
   align-items: flex-start;
   margin: auto;
- 
-
-}
-
-.intro__title {
-  display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  padding-left: 10%;
-  padding-top: 10%;
-  font-size: 24px;
-  font-weight: bold;
+  padding-left:10%;
+  padding-bottom:20px;
+  padding-top:20px;
+  font-size:18px;
+  font-weight:lighter;
   font-family: 'Robot', sans-serif;
-
 }
 
-.intro__content {
+.title{
+  font-family: 'Roboto'sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  padding-left:10%;
+  margin-top:40px;
   display: flex;
-  font-weight: lighter;
-  padding-left: 10%;
-  font-size: 16px;
-  font-family: 'Roboto' sans-serif;
-  padding-bottom: 15px;
-
 }
 
-.button {
-  width: 100%;
-  height: 50px;
-  color: white;
+.button{
+  display: flex;
+  font-size:16px;
+  margin-left:10%;
+  position:relative;
+  font-family: "Robot", sans-serif;
   border: none;
-  font-size: 20px;
+  width:70%;
+  height:50px;
+  color:#fff;
+  font-weight: bold;
   align-items: center;
-  padding-left: -5px;
-  max-width: 100%;
   border-radius: 50px 50px 50px;
-  background: linear-gradient(#FF79DA,#9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 10px 10px 5px lightblue;
+  justify-content: center;
 }
 
 .button:hover {
@@ -206,7 +177,6 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-
   border: none;
   font-size: 16px;
   height:55px;
@@ -248,7 +218,7 @@ h1 {
   width: 100%;
   height: 100%;
   padding-bottom: 10%;
-  background-color: #f2F2F2;
+  background-color:#f2F2F2;
 }
 
 .homepage__title {

@@ -25,7 +25,6 @@
 section {
   background-size: 100%;
   background-color: #f2F2F2;
-  width: 100%;
 }
 
 h2 {
@@ -36,27 +35,17 @@ h2 {
   font-family: "Robot", sans-serif;
 }
 
-h3 {
-  font-size: 16px;
-  padding-left: 20px;
-  font-family: "Robot", sans-serif;
-  margin: 0px 0px;
-  margin-top: 20%;
-  padding-top: 10%;
-  padding-bottom: 20px;
-}
-
 h4 {
   font-size: 16px;
-  position: absolute;
-  padding-right: 120px;
+  padding-right: 70%;
   font-family: "Robot", sans-serif;
+  font-weight: lighter;
   margin: 0px 0px;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   width: 100%;
 }
 
@@ -72,7 +61,7 @@ h1 {
 }
 
 .desc {
-  background-color: #fff;
+  background-color: #99E2D0;
   width: 100%;
   height: 80px;
   padding: 0px;
@@ -112,7 +101,8 @@ h1 {
   background-color: white;
 }
 
-.intro, .intro__content {
+.intro .intro__title.intro__content {
+  display: flex;
   flex-direction: row;
   width: 100%;
   height: 100%;
@@ -121,37 +111,27 @@ h1 {
   align-items: center;
   justify-content: center;
   padding-left: 10%;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-size: 18px;
-  font-weight: lighter;
-  font-family: "Robot", sans-serif;
-}
-
-.title {
-  font-family: "Roboto" sans-serif;
-  font-size: 16px;
+  padding-top: 10%;
+  font-size: 20px;
   font-weight: bold;
-  padding-left: 10%;
-  margin-top: 40px;
-  display: flex;
+  font-family: "Robot", sans-serif;
+  padding-bottom: 15px;
 }
 
-.button {
+.button,
+h3.intro__text {
   display: flex;
-  font-size: 16px;
-  margin-left: 10%;
+  font-size: 20px;
   position: relative;
   font-family: "Robot", sans-serif;
+  height: 100%;
   border: none;
-  width: 70%;
-  height: 50px;
-  color: #fff;
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 10px 10px 5px lightblue;
+  display: flex;
   justify-content: center;
 }
 
@@ -232,7 +212,8 @@ h1 {
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 180px;
   width: 100%;
   border-radius: 15px 15px 0 0;
@@ -260,6 +241,4 @@ span.new {
   border-radius: 2px;
   width: 100px;
   height: 30px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=index.css.map */
