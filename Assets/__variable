@@ -1,0 +1,14 @@
+@ 'variables';
+
+$primary-color: #9356DC;
+  $secondary-color: #FF79DA;
+  $tertiary-color: #99E2D0;
+
+  $couleur: #c5e2f8;
+  $couleur: #89c8fa;
+  $couleur: #d5f0f8;
+  $couleur: #c5e2f8;
+  $couleur: #fcc0ce;
+  $couleur: #eafbff;
+  $couleur: #d5f0f8;
+
