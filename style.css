@@ -205,13 +205,10 @@ h1 {
   font-family: 'Robot', sans-serif;
 
 }
-<<<<<<< HEAD
 .container{
   background-color:white;
-=======
 .container {
   background-color:#99E2D0;
->>>>>>> ad7dcc10deb416779d218d84ea0a543af8b10b57
   width: 100%;
   height:80px;
   padding:20px;
@@ -225,4 +222,5 @@ img{
   height:180px;
   padding-top:10%;
   border-radius: 20px 20px 0px 0px;
+}
 }
