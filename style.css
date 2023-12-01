@@ -10,7 +10,7 @@
 * {
   box-sizing: border-box;
 }
-.Heading p{
+.Heading{
   font-family:'Roboto',sans-serif;
 }
 
@@ -18,41 +18,44 @@
   width: 100%;
   margin: 0px;
 }
-section{
-  background-size:100%;
-  background-color:#f2F2F2;
 
-}
+
 h2 {
   font-size: 20px;
   padding-left: 15px;
-  margin-top: 50px;
   padding-top:50px;
-  font-family: 'Robot', sans-serif; 
+  font-family: 'Robot', sans-serif;
 }
  h3{
   font-size:20px;
   padding-left:20px;
   font-family: 'Robot', sans-serif;
-   margin-top:20%;
-  padding-top:10%;
-  padding-bottom:20px;
-}
+  padding-top:50px;
+  margin-top:80px;
 
+
+}
+section{
+  width:100%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom:20%;
+  background-color:#f2F2F2;
+
+}
 
 body {
   width: 100%;
-
 }
 
 main {
   background-color: white;
-}                                                                                                                                                                                                     
+}
 
 h1 {
   margin-top: 15px;
   position: relative;
-  font-family: Shrikhand;
+  font-family: 'Shrikhand';
   margin-bottom: 5px;
 }
 
@@ -94,7 +97,7 @@ h1 {
   align-items: flex-start;
   margin: auto;
   align-items: center;
-  padding-left:10px;
+  padding-left:10%;
   justify-content: center;
   padding-bottom:20px;
   padding-top:20px;
@@ -105,9 +108,9 @@ h1 {
 
 .title{
   font-family: 'Roboto'sans-serif;
-  font-size:20px;
+  font-size:24px;
   font-weight:bold;
-  padding-left:5%;
+  padding-left:10%;
   margin-top:40px;
   display: flex;
 }
@@ -185,9 +188,9 @@ h1 {
 }
 
 .homepage {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10%;
+  width:100%;
+  height:100%;
+  padding-bottom:10%;
   background-color:#f2F2F2;
 }
 
@@ -202,14 +205,19 @@ h1 {
   font-family: 'Robot', sans-serif;
 
 }
-.container {
-  background-color:red;
+.container{
+  background-color:white;
   width: 100%;
   height:80px;
-  padding: 0px;
+  padding:20px;
   border-bottom: 2px solid #f2F2F2;
   border-radius:0px 0px 20px 20px;
   text-align:start;
   padding: 2px 16px;
 }
-
+img{
+  width:100%;
+  height:180px;
+  padding-top:10%;
+  border-radius: 20px 20px 0px 0px;
+}
