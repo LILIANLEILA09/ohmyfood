@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-/*fonctions haut de page avec la premiere section*/
-.root {
-  --primary-color: #9356DC;
-  --secondary-color: #FF79DA;
-  --tertiary-color: #99E2D0;
-}
 /*--------pour recentrer------------*/
 * {
   box-sizing: border-box;
@@ -13,6 +7,7 @@
 /*-----------police d'ecriture--------*/
 .Heading{
   font-family:'Roboto',sans-serif;
+  font-weight:bolder;
 }
 /*-----------la page-------------------*/
 .html {
@@ -34,10 +29,10 @@ h1 {
   }
 
 h2 {
-  font-size: 20px;
+  font-size:24px;
   padding-left: 15px;
   padding-top:50px;
-  font-family: 'Robot', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 h3{
   font-size:20px;
@@ -70,29 +65,19 @@ h3{
   font-weight: bold;
   
 }
-/*--------------heading-----------------*/
+
 /*-----------homepage--------------------*/
 .homepage {
  
   padding-bottom:10%;
-  background-color:red;
+  background-color: white;
 }
-.homepage__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-left: 10%;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: 'Robot', sans-serif;
 
-}
 
 .content{
-  
+  font-family:'Roboto',sans-serif;
   padding-left: 15px;
-  font-size:20px;
+  font-size:24px;
   
 }
 .button{
@@ -115,30 +100,8 @@ h3{
   Background: linear-gradient(white, #FF79DA );
 }
 
-/*-------------title---------------------*/
 
-/*---------*/
-section{
-  width:100%;
-  padding-left:5%;
-  padding-right:5%;
-  padding-bottom:20%;
-  background-color:#f2F2F2;
-
-}
-
-
-
-
-
-
-
-
-/*-------ok----*/
-
-
-
-/*------------pour apres--------------*/
+/*---------------section buttons--------------------*/
 .btn {
   display: flex;
   justify-content: space-between;
@@ -167,16 +130,38 @@ background: linear-gradient(#FF79DA,white);
   border-radius: 50%;
   width: 25px;
 }
-
+/*---------------------------------------------*/
 .Accueil {
-  display: flex;
-  justify-content: center;
+  
   padding-right: 30%;
   font-family: 'Roboto' sans-serif;
-  font-size: 16px;
   font-weight: bold;
 }
+/*----------------coeur----------------------------*/
+.coeur1 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+}
 
+.coeur2 {
+  z-index: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.coeur:hover .coeur2 {
+  color: #ff7cf8;
+}
+.coeur:hover .coeur1 {
+  color: transparent;
+}
+/*----------------------------------------------*/
 
 
 
