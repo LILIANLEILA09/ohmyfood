@@ -1,11 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+$primary-color:#9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
+$blues:#3e9cbf;
+$foot:#303030;
+
 * {
   box-sizing: border-box;
 }
 
-.Heading {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+.Heading{
+  font-family:'Roboto',sans-serif;
 }
 
 .html {
@@ -13,41 +21,43 @@
   margin: 0px;
 }
 
+
 h2 {
   font-size: 20px;
   padding-left: 15px;
-  padding-top: 50px;
-  font-family: "Robot", sans-serif;
+  padding-top:50px;
+  font-family: 'Robot', sans-serif;
+}
+h3{
+  font-size:20px;
+  padding-left:20px;
+  font-family: 'Robot', sans-serif;
+  padding-top:50px;
+  margin-top:80px;
 }
 
-h3 {
-  font-size: 20px;
-  padding-left: 20px;
-  font-family: "Robot", sans-serif;
-  padding-top: 50px;
-  margin-top: 80px;
-}
+section{
+  width:100%;
+  padding-left:5%;
+  padding-right:5%;
+  padding-bottom:20%;
+  background-color:#f2F2F2;
 
-section {
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 20%;
-  background-color: #f2F2F2;
 }
 
 body {
   width: 100%;
+  
 }
 
 main {
-  background-color:white;
+  background-color:$primary-color;
 }
 
 h1 {
   margin-top: 15px;
   position: relative;
-  font-family: "Shrikhand";
+  font-family: 'Shrikhand';
   margin-bottom: 5px;
 }
 
@@ -58,7 +68,7 @@ h1 {
   width: 100%;
   justify-content: center;
   padding-left: 20px;
-  font-family: "Robot" sans-serif;
+  font-family: 'Robot' sans-serif;
   font-size: 16px;
   align-items: center;
   gap: 10px;
@@ -71,7 +81,7 @@ h1 {
   font-weight: bold;
 }
 
-.logo {
+.header__logo{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -79,44 +89,44 @@ h1 {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color:$blues;
 }
 
-.intro, .intro__content {
+.intro ,.intro__content{
   flex-direction: row;
   width: 100%;
   height: 100%;
   align-items: flex-start;
   margin: auto;
   align-items: center;
-  padding-left: 10%;
+  padding-left:10%;
   justify-content: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  font-size: 18px;
-  font-weight: lighter;
-  font-family: "Robot", sans-serif;
+  padding-bottom:20px;
+  padding-top:20px;
+  font-size:18px;
+  font-weight:lighter;
+  font-family: 'Robot', sans-serif;
 }
 
-.title {
-  font-family: "Roboto" sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  padding-left: 10%;
-  margin-top: 40px;
+.title{
+  font-family: 'Roboto'sans-serif;
+  font-size:24px;
+  font-weight:bold;
+  padding-left:10%;
+  margin-top:40px;
   display: flex;
 }
 
-.button {
+.button{
   display: flex;
-  font-size: 16px;
-  margin-left: 10%;
-  position: relative;
+  font-size:16px;
+  margin-left:10%;
+  position:relative;
   font-family: "Robot", sans-serif;
   border: none;
-  width: 70%;
-  height: 50px;
-  color: #fff;
+  width:70%;
+  height:50px;
+  color:#fff;
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
@@ -128,7 +138,7 @@ h1 {
 .button:hover {
   font-weight: 800;
   border-width: 5px;
-  Background: linear-gradient(white, #FF79DA);
+  Background: linear-gradient(white, #FF79DA );
 }
 
 .btn {
@@ -139,9 +149,9 @@ h1 {
   width: 100%;
   border: none;
   font-size: 16px;
-  height: 55px;
-  margin-bottom: 20px;
-  background-color: #f2F2F2;
+  height:55px;
+  margin-bottom:20px;
+  background-color:#f2F2F2;
   border-radius: 50px 50px 50px;
   box-shadow: 10px 10px 5px lightblue;
 }
@@ -149,7 +159,7 @@ h1 {
 .btn:hover {
   font-weight: 800px;
   border-width: 50%;
-  background: linear-gradient(#FF79DA, white);
+  background: linear-gradient(#FF79DA,white);
   box-shadow: 0px 0px 20px #bdbaba;
 }
 
@@ -157,8 +167,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  background-color: #9356DC;
+  color:white;
+  background-color:#9356DC;
   height: 25px;
   border-radius: 50%;
   width: 25px;
@@ -168,16 +178,16 @@ h1 {
   display: flex;
   justify-content: center;
   padding-right: 30%;
-  font-family: "Roboto" sans-serif;
+  font-family: 'Roboto' sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
 
 .homepage {
-  width: 100%;
-  height: 100%;
-  padding-bottom: 10%;
-  background-color: red;
+  width:100%;
+  height:100%;
+  padding-bottom:10%;
+  background-color:red;
 }
 
 .homepage__title {
@@ -188,5 +198,6 @@ h1 {
   padding-left: 10%;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Robot", sans-serif;
-}/*# sourceMappingURL=index.css.map */
+  font-family: 'Robot', sans-serif;
+
+}
