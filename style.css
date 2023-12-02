@@ -10,6 +10,7 @@
 * {
   box-sizing: border-box;
 }
+
 .Heading{
   font-family:'Roboto',sans-serif;
 }
@@ -26,15 +27,14 @@ h2 {
   padding-top:50px;
   font-family: 'Robot', sans-serif;
 }
- h3{
+h3{
   font-size:20px;
   padding-left:20px;
   font-family: 'Robot', sans-serif;
   padding-top:50px;
   margin-top:80px;
-
-
 }
+
 section{
   width:100%;
   padding-left:5%;
@@ -139,12 +139,6 @@ h1 {
   Background: linear-gradient(white, #FF79DA );
 }
 
-.button:hover {
-  font-weight: 800px;
-  border-width: 100%;
-  box-shadow: 0px 0px 10px rgb(56, 54, 54);
-}
-
 .btn {
   display: flex;
   flex-direction: row;
@@ -205,22 +199,4 @@ h1 {
   font-family: 'Robot', sans-serif;
 
 }
-.container{
-  background-color:white;
-.container {
-  background-color:#99E2D0;
-  width: 100%;
-  height:80px;
-  padding:20px;
-  border-bottom: 2px solid #f2F2F2;
-  border-radius:0px 0px 20px 20px;
-  text-align:start;
-  padding: 2px 16px;
-}
-img{
-  width:100%;
-  height:180px;
-  padding-top:10%;
-  border-radius: 20px 20px 0px 0px;
-}
-}
+
