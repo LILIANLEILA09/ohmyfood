@@ -1,13 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
+@font-face{ 
+	font-family: 'MyWebFont';
+	src: url('WebFont.eot');
+	src: url('WebFont.eot?iefix') format('eot'),
+	     url('WebFont.woff') format('woff'),
+	     url('WebFont.ttf') format('truetype'),
+	     url('WebFont.svg#webfont') format('svg');
+}
 /*--------pour recentrer------------*/
 * {
   box-sizing: border-box;
 }
 /*-----------police d'ecriture--------*/
 .Heading{
-  font-family:'Roboto',sans-serif;
-  font-weight:bolder;
+  font-weight:bold;
+  font-family: 'Roboto',sans-serif;
 }
 /*-----------la page-------------------*/
 .html {
@@ -24,20 +31,20 @@ main {
 
 /*------------titres-----------------*/
 h1 {
-  
   font-family: 'Shrikhand';
   }
 
 h2 {
-  font-size:24px;
+  font-size:20px;
   padding-left: 15px;
   padding-top:50px;
-  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+  font-family: "Roboto", sans-serif;
 }
-h3{
+h3 {
   font-size:20px;
   padding-left:20px;
-  font-family: 'Robot', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-top:50px;
   margin-top:80px;
 }
