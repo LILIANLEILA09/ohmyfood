@@ -31,7 +31,7 @@ body {
 }
 
 .card {
-  padding-bottom:80px;
+  padding-bottom: 80px;
 }
 
 main {
@@ -69,22 +69,24 @@ h3 {
   padding-top: 50px;
   margin-top: 80px;
 }
-h4{
-  font-size:18px;
+
+h4 {
+  font-size: 18px;
   margin-bottom: 0px;
-  font-family:'MyWebFont', sans-serif;
-  
-  
+  font-family: 'MyWebFont', sans-serif;
+
+
 }
 
-p{
-  font-family:'MyWebFont',sans-serif;
-  font-size:16px;
-  font-weight:lighter;
+p {
+  font-family: 'MyWebFont', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
   font-style: normal;
   margin-top: 0px;
 
 }
+
 /*------------------logo------------*/
 .logo {
   display: flex;
@@ -134,12 +136,13 @@ p{
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356dc,#FF79DA);
+  background: linear-gradient(#9356dc, #FF79DA);
   box-shadow: 10px 10px 5px #F2F2F2;
   justify-content: center;
 }
+
 .button:hover {
-  Background:#FF79DA;
+  Background: #FF79DA;
 }
 
 .intro__text {
@@ -160,9 +163,10 @@ p{
   border-radius: 50px 50px 50px;
   box-shadow: 10px 10px 5px #ebe8ed;
 }
-  .btn:hover {
-  background: linear-gradient(#fff,#FF79DA);
-  }
+
+.btn:hover {
+  background: linear-gradient(#fff, #FF79DA);
+}
 
 
 
@@ -189,7 +193,7 @@ p{
   background-image: url(./Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height:200px;
+  height: 200px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -197,17 +201,17 @@ p{
 }
 
 span.new {
-  background-color:#99E2D0;
-  font-family: 'MyWebFont',sans-serif;
-  color:forestgreen;
+  background-color: #99E2D0;
+  font-family: 'MyWebFont', sans-serif;
+  color: forestgreen;
   position: absolute;
   border-radius: 3px;
   top: 15px;
   right: 15px;
   padding: 7px;
   border-radius: 2px;
-  width:20%;
-  height:30px;
+  width: 20%;
+  height: 30px;
 }
 
 .new {
@@ -224,7 +228,7 @@ span.new {
   align-items: center;
   border-radius: 0px 0px 20px 20px;
   background-color: #fff;
-  height:5%;
+  height: 5%;
   width: 100%;
 }
 
@@ -237,7 +241,7 @@ span.new {
 .card__mot1 {
   padding-left: 15px;
   color: black;
-  font-family: 'MyWebFont',sans-serif;
+  font-family: 'MyWebFont', sans-serif;
   cursor: pointer;
 }
 
@@ -261,13 +265,13 @@ span.new {
   padding-top: 20px;
   border: none;
 }
-.coeur:hover .coeur2 {
-  color:hsl(270deg, 50%, 75%)
 
+.coeur:hover .coeur2 {
+  color: hsl(270deg, 50%, 75%)
 }
 
 .coeur:hover .coeur1 {
-  color:transparent;
+  color: transparent;
 }
 
 /*----------------------------------------------*/
@@ -275,9 +279,9 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
-  height:200px;
-  width:100%;
+  background-position: center;
+  height: 200px;
+  width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
   cursor: pointer;
@@ -287,7 +291,7 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height:250px;
+  height: 250px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -298,7 +302,7 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height:200px;
+  height: 200px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -310,16 +314,16 @@ span.new {
   padding-top: 30px;
   padding-left: 20px;
   font-family: 'shrikhand';
-  font-size:large;
+  font-size: large;
   padding-bottom: 20px;
 }
 
 .footer {
-   background-color:#303030;
+  background-color: #303030;
   color: white;
-  height:250px;
-  width:100% ;
-  font-family: 'MyWebFont',sans-serif;
+  height: 250px;
+  width: 100%;
+  font-family: 'MyWebFont', sans-serif;
 
 }
 
@@ -339,7 +343,8 @@ span.new {
   padding-left: 20px;
 
 }
-.mail{
-  color:#fff;
-  text-decoration:none;
+
+.mail {
+  color: #fff;
+  text-decoration: none;
 }
