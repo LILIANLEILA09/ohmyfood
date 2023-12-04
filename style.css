@@ -16,6 +16,7 @@
 .Heading {
   font-weight: bold;
   font-family: 'MyWebFont', sans-serif;
+  margin: 10px;
 }
 
 /*-----------la page-------------------*/
@@ -104,7 +105,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap:10px;
   background-color: #ebe8ed;
   border-top: 2px solid lightgrey;
   padding-bottom: 10px;
@@ -267,11 +268,10 @@ span.new {
 }
 
 .coeur:hover .coeur2 {
-  color: hsl(270deg, 50%, 75%)
+  color:#FF79DA;
 }
-
-.coeur:hover .coeur1 {
-  color: transparent;
+   .coeur:hover .coeur1 {
+    color: transparent;
 }
 
 /*----------------------------------------------*/
