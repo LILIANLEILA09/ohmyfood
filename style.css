@@ -105,7 +105,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   background-color: #ebe8ed;
   border-top: 2px solid lightgrey;
   padding-bottom: 10px;
@@ -120,12 +120,12 @@ p {
   background-color: #F2F2F2;
 }
 
-.content{
+.content {
   font-family: 'MyWebFont', sans-serif;
-  padding-left:30px;
-  font-size:20px;
-  font-weight:lighter;
-  padding-bottom:20px;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: lighter;
+  padding-bottom: 20px;
 }
 
 .button {
@@ -138,7 +138,7 @@ p {
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
-  background:linear-gradient(#9356dc, #FF79DA);
+  background: linear-gradient(#9356dc, #FF79DA);
   box-shadow: 10px 10px 5px #F2F2F2;
   justify-content: center;
 }
@@ -266,27 +266,30 @@ span.new {
   padding-right: 15px;
   padding-top: 20px;
   border: none;
-  transition-property:transform;
-  transition-duration:0.4s;
+  transition-property: transform;
+  transition-duration: 0.4s;
 }
+
 .coeur:hover .coeur2 {
   color: #FF79DA;
   transform: scale(1.15);
 }
-   .coeur:hover .coeur1 {
-    color: transparent; 
-    }
 
-    svg{
-      fill:#8b7f91;
-      transition: background-color 250ms;
-      &:hover {
-          background-color:#9356dc;
-      }
-    }
+.coeur:hover .coeur1 {
+  color: transparent;
+}
+
+svg {
+  fill: #8b7f91;
+  transition: background-color 250ms;
+
+  &:hover {
+    background-color: #9356dc;
+  }
+}
 
 
-    
+
 /*----------------------------------------------*/
 .image-2 {
   background-image: url(./Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
@@ -342,31 +345,32 @@ span.new {
 
 .footer-1 {
   padding-left: 20px;
- 
+
 }
 
 .footer-2 {
   padding-left: 20px;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
 .footer-3 {
   padding-left: 20px;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
 .footer-4 {
   padding-left: 20px;
- padding-top:10px;
+  padding-top: 10px;
 }
 
 .E-mail {
   color: #fff;
   text-decoration: none;
 }
-span{
-  font-family:'MyWebFont',sans-serif;
-  font-size:16px;
-  font-weight:bold;
- 
+
+span {
+  font-family: 'MyWebFont', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
 }
