@@ -137,7 +137,7 @@ p {
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356dc, #FF79DA);
+  background:linear-gradient(#9356dc, #FF79DA);
   box-shadow: 10px 10px 5px #F2F2F2;
   justify-content: center;
 }
@@ -265,14 +265,24 @@ span.new {
   padding-right: 15px;
   padding-top: 20px;
   border: none;
+  transition-property:transform;
+  transition-duration:0.4s;
 }
-
 .coeur:hover .coeur2 {
-  color:#FF79DA;
+  color: #FF79DA;
+  transform: scale(1.15);
 }
    .coeur:hover .coeur1 {
-    color: transparent;
-}
+    color: transparent; 
+    }
+
+    svg{
+      fill:#8b7f91;
+      transition: background-color 250ms;
+      &:hover {
+          background-color:#9356dc;
+      }
+    }
 
 /*----------------------------------------------*/
 .image-2 {
