@@ -274,18 +274,8 @@ span.new {
   color: #FF79DA;
   transform: scale(1.15);
 }
-
 .coeur:hover .coeur1 {
   color: transparent;
-}
-
-svg {
-  fill: #8b7f91;
-  transition: background-color 250ms;
-
-  &:hover {
-    background-color: #9356dc;
-  }
 }
 
 
