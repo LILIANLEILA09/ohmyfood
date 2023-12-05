@@ -120,11 +120,12 @@ p {
   background-color: #F2F2F2;
 }
 
-.content {
+.content{
   font-family: 'MyWebFont', sans-serif;
-  padding-left: 30px;
-  font-size: 20px;
-  font-weight: lighter;
+  padding-left:30px;
+  font-size:20px;
+  font-weight:lighter;
+  padding-bottom:20px;
 }
 
 .button {
@@ -359,7 +360,7 @@ span.new {
  padding-top:10px;
 }
 
-.mail {
+.E-mail {
   color: #fff;
   text-decoration: none;
 }
