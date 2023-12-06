@@ -4,7 +4,7 @@ $tertiaire:#99E2D0;
 $fondwhite:#ffff;
 $fondgris:#F2F2F2;
 $foot:#303030;
-
+$lightgray:#ebe8ed;
 
 @font-face {
   font-family: 'MyWebFont';
@@ -105,7 +105,7 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color:white;
+  background-color:$fondwhite;
 }
 
 /*--------------localisation----------*/
@@ -114,7 +114,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #ebe8ed;
+  background-color:$lightgray;
   border-top: 2px solid lightgrey;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -142,16 +142,16 @@ p {
   font-family: 'MyWebFont', sans-serif;
   width: 70%;
   height: 50px;
-  color: #fff;
+  color:$fondwhite;
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: linear-gradient($primaire,$secondaire);
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
 }
 .button:hover {
-  Background:rgba(255, 121, 218, 1);
+  Background:$secondaire(255, 121, 218, 1);
 }
 
 .intro__text {
@@ -179,7 +179,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:$fondwhite;
   background-color:$primaire;
   height:25px;
   border-radius: 50%;
@@ -230,7 +230,7 @@ span.new {
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
-  background-color: #fff;
+  background-color:$fondwhite;
   height: 5%;
   width: 100%;
 }
@@ -243,7 +243,7 @@ span.new {
 
 .card__mot1 {
   padding-left: 15px;
-  color: black;
+  color:black;
   font-family: 'MyWebFont', sans-serif;
   cursor: pointer;
 }
@@ -258,7 +258,7 @@ span.new {
 
 .coeur2 {
   z-index: 1;
-  color: white;
+  color:$fondwhite;
   justify-content: center;
   align-items: center;
   padding-right: 15px;
@@ -322,7 +322,7 @@ span.new {
 
 .footer {
   background-color:$foot;
-  color: white;
+  color:$fondwhite;
   height: 250px;
   width: 100%;
   font-family: 'MyWebFont', sans-serif;
@@ -350,7 +350,7 @@ span.new {
 }
 
 .E-mail {
-  color: #fff;
+  color:$fondwhite;
   text-decoration: none;
 }
 

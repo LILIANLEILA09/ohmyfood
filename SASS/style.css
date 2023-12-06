@@ -127,17 +127,17 @@ p {
   font-family: "MyWebFont", sans-serif;
   width: 70%;
   height: 50px;
-  color: #fff;
+  color: white;
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356dc, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
 }
 
 .button:hover {
-  Background: rgb(255, 121, 218);
+  Background: #FF79DA 255, 121, 218, 1;
 }
 
 .intro__text {
@@ -219,7 +219,7 @@ span.new {
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
-  background-color: #fff;
+  background-color: white;
   height: 5%;
   width: 100%;
 }
@@ -340,7 +340,7 @@ span.new {
 }
 
 .E-mail {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
