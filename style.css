@@ -7,7 +7,6 @@
     url('WebFont.svg#webfont') format('svg');
 }
 
-/*--------pour recentrer------------*/
 * {
   box-sizing: border-box;
 }
@@ -40,12 +39,16 @@ main {
 }
 
 .bloc {
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left:5%;
   background-color: #F2F2F2;
 
 }
+span {
+  font-family: 'MyWebFont', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 /*------------titres-----------------*/
 h1 {
@@ -60,7 +63,6 @@ h2 {
   font-family: 'MyWebFont', sans-serif;
   font-weight: bold;
   margin-top: 0px;
-
 }
 
 h3 {
@@ -75,8 +77,6 @@ h4 {
   font-size: 18px;
   margin-bottom: 0px;
   font-family: 'MyWebFont', sans-serif;
-
-
 }
 
 p {
@@ -139,12 +139,11 @@ p {
   align-items: center;
   border-radius: 50px 50px 50px;
   background: linear-gradient(#9356dc, #FF79DA);
-  box-shadow: 10px 10px 5px #F2F2F2;
+  box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
 }
-
 .button:hover {
-  Background: #FF79DA;
+  Background:rgba(255, 121, 218, 1);
 }
 
 .intro__text {
@@ -163,15 +162,11 @@ p {
   margin-bottom: 30px;
   background-color: #F2F2F2;
   border-radius: 50px 50px 50px;
-  box-shadow: 10px 10px 5px #ebe8ed;
+  box-shadow: 10px 10px 5px #d3cfd5;
 }
-
 .btn:hover {
-  background: linear-gradient(#fff, #FF79DA);
+  background:rgba(255, 121, 218, 0.19);
 }
-
-
-
 .btnrounded {
   display: flex;
   justify-content: center;
@@ -185,7 +180,7 @@ p {
 
 /*---------------------------------------------*/
 .Accueil {
-  padding-right: 30%;
+  padding-right:30%;
   font-family: 'MyWebFont', sans-serif;
   font-weight: bold;
 }
@@ -222,8 +217,6 @@ span.new {
   align-items: center;
   width: 60px;
 }
-
-
 .texte-restaurant-bloc-1 {
   display: flex;
   justify-content: space-between;
@@ -246,9 +239,6 @@ span.new {
   font-family: 'MyWebFont', sans-serif;
   cursor: pointer;
 }
-
-
-
 .coeur1 {
   position: absolute;
   justify-content: center;
@@ -271,14 +261,12 @@ span.new {
 }
 
 .coeur:hover .coeur2 {
-  color: #FF79DA;
+  color:rgba(147, 86, 220, 0.96);
   transform: scale(1.15);
 }
 .coeur:hover .coeur1 {
-  color: transparent;
+  color:transparent;
 }
-
-
 
 /*----------------------------------------------*/
 .image-2 {
@@ -297,7 +285,7 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height: 250px;
+  height: 200px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -334,8 +322,8 @@ span.new {
 }
 
 .footer-1 {
+  padding-top: 10px;
   padding-left: 20px;
-
 }
 
 .footer-2 {
@@ -345,7 +333,7 @@ span.new {
 
 .footer-3 {
   padding-left: 20px;
-  padding-top: 10px;
+  padding-top:10px;
 }
 
 .footer-4 {
@@ -358,9 +346,72 @@ span.new {
   text-decoration: none;
 }
 
-span {
-  font-family: 'MyWebFont', sans-serif;
-  font-size: 16px;
-  font-weight: bold;
 
+/***************media-query******/
+@media screen and (min-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  h2{
+    margin-left:35%;
+  }
+  h3{
+    margin-left:5%;
+  }
+  p.content{
+    margin-left:25% ;
+  }
+
+  .button{
+    width: 25%;
+    margin-left:35% ;
+  }
+  .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:5%;
+    padding-right: 5%;
+  }
+  .btn{
+    width:30%;
+    gap:10px;
+  }
+  .cards{
+    display:grid;
+    grid-template-columns:500px 500px;
+    grid-template-rows:300px;
+    padding-left:10%;
+    gap:40px;
+  }
+  .texte-restaurant-bloc-1{
+    height: 40%;
+  }
+ .footer{
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100px;
+  
+ }
+ .footer1-2-3-4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .ohmyfood {
+  padding-top: 30px;
+  padding-right: 40px;
+  font-family: 'shrikhand';
+  font-size: large;
+  padding-bottom: 20px;
 }
+.Accueil {
+  padding-right:10%;
+  font-family: 'MyWebFont', sans-serif;
+  font-weight: bold;
+}
+  
+} 
+
