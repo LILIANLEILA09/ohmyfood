@@ -1,14 +1,20 @@
 $primaire:#9356DC;
 $secondaire:#FF79DA;
 $tertiaire:#99E2D0;
-$blues:#3e9cbf;
+$fondwhite:#ffff;
+$fondgris:#F2F2F2;
 $foot:#303030;
 
-$bbleu:#0065fc;
-$bbleuclair:#DEEBFF;
-$fondgris:#F2F2F2;
 
-/*--------pour recentrer------------*/
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?iefix') format('eot'),
+    url('WebFont.woff') format('woff'),
+    url('WebFont.ttf') format('truetype'),
+    url('WebFont.svg#webfont') format('svg');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -17,6 +23,7 @@ $fondgris:#F2F2F2;
 .Heading {
   font-weight: bold;
   font-family: 'MyWebFont', sans-serif;
+  margin: 10px;
 }
 
 /*-----------la page-------------------*/
@@ -32,20 +39,24 @@ body {
 }
 
 .card {
-  padding-bottom:80px;
+  padding-bottom: 80px;
 }
 
 main {
-  background-color: white;
+  background-color:$fondwhite;
 }
 
 .bloc {
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #F2F2F2;
+  padding-left:5%;
+  background-color:$fondgris;
 
 }
+span {
+  font-family: 'MyWebFont', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 
 /*------------titres-----------------*/
 h1 {
@@ -60,7 +71,6 @@ h2 {
   font-family: 'MyWebFont', sans-serif;
   font-weight: bold;
   margin-top: 0px;
-
 }
 
 h3 {
@@ -70,18 +80,20 @@ h3 {
   padding-top: 50px;
   margin-top: 80px;
 }
-h4{
-  font-size:18px;
+
+h4 {
+  font-size: 18px;
   margin-bottom: 0px;
-  font-family:'MyWebFont', sans-serif;
+  font-family: 'MyWebFont', sans-serif;
 }
 
-p{
-  font-family:'MyWebFont',sans-serif;
-  font-size:16px;
-  font-weight:lighter;
+p {
+  font-family: 'MyWebFont', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
   font-style: normal;
   margin-top: 0px;
+
 }
 
 /*------------------logo------------*/
@@ -93,7 +105,7 @@ p{
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color:white;
 }
 
 /*--------------localisation----------*/
@@ -107,12 +119,13 @@ p{
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
+
 }
 
 /*-----------homepage--------------------*/
 .homepage {
   padding-bottom: 10%;
-  background-color: #F2F2F2;
+  background-color:$fondgris;
 }
 
 .content {
@@ -120,6 +133,7 @@ p{
   padding-left: 30px;
   font-size: 20px;
   font-weight: lighter;
+  padding-bottom: 20px;
 }
 
 .button {
@@ -132,17 +146,15 @@ p{
   font-weight: bold;
   align-items: center;
   border-radius: 50px 50px 50px;
-  background: linear-gradient(#ff79da,#9356dc);
-  box-shadow: 10px 10px 5px lightblue;
+  background: linear-gradient(#9356dc, #FF79DA);
+  box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
 }
-
 .button:hover {
-  Background: linear-gradient(white, #FF79DA);
+  Background:rgba(255, 121, 218, 1);
 }
 
 .intro__text {
-
   font-family: 'MyWebFont', sans-serif;
 }
 
@@ -156,28 +168,27 @@ p{
   font-size: 16px;
   height: 55px;
   margin-bottom: 30px;
-  background-color: #F2F2F2;
+  background-color:$fondgris;
   border-radius: 50px 50px 50px;
-  box-shadow: 10px 10px 5px #ebe8ed;
-.btn:hover {
-  background: linear-gradient(#9356dc,#FF79DA);
-  box-shadow: 0px 0px 20px #bdbaba;
+  box-shadow: 10px 10px 5px #d3cfd5;
 }
+.btn:hover {
+  background:rgba(255, 121, 218, 0.19);
 }
 .btnrounded {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #9356dc;
-  height: 25px;
+  background-color:$primaire;
+  height:25px;
   border-radius: 50%;
   width: 25px;
 }
 
 /*---------------------------------------------*/
 .Accueil {
-  padding-right: 30%;
+  padding-right:30%;
   font-family: 'MyWebFont', sans-serif;
   font-weight: bold;
 }
@@ -187,7 +198,7 @@ p{
   background-image: url(./Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height:200px;
+  height: 200px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -195,17 +206,17 @@ p{
 }
 
 span.new {
-  background-color:#99E2D0;
-  font-family: 'MyWebFont',sans-serif;
-  color:forestgreen;
+  background-color:$tertiaire;
+  font-family: 'MyWebFont', sans-serif;
+  color: forestgreen;
   position: absolute;
   border-radius: 3px;
   top: 15px;
   right: 15px;
   padding: 7px;
   border-radius: 2px;
-  width:20%;
-  height:30px;
+  width: 20%;
+  height: 30px;
 }
 
 .new {
@@ -214,15 +225,13 @@ span.new {
   align-items: center;
   width: 60px;
 }
-
-
 .texte-restaurant-bloc-1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
   background-color: #fff;
-  height:5%;
+  height: 5%;
   width: 100%;
 }
 
@@ -235,9 +244,9 @@ span.new {
 .card__mot1 {
   padding-left: 15px;
   color: black;
+  font-family: 'MyWebFont', sans-serif;
   cursor: pointer;
 }
-
 .coeur1 {
   position: absolute;
   justify-content: center;
@@ -255,12 +264,16 @@ span.new {
   padding-right: 15px;
   padding-top: 20px;
   border: none;
+  transition-property: transform;
+  transition-duration: 0.4s;
 }
+
 .coeur:hover .coeur2 {
-  color:#FF79DA;
+  color:rgba(147, 86, 220, 0.96);
+  transform: scale(1.15);
 }
 .coeur:hover .coeur1 {
-  color: transparent;
+  color:transparent;
 }
 
 /*----------------------------------------------*/
@@ -268,9 +281,9 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:center;
-  height:200px;
-  width:100%;
+  background-position: center;
+  height: 200px;
+  width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
   cursor: pointer;
@@ -280,7 +293,7 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height:250px;
+  height: 200px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -291,7 +304,7 @@ span.new {
   background-image: url(./Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height:200px;
+  height: 200px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -303,37 +316,113 @@ span.new {
   padding-top: 30px;
   padding-left: 20px;
   font-family: 'shrikhand';
-  font-size:large;
+  font-size: large;
   padding-bottom: 20px;
 }
 
 .footer {
-  background-color: #303030;
+  background-color:$foot;
   color: white;
-  height:250px;
-  width:100% ;
-  font-family: 'MyWebFont',sans-serif;
+  height: 250px;
+  width: 100%;
+  font-family: 'MyWebFont', sans-serif;
 
 }
 
 .footer-1 {
+  padding-top: 10px;
   padding-left: 20px;
-  font-family: 'MyWebFont',sans-serif;
 }
 
 .footer-2 {
   padding-left: 20px;
+  padding-top: 10px;
 }
 
 .footer-3 {
   padding-left: 20px;
+  padding-top:10px;
 }
 
 .footer-4 {
   padding-left: 20px;
+  padding-top: 10px;
+}
 
+.E-mail {
+  color: #fff;
+  text-decoration: none;
 }
-.mail{
-  color:#fff;
-  text-decoration:none;
+
+
+/***************media-query******/
+@media screen and (min-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  h2{
+    margin-left:35%;
+  }
+  h3{
+    margin-left:5%;
+  }
+  p.content{
+    margin-left:25% ;
+  }
+
+  .button{
+    width: 25%;
+    margin-left:35% ;
+  }
+  .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:5%;
+    padding-right: 5%;
+  }
+  .btn{
+    width:30%;
+    gap:10px;
+  }
+  .cards{
+    display:grid;
+    grid-template-columns:500px 500px;
+    grid-template-rows:300px;
+    justify-content:center;
+    padding-right:5%;
+    padding-left: 5%;
+    gap:40px;
+    
+  }
+  .texte-restaurant-bloc-1{
+    height: 40%;
+  }
+ .footer{
+  display:flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 100px;
+  
+ }
+ .footer1-2-3-4{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+ .ohmyfood {
+  padding-top: 30px;
+  padding-right: 40px;
+  font-family: 'shrikhand';
+  font-size: large;
+  padding-bottom: 20px;
 }
+.Accueil {
+  padding-right:10%;
+  font-family: 'MyWebFont', sans-serif;
+  font-weight: bold;
+}
+  
+} 
+

@@ -382,8 +382,11 @@ span.new {
     display:grid;
     grid-template-columns:500px 500px;
     grid-template-rows:300px;
-    padding-left:10%;
+    justify-content:center;
+    padding-right:5%;
+    padding-left: 5%;
     gap:40px;
+    
   }
   .texte-restaurant-bloc-1{
     height: 40%;
