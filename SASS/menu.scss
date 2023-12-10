@@ -1,0 +1,34 @@
+$primaire:#9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
+$fondwhite:#ffff;
+$fondgris:#F2F2F2;
+$foot:#303030;
+$lightgray:#ebe8ed;
+
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?iefix') format('eot'),
+    url('WebFont.woff') format('woff'),
+    url('WebFont.ttf') format('truetype'),
+    url('WebFont.svg#webfont') format('svg');
+}
+
+* {
+  box-sizing: border-box;
+}
+ h1{
+  font-family: 'Shrikhand';
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
