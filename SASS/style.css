@@ -1,3 +1,4 @@
+@import url(__variables.scss);
 @font-face {
   font-family: "MyWebFont";
   src: url("WebFont.eot");
@@ -100,8 +101,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #ebe8ed;
-  border-top: 2px solid lightgrey;
+  background-color: #d3cfd5;
+  border-top: 2px solid #ebe8ed;
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
@@ -137,7 +138,7 @@ p {
 }
 
 .button:hover {
-  Background: #FF79DA 255, 121, 218, 1;
+  Background: #FF79DA;
 }
 
 .intro__text {
@@ -183,7 +184,7 @@ p {
 
 /*--------------------cards------------------------*/
 .image-1 {
-  background-image: url(./Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(/Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;
