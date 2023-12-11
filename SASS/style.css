@@ -101,7 +101,7 @@ p {
   align-items: center;
   gap: 10px;
   background-color: #ebe8ed;
-  border-top: 2px solid lightgrey;
+  border-top: 2px solid #ebe8ed;
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
@@ -137,7 +137,7 @@ p {
 }
 
 .button:hover {
-  Background: #FF79DA 255, 121, 218, 1;
+  background: #FF79DA;
 }
 
 .intro__text {
@@ -183,7 +183,7 @@ p {
 
 /*--------------------cards------------------------*/
 .image-1 {
-  background-image: url(./Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;
@@ -269,7 +269,7 @@ span.new {
 
 /*----------------------------------------------*/
 .image-2 {
-  background-image: url(./Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -281,7 +281,7 @@ span.new {
 }
 
 .image-3 {
-  background-image: url(./Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;
@@ -292,7 +292,7 @@ span.new {
 }
 
 .image-4 {
-  background-image: url(./Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;

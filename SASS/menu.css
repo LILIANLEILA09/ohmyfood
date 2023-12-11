@@ -11,13 +11,26 @@ h1 {
   font-family: "Shrikhand";
 }
 
+.fas {
+  padding-left: 20px;
+  color: black;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  background-color: #99E2D0;
+}
+
 .logo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: white;
 }/*# sourceMappingURL=menu.css.map */
