@@ -22,6 +22,12 @@ $lightgray:#ebe8ed;
  h1{
   font-family:'Shrikhand';
 }
+.html {
+  width: 100%;
+  margin: 0px;
+  padding: 10%;
+}
+
 .fas{
   padding-left: 20px;
   color: black;
@@ -37,9 +43,12 @@ $lightgray:#ebe8ed;
 .logo{
  display: flex;
  justify-content: center;
- flex-direction: column;
- align-items: center;
- position: relative;
  width: 100%;
- height: 100%;
+}
+.card {
+  background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  height:300px;
+  width:100%;
+  cursor: pointer;
 }
