@@ -1,0 +1,120 @@
+$primaire:#9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
+$fondwhite:#ffff;
+$fondgris:#F2F2F2;
+$foot:#303030;
+$lightgray:#ebe8ed;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?iefix') format('eot'),
+    url('WebFont.woff') format('woff'),
+    url('WebFont.ttf') format('truetype'),
+    url('WebFont.svg#webfont') format('svg');
+}
+/*general*/
+
+* {
+  box-sizing: border-box;
+}
+
+.html {
+  width: 100%;
+  margin: 0px;
+  padding: 10%;
+}
+
+/*les titres*/
+
+ 
+h1{
+  font-family:'Shrikhand';
+  font-weight: bold;
+  font-size:24px;
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom:20px;
+  font-weight: bold;
+  margin-top: 0px;
+
+}
+/*entéte ohmyfood et la fleche retour*/
+
+.header-logo{
+   display: flex;
+   justify-content:space-between;
+   align-items:center;
+  width:100%;
+  height:98px;
+  background-color:red;
+}
+.logo{
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ width: 100%;
+ 
+}
+/*icone fleche retour*/
+
+.fas{
+  padding-left: 25px;
+  color: black;
+}
+
+.coeur1 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+  border: none;
+}
+
+.coeur2 {
+  z-index: 1;
+  color:$fondwhite;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+  border: none;
+  transition-property: transform;
+  transition-duration: 0.4s;
+}
+
+&:hover .coeur2 {
+  color:rgba(147, 86, 220, 0.96);
+  transform: scale(1.15);
+}
+.coeur:hover .coeur1 {
+  color:transparent;
+}
+.image-menu-1-2-3-4{
+  &__group{
+    & imput{
+      background-size:cover;
+      background-position:top;
+      width: 100%;
+      height:250px;
+    }
+    }
+  }
+.image-menu-1 {
+  background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  
+.image-menu-2 {
+  background-image: url(../Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+
+}
+.image-menu-3 {
+  background-image: url(../Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  
+.image-menu-4 {
+  background-image: url(../Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+}
+}
