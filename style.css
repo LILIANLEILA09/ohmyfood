@@ -274,7 +274,7 @@ span.new {
 .coeur:hover .coeur2 {
   color: rgba(255, 121, 218, 1);
   background: linear-gradient(10deg, #FF79DA 0%, #FF79DA 25%, #9356dc 50%, #9356dc 75%, #9356dc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip:text;
   -moz-text-fill-color: transparent;
