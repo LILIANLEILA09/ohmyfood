@@ -211,7 +211,7 @@ span.new {
   right: 15px;
   padding: 7px;
   border-radius: 2px;
-  width: 30%;
+  width:80px;
   height: 30px;
 }
 
@@ -255,9 +255,6 @@ span.new {
 
 /* Use the text as a mask for the background. */
 /* This will show the gradient as a text color rather than element bg. */
-
-
-
 
 .coeur2 {
   z-index: 1;
