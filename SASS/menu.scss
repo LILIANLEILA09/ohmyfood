@@ -6,7 +6,7 @@ $fondgris:#F2F2F2;
 $foot:#303030;
 $lightgray:#ebe8ed;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @font-face {
   font-family: 'MyWebFont';
   src: url('WebFont.eot');
@@ -15,40 +15,52 @@ $lightgray:#ebe8ed;
     url('WebFont.ttf') format('truetype'),
     url('WebFont.svg#webfont') format('svg');
 }
+/*general*/
 
 * {
   box-sizing: border-box;
 }
- h1{
-  font-family:'Shrikhand';
-}
+
 .html {
   width: 100%;
   margin: 0px;
   padding: 10%;
 }
 
-.fas{
-  padding-left: 20px;
-  color: black;
+/*les titres*/
+
+ 
+h1{
+  font-family:'Shrikhand';
+  font-weight: bold;
+  font-size:24px;
+  padding-left: 30px;
+  padding-top: 40px;
+  padding-bottom:20px;
+  font-weight: bold;
+  margin-top: 0px;
+
 }
+/*entéte ohmyfood et la fleche retour*/
+
 .header-logo{
    display: flex;
    justify-content:space-between;
    align-items:center;
-   position:absolute;
-   width:100%;
+  width:100%;
+  height:98px;
   background-color:$tertiaire;
 }
 .logo{
  display: flex;
- justify-content: center;
+ justify-content:center;
+ align-items: center;
  width: 100%;
+ 
 }
-.card {
-  background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  height:300px;
-  width:100%;
-  cursor: pointer;
+/*icone fleche retour*/
+
+.fas{
+  padding-left: 25px;
+  color: black;
 }
