@@ -246,6 +246,8 @@ span.new {
   border: none;
 }
 
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
 .coeur2 {
   z-index: 1;
   color: white;
@@ -259,7 +261,11 @@ span.new {
 }
 
 .coeur:hover .coeur2 {
-  color: rgba(147, 86, 220, 0.96);
+  background: linear-gradient(10deg, #FF79DA 0%, #FF79DA 25%, #9356dc 50%, #9356dc 75%, #9356dc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
   transform: scale(1.15);
 }
 

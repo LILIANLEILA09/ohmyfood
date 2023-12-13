@@ -35,7 +35,7 @@ h1 {
   align-items: center;
   width: 100%;
   height: 98px;
-  background-color: red;
+  background-color: white;
 }
 
 .logo {
@@ -47,17 +47,23 @@ h1 {
 
 /*icone fleche retour*/
 .fas {
-  padding-left: 25px;
   color: black;
+  padding-left: 20px;
+}
+
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
+/*le coeur*/
+.coeurs {
+  margin: 0px;
 }
 
 .coeur1 {
   position: absolute;
   justify-content: center;
   align-items: center;
-  padding-right: 15px;
+  padding-right: 10px;
   padding-top: 20px;
-  border: none;
 }
 
 .coeur2 {
@@ -65,22 +71,16 @@ h1 {
   color: white;
   justify-content: center;
   align-items: center;
-  padding-right: 15px;
+  padding-right: 10px;
   padding-top: 20px;
-  border: none;
-  transition-property: transform;
-  transition-duration: 0.4s;
 }
 
 .coeur:hover .coeur2 {
-  color: rgba(147, 86, 220, 0.96);
-  transform: scale(1.15);
+  color: #ff7cf8;
+  transition: 2s;
 }
 
-.coeur:hover .coeur1 {
-  color: transparent;
-}
-
+/*----------------------------------------------*/
 .image-menu-1 {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
@@ -111,4 +111,19 @@ h1 {
   background-position: top;
   width: 100%;
   height: 250px;
+}
+
+.texte-restaurant-bloc-1 {
+  align-items: center;
+  border-radius: 40px 40px 0px 0px;
+  width: 100%;
+  background-color: white;
+  margin-top: -50px;
+  width: 100%;
+  height: 100px;
+}
+.texte-restaurant-bloc-1 .text-position {
+  display: flex;
+  padding-top: 200px;
+  align-items: center;
 }/*# sourceMappingURL=menu.css.map */
