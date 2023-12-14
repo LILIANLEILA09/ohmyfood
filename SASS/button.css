@@ -1,0 +1,18 @@
+.button {
+  display: flex;
+  margin-left: 10%;
+  font-family: "MyWebFont", sans-serif;
+  width: 70%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  border-radius: 50px 50px 50px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 10px 10px 5px #d3cfd5;
+  justify-content: center;
+}
+
+.button:hover {
+  background: #FF79DA;
+}/*# sourceMappingURL=button.css.map */

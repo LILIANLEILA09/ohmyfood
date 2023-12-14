@@ -1,9 +1,11 @@
+@import 'button';
 @import '__variables';
-$fondwhite:#ffff;
-$fondgris:#F2F2F2;
+@import 'coeur';
+$primaire:#9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
+$blues:#3e9cbf;
 $foot:#303030;
-$lightgray:#ebe8ed;
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @font-face {
   font-family: 'MyWebFont';
@@ -63,39 +65,6 @@ h1{
   padding-left:20px;
 }
 
-/* Use the text as a mask for the background. */
-/* This will show the gradient as a text color rather than element bg. */
-
-/*le coeur*/
-.coeurs {
-  margin:0px;
-}
-
-.coeur1 {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  padding-right: 10px;
-  padding-top: 20px;
-}
-
-.coeur2 {
-  z-index: 1;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  padding-right:10px;
-  padding-top: 20px;
-}
-
-.coeur:hover {
-  .coeur2 {
-      color: #ff7cf8;
-      transition: 2s;
-
-  }
-}
-
 /*----------------------------------------------*/
 
 .image-menu-1 {
@@ -127,19 +96,26 @@ h1{
   width: 100%;
   height:250px;
 }
+
 .texte-restaurant-bloc-1 {
-  .text-position {
-      display: flex;
-     padding-top:200px;
-      align-items: center;
-  }
-
-  align-items:center;
-  border-radius: 40px 40px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color:$tertiaire;
+  margin-top: -50px;
   width: 100%;
-  background-color:$fondwhite;
-  margin-top:-50px;
-  width: 100%;
-  height:100px;
+}
 
+.text-position {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__mot1 {
+  padding-left: 15px;
+  color: black;
+  font-family: 'MyWebFont', sans-serif;
+  cursor: pointer;
 }
