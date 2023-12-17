@@ -19,17 +19,16 @@
   background: #FF79DA;
 }
 
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
 .coeur1 {
   position: absolute;
   justify-content: center;
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-  border: none;
 }
 
-/* Use the text as a mask for the background. */
-/* This will show the gradient as a text color rather than element bg. */
 .coeur2 {
   z-index: 1;
   color: white;
@@ -37,25 +36,18 @@
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-  border: none;
-  transition-property: transform;
-  transition-duration: 450ms;
-  transition: transform 450ms, background-color 300ms 150ms;
 }
 
 .coeur:hover .coeur2 {
   color: #FF79DA;
-  background: linear-gradient(30deg, #FF79DA 0%, #FF79DA 25%, #9356DC 50%, #9356DC 75%, #9356DC);
+  background: linear-gradient(45deg, #9356DC 0%, #9356DC 25%, #FF79DA 50%, #9356DC 75%, #FF79DA 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  transform: scale(1.13);
 }
-
 .coeur:hover .coeur1 {
-  transition: transform 450ms, background-color 300ms 150ms;
-  transform: scale(1.13);
+  color: transparent;
 }
 
 @font-face {
@@ -354,6 +346,35 @@ span.new {
 .E-mail {
   color: white;
   text-decoration: none;
+}
+
+.coeur1 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.coeur2 {
+  z-index: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.coeur:hover .coeur2 {
+  color: #FF79DA;
+  background: linear-gradient(45deg, #9356DC 0%, #9356DC 25%, #FF79DA 50%, #9356DC 75%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.coeur:hover .coeur1 {
+  color: transparent;
 }
 
 /***************media-query******/

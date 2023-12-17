@@ -1,5 +1,5 @@
 @import '__variables';
-/* Use the text as a mask for the background. */
+    /* Use the text as a mask for the background. */
 /* This will show the gradient as a text color rather than element bg. */
 
 .coeur1 {
@@ -8,27 +8,28 @@
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-  border: none;
 }
 
 .coeur2 {
   z-index: 1;
-  color: $fondwhite;
+  color: white;
   justify-content: center;
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-  border: none;
-  transition-property: transform;
+
 }
-.coeur:hover .coeur2 {
-  color: $secondaire;
-  background: linear-gradient(30deg, $secondaire 0%, $secondaire 25%, $primaire 50%, $primaire 75%, $primaire);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-.coeur:hover .coeur1 {
-      transform: scale(1.13);
+
+.coeur:hover {
+  .coeur2 {
+      color:$secondaire;
+      background: linear-gradient(45deg, $primaire 0%,$primaire 25%,$secondaire 50%,$primaire 75%,$secondaire 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+  }
+  .coeur1 {
+      color: transparent;
+  }
 }

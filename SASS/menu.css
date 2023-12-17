@@ -19,6 +19,8 @@
   background: #FF79DA;
 }
 
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
 .coeur1 {
   position: absolute;
   justify-content: center;
@@ -28,8 +30,6 @@
   border: none;
 }
 
-/* Use the text as a mask for the background. */
-/* This will show the gradient as a text color rather than element bg. */
 .coeur2 {
   z-index: 1;
   color: white;
@@ -39,7 +39,6 @@
   padding-top: 20px;
   border: none;
   transition-property: transform;
-  transition-duration: 0.4s;
 }
 
 .coeur:hover .coeur2 {
@@ -49,11 +48,10 @@
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  transform: scale(1.15);
 }
 
 .coeur:hover .coeur1 {
-  color: transparent;
+  transform: scale(1.13);
 }
 
 /*general*/

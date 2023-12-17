@@ -234,8 +234,6 @@ span.new {
   cursor: pointer;
 }
 
-
-
 /*----------------------------------------------*/
 .image-2 {
   background-image: url(../Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
@@ -312,6 +310,39 @@ span.new {
 .E-mail {
   color:$fondwhite;
   text-decoration: none;
+}
+
+
+.coeur1 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+}
+
+.coeur2 {
+  z-index: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-top: 20px;
+
+}
+.coeur:hover {
+  .coeur2 {
+      color:$secondaire;
+      background: linear-gradient(45deg, $primaire 0%,$primaire 25%,$secondaire 50%,$primaire 75%,$secondaire 100%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+  }
+
+  .coeur1 {
+      color: transparent;
+  }
 }
 
 

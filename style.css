@@ -1,11 +1,30 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('WebFont.eot');
-  src: url('WebFont.eot?iefix') format('eot'),
-    url('WebFont.woff') format('woff'),
-    url('WebFont.ttf') format('truetype'),
-    url('WebFont.svg#webfont') format('svg');
+  font-family: "fontstack";
+  src: url("WebFont.eot");
+  src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+.button {
+  display: flex;
+  margin-left: 10%;
+  font-family: "MyWebFont", sans-serif;
+  width: 70%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  border-radius: 50px 50px 50px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 10px 10px 5px #d3cfd5;
+  justify-content: center;
+  transition: transform 450ms, background-color 300ms;
+}
+.button:hover {
+  transform: scale(1.13);
+  background: #FF79DA;
+}
+
 
 * {
   box-sizing: border-box;
@@ -14,7 +33,7 @@
 /*-----------police d'ecriture--------*/
 .Heading {
   font-weight: bold;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "fontstack", sans-serif;
   margin: 10px;
 }
 
@@ -39,22 +58,19 @@ main {
 }
 
 .bloc {
-padding-left:5%;
-padding-right:5%;
+  padding-left: 5%;
   background-color: #F2F2F2;
-
 }
 
 span {
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
 
-
 /*------------titres-----------------*/
 h1 {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
 }
 
 h2 {
@@ -62,7 +78,7 @@ h2 {
   padding-left: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
   font-weight: bold;
   margin-top: 0px;
 }
@@ -70,7 +86,7 @@ h2 {
 h3 {
   font-size: 20px;
   padding-left: 20px;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
   padding-top: 50px;
   margin-top: 80px;
 }
@@ -78,16 +94,15 @@ h3 {
 h4 {
   font-size: 18px;
   margin-bottom: 0px;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
 }
 
 p {
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
   font-size: 16px;
   font-weight: lighter;
   font-style: normal;
   margin-top: 0px;
-
 }
 
 /*------------------logo------------*/
@@ -109,11 +124,10 @@ p {
   align-items: center;
   gap: 10px;
   background-color: #ebe8ed;
-  border-top: 2px solid lightgrey;
+  border-top: 2px solid #ebe8ed;
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
-
 }
 
 /*-----------homepage--------------------*/
@@ -123,34 +137,15 @@ p {
 }
 
 .content {
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
   padding-left: 30px;
   font-size: 20px;
   font-weight: lighter;
   padding-bottom: 20px;
 }
 
-.button {
-  display: flex;
-  margin-left: 10%;
-  font-family: 'MyWebFont', sans-serif;
-  width: 70%;
-  height: 50px;
-  color: #fff;
-  font-weight: bold;
-  align-items: center;
-  border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356dc, #FF79DA);
-  box-shadow: 10px 10px 5px #d3cfd5;
-  justify-content: center;
-}
-
-.button:hover {
-  Background: rgba(255, 121, 218, 1);
-}
-
 .intro__text {
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
 }
 
 /*---------------section buttons--------------------*/
@@ -158,17 +153,17 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   border: none;
-  font-size: 16px;
-  height: 55px;
+  font-size: 1rem;
+  height: 3rem;
   margin-bottom: 30px;
   background-color: #F2F2F2;
   border-radius: 50px 50px 50px;
   box-shadow: 10px 10px 5px #d3cfd5;
 }
-
 .btn:hover {
+  transform: scale(1.13);
   background: rgba(255, 121, 218, 0.19);
 }
 
@@ -177,7 +172,7 @@ p {
   justify-content: center;
   align-items: center;
   color: white;
-  background-color: #9356dc;
+  background-color: #9356DC;
   height: 25px;
   border-radius: 50%;
   width: 25px;
@@ -185,14 +180,15 @@ p {
 
 /*---------------------------------------------*/
 .Accueil {
-  padding-right: 30%;
-  font-family: 'MyWebFont', sans-serif;
+  padding-right: 10%;
+  font-size: 16px;
+  font-family: "MyWebFont", sans-serif;
   font-weight: bold;
 }
 
 /*--------------------cards------------------------*/
 .image-1 {
-  background-image: url(./Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;
@@ -204,7 +200,7 @@ p {
 
 span.new {
   background-color: #99E2D0;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "fontstack", sans-serif;
   color: forestgreen;
   position: absolute;
   border-radius: 3px;
@@ -212,7 +208,7 @@ span.new {
   right: 15px;
   padding: 7px;
   border-radius: 2px;
-  width:80px;
+  width: 20%;
   height: 30px;
 }
 
@@ -228,7 +224,8 @@ span.new {
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
-  background-color: #fff;
+  background-color: white;
+  height: 5%;
   width: 100%;
 }
 
@@ -241,52 +238,13 @@ span.new {
 .card__mot1 {
   padding-left: 15px;
   color: black;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: "MyWebFont", sans-serif;
   cursor: pointer;
-}
-
-.coeur1 {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  padding-right: 15px;
-  padding-top: 20px;
-  border: none;
-}
-
-/* Use the text as a mask for the background. */
-/* This will show the gradient as a text color rather than element bg. */
-
-.coeur2 {
-  z-index: 1;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  padding-right: 15px;
-  padding-top: 20px;
-  border: none;
-  transition-property: transform;
-  transition-duration: 0.4s;
-}
-
-.coeur:hover .coeur2 {
-  color: rgba(255, 121, 218, 1);
-  background: linear-gradient(10deg, #FF79DA 0%, #FF79DA 25%, #9356dc 50%, #9356dc 75%, #9356dc);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip:text;
-  -moz-text-fill-color: transparent;
-  transform: scale(1.15);
-}
-
-.coeur:hover .coeur1 {
-  color: transparent;
-
 }
 
 /*----------------------------------------------*/
 .image-2 {
-  background-image: url(./Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -298,7 +256,7 @@ span.new {
 }
 
 .image-3 {
-  background-image: url(./Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;
@@ -309,7 +267,7 @@ span.new {
 }
 
 .image-4 {
-  background-image: url(./Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(../Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
   height: 200px;
@@ -323,7 +281,7 @@ span.new {
 .ohmyfood {
   padding-top: 30px;
   padding-left: 20px;
-  font-family: 'shrikhand';
+  font-family: "shrikhand";
   font-size: large;
   padding-bottom: 20px;
 }
@@ -333,8 +291,7 @@ span.new {
   color: white;
   height: 250px;
   width: 100%;
-  font-family: 'MyWebFont', sans-serif;
-
+  font-family: "fontstack", sans-serif;
 }
 
 .footer-1 {
@@ -358,34 +315,28 @@ span.new {
 }
 
 .E-mail {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
-
 
 /***************media-query******/
 @media screen and (min-width: 800px) {
   * {
     box-sizing: border-box;
   }
-
   h2 {
     margin-left: 35%;
   }
-
   h3 {
     margin-left: 5%;
   }
-
   p.content {
     margin-left: 25%;
   }
-
   .button {
     width: 25%;
     margin-left: 35%;
   }
-
   .btns {
     display: flex;
     justify-content: space-between;
@@ -393,53 +344,43 @@ span.new {
     padding-left: 5%;
     padding-right: 5%;
   }
-
   .btn {
     width: 30%;
     gap: 10px;
   }
-
   .cards {
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 50%;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px;
     justify-content: center;
     padding-right: 5%;
-    padding-left: 0%;
+    padding-left: 5%;
     gap: 40px;
-
   }
-
   .texte-restaurant-bloc-1 {
-    height: 30%;
+    height: 40%;
   }
-
   .footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     height: 100px;
-
   }
-
   .footer1-2-3-4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .ohmyfood {
     padding-top: 30px;
     padding-right: 40px;
-    font-family: 'shrikhand';
+    font-family: "shrikhand";
     font-size: large;
     padding-bottom: 20px;
   }
-
   .Accueil {
     padding-right: 10%;
-    font-family: 'MyWebFont', sans-serif;
+    font-family: "fontstack", sans-serif;
     font-weight: bold;
   }
-
 }
