@@ -27,7 +27,6 @@
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-  border: none;
 }
 
 .coeur2 {
@@ -37,21 +36,21 @@
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-  border: none;
-  transition-property: transform;
+  transition: transform 400ms;
 }
 
 .coeur:hover .coeur2 {
   color: #FF79DA;
-  background: linear-gradient(30deg, #FF79DA 0%, #FF79DA 25%, #9356DC 50%, #9356DC 75%, #9356DC);
+  background: linear-gradient(50deg, #FF79DA 10%, #FF79DA 25%, #9356DC 50%, #9356DC 75%, #9356DC 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-
 .coeur:hover .coeur1 {
-  transform: scale(1.13);
+  color: transparent;
+  transform: scale(1);
+  transition: all 400ms;
 }
 
 /*general*/

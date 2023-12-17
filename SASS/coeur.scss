@@ -17,13 +17,13 @@
   align-items: center;
   padding-right: 15px;
   padding-top: 20px;
-
+  transition: transform 400ms;
 }
 
 .coeur:hover {
   .coeur2 {
       color:$secondaire;
-      background: linear-gradient(45deg, $primaire 0%,$primaire 25%,$secondaire 50%,$primaire 75%,$secondaire 100%);
+      background: linear-gradient(30deg, $secondaire 10%,$secondaire 25%,$primaire 50%,$primaire 75%,$primaire 100%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
@@ -31,5 +31,7 @@
   }
   .coeur1 {
       color: transparent;
+      transform: scale(1);
+      transition: all 400ms;
   }
 }
