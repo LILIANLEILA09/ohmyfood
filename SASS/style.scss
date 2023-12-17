@@ -1,14 +1,20 @@
 @import '__variables';
 @import 'button';
-@import 'heart';
+@import 'coeur';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('WebFont.eot');
-  src: url('WebFont.eot?iefix') format('eot'),
-    url('WebFont.woff') format('woff'),
-    url('WebFont.ttf') format('truetype'),
-    url('WebFont.svg#webfont') format('svg');
-}
+    font-family: 'fontstack';
+    src: url('WebFont.eot');
+    src: url('WebFont.eot?iefix') format('eot'),
+      url('WebFont.woff') format('woff'),
+      url('WebFont.ttf') format('truetype'),
+      url('WebFont.svg#webfont') format('svg');
+  }
+  $primaire:#9356DC;
+  $secondaire:#FF79DA;
+  $tertiaire:#99E2D0;
+  $blues:#3e9cbf;
+  $foot:#303030;
 
 * {
   box-sizing: border-box;
@@ -17,7 +23,7 @@
 /*-----------police d'ecriture--------*/
 .Heading {
   font-weight: bold;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: 'fontstack', sans-serif;
   margin: 10px;
 }
 
@@ -31,6 +37,7 @@
 body {
   width: 100%;
   height: auto;
+
 }
 
 .card {
@@ -140,17 +147,18 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width:90%;
   border: none;
-  font-size: 16px;
-  height: 55px;
+  font-size:1rem;
+  height:3rem;
   margin-bottom: 30px;
   background-color:$fondgris;
   border-radius: 50px 50px 50px;
-  box-shadow: 10px 10px 5px #d3cfd5;
+  box-shadow: 10px 10px 5px $grey;
+  &:hover {
+      transform: scale(1.13);
+     background:rgba(255, 121, 218, 0.19);
 }
-.btn:hover {
-  background:rgba(255, 121, 218, 0.19);
 }
 .btnrounded {
   display: flex;
@@ -159,13 +167,14 @@ p {
   color:$fondwhite;
   background-color:$primaire;
   height:25px;
-  border-radius: 50%;
+  border-radius:50%;
   width: 25px;
 }
 
 /*---------------------------------------------*/
 .Accueil {
-  padding-right:30%;
+  padding-right:10%;
+  font-size:16px;
   font-family: 'MyWebFont', sans-serif;
   font-weight: bold;
 }
@@ -184,7 +193,7 @@ p {
 
 span.new {
   background-color:$tertiaire;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: 'fontstack', sans-serif;
   color: forestgreen;
   position: absolute;
   border-radius: 3px;
@@ -276,7 +285,7 @@ span.new {
   color:$fondwhite;
   height: 250px;
   width: 100%;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: 'fontstack', sans-serif;
 
 }
 
@@ -371,7 +380,7 @@ span.new {
 }
 .Accueil {
   padding-right:10%;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: 'fontstack', sans-serif;
   font-weight: bold;
 }
   

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .button {
   display: flex;
   margin-left: 10%;
@@ -11,14 +12,13 @@
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
+  transition: transform 450ms, background-color 300ms;
 }
-
 .button:hover {
+  transform: scale(1.13);
   background: #FF79DA;
 }
 
-/* Use the text as a mask for the background. */
-/* This will show the gradient as a text color rather than element bg. */
 .coeur1 {
   position: absolute;
   justify-content: center;
@@ -28,6 +28,8 @@
   border: none;
 }
 
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
 .coeur2 {
   z-index: 1;
   color: white;
@@ -37,23 +39,27 @@
   padding-top: 20px;
   border: none;
   transition-property: transform;
-  transition-duration: 0.4s;
+  transition-duration: 450ms;
+  transition: transform 450ms, background-color 300ms 150ms;
 }
 
 .coeur:hover .coeur2 {
-  background: linear-gradient(10deg, #FF79DA 0%, #FF79DA 25%, #9356dc 50%, #9356dc 75%, #9356dc);
+  color: #FF79DA;
+  background: linear-gradient(30deg, #FF79DA 0%, #FF79DA 25%, #9356DC 50%, #9356DC 75%, #9356DC);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  transform: scale(1.15);
+  transform: scale(1.13);
 }
-.coeur:hover .coeur2 .coeur:hover .coeur1 {
-  color: transparent;
+
+.coeur:hover .coeur1 {
+  transition: transform 450ms, background-color 300ms 150ms;
+  transform: scale(1.13);
 }
 
 @font-face {
-  font-family: "MyWebFont";
+  font-family: "fontstack";
   src: url("WebFont.eot");
   src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
 }
@@ -64,7 +70,7 @@
 /*-----------police d'ecriture--------*/
 .Heading {
   font-weight: bold;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   margin: 10px;
 }
 
@@ -184,17 +190,17 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
   border: none;
-  font-size: 16px;
-  height: 55px;
+  font-size: 1rem;
+  height: 3rem;
   margin-bottom: 30px;
   background-color: #F2F2F2;
   border-radius: 50px 50px 50px;
   box-shadow: 10px 10px 5px #d3cfd5;
 }
-
 .btn:hover {
+  transform: scale(1.13);
   background: rgba(255, 121, 218, 0.19);
 }
 
@@ -211,7 +217,8 @@ p {
 
 /*---------------------------------------------*/
 .Accueil {
-  padding-right: 30%;
+  padding-right: 10%;
+  font-size: 16px;
   font-family: "MyWebFont", sans-serif;
   font-weight: bold;
 }
@@ -230,7 +237,7 @@ p {
 
 span.new {
   background-color: #99E2D0;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   color: forestgreen;
   position: absolute;
   border-radius: 3px;
@@ -321,7 +328,7 @@ span.new {
   color: white;
   height: 250px;
   width: 100%;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
 }
 
 .footer-1 {
@@ -410,7 +417,7 @@ span.new {
   }
   .Accueil {
     padding-right: 10%;
-    font-family: "MyWebFont", sans-serif;
+    font-family: "fontstack", sans-serif;
     font-weight: bold;
   }
 }/*# sourceMappingURL=style.css.map */

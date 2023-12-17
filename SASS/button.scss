@@ -3,7 +3,7 @@
 .button {
     display: flex;
     margin-left: 10%;
-    font-family: 'MyWebFont', sans-serif;
+    font-family:'MyWebFont', sans-serif;
     width: 70%;
     height: 50px;
     color:$fondwhite;
@@ -11,10 +11,11 @@
     align-items: center;
     border-radius: 50px 50px 50px;
     background: linear-gradient($primaire,$secondaire);
-    box-shadow: 10px 10px 5px #d3cfd5;
+    box-shadow: 10px 10px 5px $grey;
     justify-content: center;
-  }
-  .button:hover {
+    transition: transform 450ms, background-color 300ms;
+    &:hover {
+    transform: scale(1.13); 
     background:$secondaire;
   }
-  
+}

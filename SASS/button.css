@@ -11,8 +11,9 @@
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
+  transition: transform 450ms, background-color 300ms;
 }
-
 .button:hover {
+  transform: scale(1.13);
   background: #FF79DA;
 }/*# sourceMappingURL=button.css.map */
