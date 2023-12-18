@@ -41,7 +41,7 @@
 
 .coeur:hover .coeur2 {
   color: #FF79DA;
-  background: linear-gradient(50deg, #FF79DA 10%, #FF79DA 25%, #9356DC 50%, #9356DC 75%, #9356DC 100%);
+  background: linear-gradient(30deg, #FF79DA 10%, #FF79DA 25%, #9356DC 50%, #9356DC 75%, #9356DC 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
