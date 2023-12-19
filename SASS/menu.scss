@@ -48,13 +48,25 @@ h5{
   font-family:$font-stack;
   font-weight:lighter;
   font-size:1.5rem;
-  border:1 solid $tertiaire;
+  margin-bottom:5px;
+  
 }
 p{
   font-family:$font-stack;
   padding-left:20px;
   font-size:16px;
   margin-top:5px;
+
+}
+.trait{
+  content: "";
+  width: 3rem;
+  height: 0.15rem;
+  background-color:$tertiaire;
+  position: absolute;
+ margin:0px;
+  
+
 
 }
 span{
