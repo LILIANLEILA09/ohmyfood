@@ -65,7 +65,7 @@
 /*-----------police d'ecriture--------*/
 .Heading {
   font-weight: bold;
-  font-family: "fontstack", sans-serif;
+  font-family: "font-stack", sans-serif;
   margin: 10px;
 }
 
@@ -73,7 +73,7 @@
 .html {
   width: 100%;
   margin: 0px;
-  padding: 10%;
+  padding: 0px;
 }
 
 body {
@@ -90,12 +90,13 @@ main {
 }
 
 .bloc {
-  padding-left: 5%;
+  width: 100%;
   background-color: #F2F2F2;
+  padding: 5%;
 }
 
 span {
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -110,7 +111,7 @@ h2 {
   padding-left: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   font-weight: bold;
   margin-top: 0px;
 }
@@ -118,19 +119,19 @@ h2 {
 h3 {
   font-size: 20px;
   padding-left: 20px;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   padding-top: 50px;
   margin-top: 80px;
 }
 
 h4 {
   font-size: 18px;
+  font-family: "fontstack", sans-serif;
   margin-bottom: 0px;
-  font-family: "MyWebFont", sans-serif;
 }
 
 p {
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   font-size: 16px;
   font-weight: lighter;
   font-style: normal;
@@ -169,7 +170,7 @@ p {
 }
 
 .content {
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   padding-left: 30px;
   font-size: 20px;
   font-weight: lighter;
@@ -177,7 +178,7 @@ p {
 }
 
 .intro__text {
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
 }
 
 /*---------------section buttons--------------------*/
@@ -214,7 +215,7 @@ p {
 .Accueil {
   padding-right: 10%;
   font-size: 16px;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   font-weight: bold;
 }
 
@@ -251,27 +252,26 @@ span.new {
   width: 60px;
 }
 
-.texte-restaurant-bloc-1 {
+.texte-restaurant-bloc-1, .texte-restaurant-bloc-2, .texte-restaurant-bloc-3, .texte-restaurant-bloc-4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
-  height: 5%;
+  height: 80px;
   width: 100%;
+}
+
+.card__mot1, .card__mot2, .card__mot3, .card__mot4 {
+  padding-left: 15px;
+  color: black;
+  font-family: "MyWebFont", sans-serif;
 }
 
 .text-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.card__mot1 {
-  padding-left: 15px;
-  color: black;
-  font-family: "MyWebFont", sans-serif;
-  cursor: pointer;
 }
 
 /*----------------------------------------------*/
@@ -380,7 +380,6 @@ span.new {
   color: transparent;
 }
 
-/***************media-query******/
 @media screen and (min-width: 800px) {
   * {
     box-sizing: border-box;
@@ -411,15 +410,12 @@ span.new {
   }
   .cards {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 450px 450px;
     grid-template-rows: 300px;
     justify-content: center;
-    padding-right: 5%;
+    padding-right: 10%;
     padding-left: 5%;
-    gap: 40px;
-  }
-  .texte-restaurant-bloc-1 {
-    height: 40%;
+    gap: 30px;
   }
   .footer {
     display: flex;

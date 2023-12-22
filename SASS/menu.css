@@ -80,19 +80,20 @@ h4 {
   margin-left: 20px;
   margin-bottom: 0px;
   padding-top: 5px;
+  font-family: "font-stack", sans-serif;
 }
 
 h5 {
-  font-family: "Roboto", sans-serif;
+  font-family: "font-stack", sans-serif;
   font-weight: lighter;
   font-size: 1.5rem;
   margin-bottom: 5px;
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: "font-stack", sans-serif;
   padding-left: 20px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 5px;
 }
 
@@ -107,6 +108,7 @@ p {
 
 span {
   margin-right: 20px;
+  font-family: "font-stack", sans-serif;
 }
 
 main {
@@ -175,6 +177,7 @@ main {
 
 .texte-restaurant-bloc-1 {
   display: flex;
+  font-family: "font-stack", sans-serif;
   justify-content: space-between;
   align-items: center;
   border-radius: 50px 50px 0px 0px;
@@ -199,7 +202,7 @@ main {
   padding-left: 15px;
   color: black;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "font-stack", sans-serif;
   cursor: pointer;
 }
 
@@ -226,7 +229,7 @@ main {
   color: white;
   height: 250px;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: "fontstack", sans-serif;
 }
 
 .footer-1 {
@@ -265,7 +268,7 @@ main {
 .boutton {
   display: flex;
   margin-left: 10%;
-  font-family: "MyWebFont", sans-serif;
+  font-family: "fontstack", sans-serif;
   width: 70%;
   height: 50px;
   color: white;
@@ -276,6 +279,7 @@ main {
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
+  cursor: pointer;
 }
 .boutton:hover {
   background: #FF79DA;
