@@ -1,20 +1,31 @@
-@import 'button';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 @import '__variables';
-@import 'coeur';
+@import '__button';
+@import '__coeur';
 
-
-$primaire: #9356DC;
-$secondaire: #FF79DA;
-$tertiaire: #99E2D0;
-$blues: #3e9cbf;
-$foot: #303030;
-$grey: #d3cfd5;
-$fondgris:#F2F2F2;
-$fondwhite:#ffff;
-$gray:#F6F6F6;
-$font-stack:'Roboto', sans-serif;
-
-/*general*/
+@font-face {
+    font-family: 'font-stack';
+    src: url('WebFont.eot');
+    src: url('WebFont.eot?iefix') format('eot'),
+      url('WebFont.woff') format('woff'),
+      url('WebFont.ttf') format('truetype'),
+      url('WebFont.svg#webfont') format('svg');
+  }
+  $primaire:#9356DC;
+  $secondaire:#FF79DA;
+  $tertiaire:#99E2D0;
+  $blues:#3e9cbf;
+  $foot:#303030;
+  $secondaire: #FF79DA;
+  $blues: #3e9cbf;
+  $foot: #303030;
+  $grey: #d3cfd5;
+  $fondgris:#F2F2F2;
+  $fondwhite:#ffff;
+  $gray:#F6F6F6;
+  $font-stack:'Roboto', sans-serif;
 
 * {
   box-sizing: border-box;
@@ -40,22 +51,30 @@ h1 {
 h4{
   margin-left: 20px;
   margin-bottom: 0px;
-  padding-top:5px;
-  font-family: 'font-stack',sans-serif;
+  margin-top:0px;
+  font-family: 'fontstack',sans-serif;
+  padding-top: 0.4rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  
 }
 h5{
-  font-family:'font-stack',sans-serif;
+  font-family:'fontstack',sans-serif;
   font-weight:lighter;
   font-size:1.5rem;
   margin-bottom:5px;
   
 }
 p{
-  font-family:'font-stack',sans-serif;
-  padding-left:20px;
+  font-family:'fonttack',sans-serif;
+  margin-left: 20px;
   font-size:1rem;
-  margin-top:5px;
-
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  
+  
 }
 .trait{
   content: "";
@@ -65,13 +84,65 @@ p{
   position: absolute;
  margin:0px;
   
-
-
 }
 span{
   margin-right: 20px;
-  font-family:'font-stack',sans-serif;
+  font-family:'fontstack',sans-serif;
 }
+/*----------------------------la composition--------------------------------*/
+.composition {
+  margin-top: 30px;
+  width:90%;
+  border: none;
+  font-size:1rem;
+  height:4rem;
+  background-color:$fondwhite;
+  border-radius:20px 20px 20px;
+  box-shadow: 10px 10px 5px $grey;
+  &:hover {
+     background:$fondgris;
+}
+}
+
+.assaisonnement{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.check{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom:60px;
+  
+}
+.price{
+padding-bottom:5rem ;
+
+}
+
+.true{
+  background-color:$tertiaire;
+  width:4rem;
+  height: 4rem;
+  border-radius: 0px 20px 20px 0px;
+  margin-bottom:7.4rem ;
+  margin-left: 20px;
+  }
+
+ 
+/*-------------------------------fin-------------------------------------------*/
+
+
 main{
   background-color:$gray;
   width: 100%;
@@ -154,11 +225,7 @@ main{
   justify-content: space-between;
   align-items: center;
 }
-.assaisonnement{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .card__mot1 {
   padding-left: 15px;
@@ -168,23 +235,7 @@ main{
   cursor: pointer;
 }
 
-.composition {
-  justify-content: space-between;
-  align-items: center;
-  width:90%;
-  border: none;
-  font-size:1rem;
-  height:4rem;
-  margin-bottom:20px;
-  padding-left:2%;
-  margin-left:5%;
-  background-color:$fondwhite;
-  border-radius:20px 20px 20px;
-  box-shadow: 10px 10px 5px $grey;
-  &:hover {
-     background:$fondgris;
-}
-}
+
 .footer {
   background-color:$foot;
   color:$fondwhite;

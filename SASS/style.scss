@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import '__variables';
 @import '__button';
 @import '__coeur';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 @font-face {
     font-family: 'font-stack';
     src: url('WebFont.eot');
@@ -17,6 +19,7 @@
   $foot:#303030;
 
 * {
+  
   box-sizing: border-box;
 }
 
@@ -41,7 +44,7 @@ body {
 }
 
 .card {
-  padding-bottom: 80px;
+  padding-bottom:80px;
   
 }
 
@@ -51,12 +54,13 @@ main {
 }
 
 .bloc {
-  width: 100%;
   background-color:$fondgris;
-  padding:5% ;
+  padding-top:10px;
+ 
+   
 }
 span {
-  font-family: 'fontstack', sans-serif;
+  font-family: 'font-stack', sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -64,7 +68,7 @@ span {
 
 /*------------titres-----------------*/
 h1 {
-  font-family: 'Shrikhand';
+  font-family: 'Shrikhand',cursive;
 }
 
 h2 {
@@ -72,7 +76,7 @@ h2 {
   padding-left: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'fontstack', sans-serif;
+  font-family: 'font-stack', sans-serif;
   font-weight: bold;
   margin-top: 0px;
 }
@@ -80,28 +84,22 @@ h2 {
 h3 {
   font-size: 20px;
   padding-left: 20px;
-  font-family: 'fontstack', sans-serif;
-  padding-top: 50px;
-  margin-top: 80px;
+  padding-bottom:20px;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4 {
   font-size: 18px;
-  font-family: 'fontstack', sans-serif;
+  font-family: 'font-stack', sans-serif;
   margin-bottom: 0px;
 }
-
-
 p {
   font-family: 'fontstack', sans-serif;
-  font-size: 16px;
+  font-size:1em;
   font-weight: lighter;
   font-style: normal;
   margin-top: 0px;
-
 }
-
-
 
 /*------------------logo------------*/
 .logo {
@@ -136,7 +134,7 @@ p {
 }
 
 .content {
-  font-family: 'fontstack', sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding-left: 30px;
   font-size: 20px;
   font-weight: lighter;
@@ -144,7 +142,7 @@ p {
 }
 
 .intro__text {
-  font-family: 'fontstack', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*---------------section buttons--------------------*/
@@ -199,15 +197,15 @@ p {
 span.new {
   background-color:$tertiaire;
   font-family: 'fontstack', sans-serif;
-  color: forestgreen;
+  color:forestgreen;
   position: absolute;
   border-radius: 3px;
   top: 15px;
   right: 15px;
   padding: 7px;
   border-radius: 2px;
-  width: 20%;
-  height: 30px;
+  width:5rem; 
+  height:2.5rem;
 }
 
 .new {
@@ -229,7 +227,7 @@ span.new {
 .card__mot1,.card__mot2,.card__mot3,.card__mot4 {
   padding-left: 15px;
   color:black;
-  font-family: 'MyWebFont', sans-serif;
+  font-family: 'font-stack', sans-serif;
   
 }
 .text-position {
@@ -273,6 +271,8 @@ span.new {
   cursor: pointer;
 }
 
+
+
 /*--------------------footer--------------------*/
 .ohmyfood {
   padding-top: 30px;
@@ -281,7 +281,9 @@ span.new {
   font-size: large;
   padding-bottom: 20px;
 }
+/*---------------------------check----------------------*/
 
+/*------------------------------------------------------*/
 .footer {
   background-color:$foot;
   color:$fondwhite;
@@ -352,11 +354,13 @@ span.new {
 
 //***************media-query******/
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
   }
-  
+  .bloc{
+    width:100%;
+  }
   h2{
     margin-left:35%;
   }
@@ -389,11 +393,9 @@ span.new {
 
   .cards{
     display:grid;
-    grid-template-columns:450px 450px;
+    grid-template-columns:500px 500px;
     grid-template-rows:300px;
     justify-content:center;
-    padding-right:10%;
-    padding-left:5%;
     gap:30px;
     
   }
