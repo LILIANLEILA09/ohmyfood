@@ -5,7 +5,7 @@
 @import '__coeur';
 
 @font-face {
-    font-family: 'font-stack';
+    font-family: 'fontstack';
     src: url('WebFont.eot');
     src: url('WebFont.eot?iefix') format('eot'),
       url('WebFont.woff') format('woff'),
@@ -60,7 +60,7 @@ main {
    
 }
 span {
-  font-family: 'font-stack', sans-serif;
+  font-family: 'fontstack', sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -76,7 +76,7 @@ h2 {
   padding-left: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'font-stack', sans-serif;
+  font-family: 'fontstack', sans-serif;
   font-weight: bold;
   margin-top: 0px;
 }
