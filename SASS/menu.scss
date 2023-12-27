@@ -89,7 +89,7 @@ span{
   margin-right: 20px;
   font-family:'fontstack',sans-serif;
 }
-/*----------------------------la composition--------------------------------*/
+/*------------------------ANIMATION BTN CHECK A ADDAPTER-------------------------------*/
 .composition {
   margin-top: 30px;
   width:90%;
@@ -118,28 +118,53 @@ span{
   white-space: nowrap;
   overflow: hidden;
 }
-.check{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom:60px;
-  
-}
+
 .price{
-padding-bottom:5em;
-
+  
+margin-bottom: 0px;
 }
 
-.true{
-  background-color:$tertiaire;
-  width:4rem;
-  height: 4rem;
-  border-radius: 0px 20px 20px 0px;
-  margin-bottom:7.4rem ;
-  margin-left: 20px;
-  }
 
+/*--------------------------exemple------------
+/* ANIMATION BTN-CHECK */
+/* Before animation */
+.composition {
+  position: relative;
+  overflow: hidden;
+  /* After animation */
+}
+.true {
+  border: 0;
+  position: absolute;
+  top: 0px;
+  right: -65px;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 65px;
+  border-radius: 0 20px 20px 0;
+  transition-duration: 0.55s;
  
+}
+.composition .check .fa-circle-check {
+  color: white;
+  transform: rotate(220deg);
+  transition-duration: 0.6s;
+}
+.composition:hover {
+  cursor: pointer;
+  .true{
+    right: 0px;
+  }
+}
+.composition:hover .check {
+  right: 0;
+}
+.composition:hover .fa-circle-check {
+  transform: rotate(0deg);
+}
+.composition:hover strong {
+  margin-right: 60px;
+}
 /*-------------------------------fin-------------------------------------------*/
 
 
@@ -174,8 +199,6 @@ main{
   color: black;
   padding-left:20px;
 }
-
-/*----------------------------------------------*/
 
 .image-menu-1 {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -290,8 +313,6 @@ main{
       box-shadow: 10px 10px 5px $grey;
       justify-content: center;
       cursor: pointer;
-      &:hover {
-      background:$secondaire;
-    }
+   
   }
-  
+
