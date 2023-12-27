@@ -122,6 +122,8 @@ span{
 .price{
   
 margin-bottom: 0px;
+
+
 }
 
 
@@ -133,37 +135,64 @@ margin-bottom: 0px;
   overflow: hidden;
   /* After animation */
 }
-.true {
+.true{
   border: 0;
   position: absolute;
   top: 0px;
   right: -65px;
-  background-color: #99E2D0;
+  background-color:$tertiaire;
   height: 100%;
   width: 65px;
   border-radius: 0 20px 20px 0;
   transition-duration: 0.55s;
+}
+.icone{
+  border-radius: 20px 20px 20px 20px;
+  color:$tertiaire;
+  background-color:$fondwhite;
+  width:30px ;
+  height:30px ;
+ margin-top: 18px;
+ margin-left: 18px;
  
 }
-.composition .check .fa-circle-check {
+/*--------------------essai----------------------*/
+.price{
+  border: 0;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  margin-right: 20px;
+  border-radius: 0 20px 20px 0;
+  transition-duration: 0.55s;
+}
+.composition:hover {
+  cursor: pointer;
+  .price{
+    right: 65px;
+  }
+}
+/*-----------------------------------------------*/
+.composition .check .icone {
   color: white;
   transform: rotate(220deg);
   transition-duration: 0.6s;
 }
 .composition:hover {
   cursor: pointer;
-  .true{
+  .true {
     right: 0px;
   }
+  
 }
 .composition:hover .check {
   right: 0;
 }
-.composition:hover .fa-circle-check {
+.composition:hover .icone {
   transform: rotate(0deg);
 }
 .composition:hover strong {
-  margin-right: 60px;
+  margin-right:60px;
 }
 /*-------------------------------fin-------------------------------------------*/
 

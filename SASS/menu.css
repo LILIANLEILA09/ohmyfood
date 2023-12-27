@@ -178,7 +178,36 @@ span {
   transition-duration: 0.55s;
 }
 
-.composition .check .fa-circle-check {
+.icone {
+  border-radius: 20px 20px 20px 20px;
+  color: #99E2D0;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  margin-top: 18px;
+  margin-left: 18px;
+}
+
+/*--------------------essai----------------------*/
+.price {
+  border: 0;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  margin-right: 20px;
+  border-radius: 0 20px 20px 0;
+  transition-duration: 0.55s;
+}
+
+.composition:hover {
+  cursor: pointer;
+}
+.composition:hover .price {
+  right: 65px;
+}
+
+/*-----------------------------------------------*/
+.composition .check .icone {
   color: white;
   transform: rotate(220deg);
   transition-duration: 0.6s;
@@ -195,7 +224,7 @@ span {
   right: 0;
 }
 
-.composition:hover .fa-circle-check {
+.composition:hover .icone {
   transform: rotate(0deg);
 }
 
