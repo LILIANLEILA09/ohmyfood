@@ -23,7 +23,7 @@
   box-sizing: border-box;
 }
 /*loader spinner*/
-.move {
+.animation{
   position: fixed;
   display: grid;
   place-items: center;
@@ -48,7 +48,7 @@
   }
 }
 
-.move {
+.animation {
   animation: dissapears 200ms;
   animation-fill-mode: forwards;
   transform-origin: top;

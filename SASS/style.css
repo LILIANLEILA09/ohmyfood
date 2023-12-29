@@ -64,7 +64,7 @@
 }
 
 /*loader spinner*/
-.move {
+.animation {
   position: fixed;
   display: grid;
   place-items: center;
@@ -87,7 +87,7 @@
     transform: scale(0);
   }
 }
-.move {
+.animation {
   animation: dissapears 200ms;
   animation-fill-mode: forwards;
   transform-origin: top;
