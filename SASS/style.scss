@@ -19,7 +19,6 @@
   $foot:#303030;
 
 * {
-
   box-sizing: border-box;
 }
 /*loader spinner*/
@@ -54,25 +53,32 @@
   transform-origin: top;
   animation-delay: 5s;
 }
-
+/* HTML: <div class="loader"></div> */
 .loader {
-  width: 15px;
-  color:$secondaire;
+  width: 40px;
   aspect-ratio: 1;
-  border-radius: 50%;
-  clip-path: inset(-45px);
-  box-shadow: -60px 15px,-60px 15px,-60px 15px;
-  transform: translateY(-15px);
-  animation: l19 1s infinite linear;
+  background:
+    linear-gradient( 45deg,#00AAFF 50%,#0000 0),
+    linear-gradient(-45deg,#F1BBBB 50%,#0000 0),
+    linear-gradient( 45deg,#0000 50%,#AA00FF 0),
+    linear-gradient(-45deg,#0000 50%,#FF00AA 0),
+    #00AAFF;
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  animation: l3 2.5s infinite; 
 }
-@keyframes l19{ 
-  16.67% {box-shadow:-60px 15px,-60px 15px,19px 15px}
-  33.33% {box-shadow:-60px 15px,  0px 15px,19px 15px}
-  40%,60%{box-shadow:-19px 15px,  0px 15px,19px 15px}
-  66.67% {box-shadow:-19px 15px,  0px 15px,60px 15px}
-  83.33% {box-shadow:-19px 15px, 60px 15px,60px 15px}
-  100%   {box-shadow: 60px 15px, 60px 15px,60px 15px}
+@keyframes l3 {
+  0%   {background-position:100% 0,0    0   ,0 100%,100% 100%}
+  15%,
+  25%  {background-position:100% 0,0    0   ,0 100%,0    0   }
+  40%,
+  50%  {background-position:100% 0,0    0   ,100% 0,0    0   }
+  65%,
+  75%  {background-position:100% 0,100% 100%,100% 0,0    0   }
+  90%,
+  100% {background-position:0 100%,100% 100%,100% 0,0    0   }
 }
+
 
 /*-----------police d'ecriture--------*/
 .Heading {
