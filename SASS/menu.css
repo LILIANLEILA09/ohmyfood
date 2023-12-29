@@ -56,7 +56,7 @@
 }
 
 @font-face {
-  font-family: "font-stack";
+  font-family: "fontstack";
   src: url("WebFont.eot");
   src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
 }
@@ -377,4 +377,8 @@ main {
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
   cursor: pointer;
+}
+.boutton:hover {
+  transform: scale(1.13);
+  background: #FF79DA;
 }/*# sourceMappingURL=menu.css.map */
