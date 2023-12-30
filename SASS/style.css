@@ -94,11 +94,11 @@
   animation-delay: 5s;
 }
 
-/* HTML: <div class="loader"></div> */
+/******LOADER******************/
 .loader {
   width: 40px;
   aspect-ratio: 1;
-  background: linear-gradient(45deg, #00AAFF 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #F1BBBB 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #AA00FF 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
+  background: linear-gradient(45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #F1BBBB 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
   background-size: 200% 200%;
   background-repeat: no-repeat;
   animation: l3 2.5s infinite;
