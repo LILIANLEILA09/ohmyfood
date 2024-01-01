@@ -171,7 +171,7 @@ h1 {
 
 .ohmyfood {
   padding-top: 30px;
-  padding-right: 40px;
+  padding-left: 1rem;
   font-family: "shrikhand";
   font-size: large;
   padding-bottom: 20px;
@@ -387,7 +387,7 @@ span.new {
 .footer {
   background-color: #303030;
   color: white;
-  height: 250px;
+  height: 300px;
   width: 100%;
   font-family: "fontstack", sans-serif;
 }
@@ -398,22 +398,23 @@ span.new {
 }
 
 .footer-2 {
-  padding-left: 20px;
+  padding-left: 1rem;
   padding-top: 10px;
 }
 
 .footer-3 {
-  padding-left: 20px;
+  padding-left: 1rem;
   padding-top: 10px;
 }
 
 .footer-4 {
-  padding-left: 20px;
+  padding-left: 1rem;
   padding-top: 10px;
 }
 
 .E-mail {
   color: white;
+  padding-right: 1rem;
   text-decoration: none;
 }
 
