@@ -38,6 +38,7 @@ $font-stack: 'Roboto', sans-serif;
   padding: 10%;
 }
 
+
 /*les titres*/
 h1 {
   font-family: 'Shrikhand';
@@ -59,7 +60,6 @@ h4 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-
 }
 
 h5 {
@@ -67,7 +67,6 @@ h5 {
   font-weight: lighter;
   font-size: 1.5rem;
   margin-bottom: 5px;
-
 }
 
 p {
@@ -101,7 +100,7 @@ span {
   border: none;
   font-size: 1rem;
   height: 4rem;
-  background-color:$fondwhite;
+  background-color: $fondwhite;
   border-radius: 20px 20px 20px;
   box-shadow: 10px 10px 5px $grey;
 
@@ -114,7 +113,9 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+}
+.check{
+ margin-top:25px;
 }
 
 .text {
@@ -126,10 +127,11 @@ span {
   overflow: hidden;
 }
 
+
 .price {
   margin-bottom: 0px;
+margin-left: 10px;
 }
-
 
 /*--------------------------exemple------------
 /* ANIMATION BTN-CHECK */
@@ -150,7 +152,9 @@ span {
   width: 65px;
   border-radius: 0 20px 20px 0;
   transition-duration: 0.55s;
+  
 }
+
 
 .icone {
   border-radius: 20px 20px 20px 20px;
@@ -165,15 +169,20 @@ span {
 /*------------------------------------------*/
 .price {
   border: 0;
-  position: absolute;
-  top: 40px;
   right: 0px;
   margin-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   border-radius: 0 20px 20px 0;
   transition-duration: 0.55s;
+  
 }
+
+
 .composition:hover {
   cursor: pointer;
+
   .price {
     right: 65px;
   }
@@ -181,10 +190,11 @@ span {
 
 /*-----------------------------------------------*/
 .composition .check .icone {
-  color:$fondwhite;
+  color: $fondwhite;
   transform: rotate(220deg);
   transition-duration: 0.6s;
 }
+
 .composition:hover {
   cursor: pointer;
 
@@ -192,9 +202,11 @@ span {
     right: 0px;
   }
 }
+
 .composition:hover .check {
   right: 0;
 }
+
 .composition:hover .icone {
   transform: rotate(0deg);
 }
@@ -274,16 +286,6 @@ main {
   cursor: pointer;
 }
 
-.texte-restaurant-bloc-1 {
-  display: flex;
-  font-family: 'font-stack', sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px 50px 0px 0px;
-  background-color: $gray;
-  margin-top: -50px;
-  width: 100%;
-}
 
 
 .text-position {
@@ -331,7 +333,7 @@ main {
 }
 
 .E-mail {
-  color:$fondwhite;
+  color: $fondwhite;
   text-decoration: none;
 }
 
@@ -345,9 +347,9 @@ main {
 
 .boutton {
   display: flex;
-  margin-left: 10%;
+  margin-left: 35%;
   font-family: 'fontstack', sans-serif;
-  width: 70%;
+  width: 30%;
   height: 50px;
   color: $fondwhite;
   font-weight: bold;
@@ -358,90 +360,180 @@ main {
   box-shadow: 10px 10px 5px $grey;
   justify-content: center;
   cursor: pointer;
+
   &:hover {
     transform: scale(1.13);
     background: $secondaire;
   }
 }
+
 /*---------------------DEFIL----------------------------------*/
 .entree-1,
 .entree-2,
 .entree-3,
 .entree-3-2 {
-    animation: appear 1s;
-    opacity: 0;
-    width: 100%;
-    animation-fill-mode:forwards;
-    
+  animation: appear 1s;
+  opacity: 0;
+  width: 100%;
+  animation-fill-mode: forwards;
+
 }
 
 .entree-1 {
-    animation-delay: 1500ms;
+  animation-delay: 1500ms;
 }
 
 .entree-2 {
-    animation-delay: 1800ms;
+  animation-delay: 1800ms;
 }
 
 .entree-3 {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .entree-3-2 {
-    animation-delay: 2100ms;
+  animation-delay: 2100ms;
 }
 
 .plat-1,
 .plat-2,
 .plat-3 {
-    animation: appear 2200ms;
-    opacity: 0;
-    width: 100%;
-    animation-fill-mode: forwards;
-    
+  animation: appear 2200ms;
+  opacity: 0;
+  width: 100%;
+  animation-fill-mode: forwards;
+  
+
 }
 
 .plat-1 {
-    animation-delay: 2400ms;
+  animation-delay: 2400ms;
 }
 
 .plat-2 {
-    animation-delay: 2900ms;
+  animation-delay: 2900ms;
 }
 
 .plat-3 {
-    animation-delay: 3300ms;
+  animation-delay: 3300ms;
 }
 
 .dessert-1,
 .dessert-2,
 .dessert-3 {
-    animation: appear 3200ms;
-    opacity: 0;
-    width: 100%;
-    animation-fill-mode: forwards;
-    
+  animation: appear 3200ms;
+  opacity: 0;
+  width: 100%;
+  animation-fill-mode: forwards;
+
 }
 
 .dessert-1 {
-    animation-delay: 3900ms;
+  animation-delay: 3900ms;
 }
 
 .dessert-2 {
-    animation-delay: 4500ms;
+  animation-delay: 4500ms;
 }
 
 .dessert-3 {
-    animation-delay: 4900ms;
+  animation-delay: 4900ms;
 }
+
 @keyframes appear {
   0% {
     transform: translateY(50%);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
   }
+
+}
+.texte-restaurant-bloc-1 {
+  display: flex;
+  font-family: 'fontstack', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color: $gray;
+  margin-top: -50px;
+
+  
+ 
+
+}
+//***************media-query******/
+
+@media screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .bloc {
+    width: 50%;
+  
+  }
+
+
+.texte-restaurant-bloc-1 {
+  display: flex;
+  font-family: 'fontstack', sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color: $gray;
+  margin-top: -50px;
+  background-color:$fondgris;
+  width:80%;
+ margin-left: 10%;
+
+}
+.entree-1,
+.entree-2,
+.entree-3,
+.entree-4,
+.entree-3-2,
+.entree-4-3{
+  animation: appear 1s;
+  opacity: 0;
+  width: 70%;
+  animation-fill-mode: forwards;
+  margin-left:18%;
+}
+
+.plat-1,
+.plat-2,
+.plat-3 {
+  animation: appear 2200ms;
+  opacity: 0;
+  width: 70%;
+  animation-fill-mode: forwards;
+  margin-left: 18%;
+
+}
+.dessert-1,
+.dessert-2,
+.dessert-3 {
+  animation: appear 3200ms;
+  opacity: 0;
+  width: 70%;
+  animation-fill-mode: forwards;
+  margin-left: 18%;
+
+}
+h5{
+  margin-left: 20%;
+}
+.trait{
+  margin-left:20% ;
+}
+main{
+  width:80%;
+  background-color:$fondgris;
+  margin-left:10% ;
+}
 
 }

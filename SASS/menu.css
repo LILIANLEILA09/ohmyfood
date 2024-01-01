@@ -144,6 +144,10 @@ span {
   align-items: center;
 }
 
+.check {
+  margin-top: 25px;
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -155,6 +159,7 @@ span {
 
 .price {
   margin-bottom: 0px;
+  margin-left: 10px;
 }
 
 /*--------------------------exemple------------
@@ -191,10 +196,11 @@ span {
 /*------------------------------------------*/
 .price {
   border: 0;
-  position: absolute;
-  top: 40px;
   right: 0px;
   margin-right: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
   border-radius: 0 20px 20px 0;
   transition-duration: 0.55s;
 }
@@ -299,17 +305,6 @@ main {
   cursor: pointer;
 }
 
-.texte-restaurant-bloc-1 {
-  display: flex;
-  font-family: "font-stack", sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px 50px 0px 0px;
-  background-color: #F6F6F6;
-  margin-top: -50px;
-  width: 100%;
-}
-
 .text-position {
   display: flex;
   justify-content: space-between;
@@ -367,9 +362,9 @@ main {
 
 .boutton {
   display: flex;
-  margin-left: 10%;
+  margin-left: 35%;
   font-family: "fontstack", sans-serif;
-  width: 70%;
+  width: 30%;
   height: 50px;
   color: white;
   font-weight: bold;
@@ -463,5 +458,76 @@ main {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+.texte-restaurant-bloc-1 {
+  display: flex;
+  font-family: "fontstack", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 50px 50px 0px 0px;
+  background-color: #F6F6F6;
+  margin-top: -50px;
+}
+
+@media screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  .bloc {
+    width: 50%;
+  }
+  .texte-restaurant-bloc-1 {
+    display: flex;
+    font-family: "fontstack", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px 50px 0px 0px;
+    background-color: #F6F6F6;
+    margin-top: -50px;
+    background-color: #F2F2F2;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .entree-1,
+  .entree-2,
+  .entree-3,
+  .entree-4,
+  .entree-3-2,
+  .entree-4-3 {
+    animation: appear 1s;
+    opacity: 0;
+    width: 70%;
+    animation-fill-mode: forwards;
+    margin-left: 18%;
+  }
+  .plat-1,
+  .plat-2,
+  .plat-3 {
+    animation: appear 2200ms;
+    opacity: 0;
+    width: 70%;
+    animation-fill-mode: forwards;
+    margin-left: 18%;
+  }
+  .dessert-1,
+  .dessert-2,
+  .dessert-3 {
+    animation: appear 3200ms;
+    opacity: 0;
+    width: 70%;
+    animation-fill-mode: forwards;
+    margin-left: 18%;
+  }
+  h5 {
+    margin-left: 20%;
+  }
+  .trait {
+    margin-left: 20%;
+  }
+  main {
+    width: 80%;
+    background-color: #F2F2F2;
+    margin-left: 10%;
   }
 }/*# sourceMappingURL=menu.css.map */

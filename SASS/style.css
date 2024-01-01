@@ -63,12 +63,14 @@
   box-sizing: border-box;
 }
 
+/*********
 /*loader spinner*/
-.animation {
+/**
+.animation{
   position: fixed;
   display: grid;
   place-items: center;
-  background-color: #99E2D0;
+  background-color:$tertiaire;
   height: 100vh;
   top: 0;
   bottom: 0;
@@ -81,12 +83,14 @@
 
 @keyframes dissapears {
   0% {
-    transform: scale(1);
+      transform: scale(1);
   }
+
   100% {
-    transform: scale(0);
+      transform: scale(0);
   }
 }
+/**
 .animation {
   animation: dissapears 200ms;
   animation-fill-mode: forwards;
@@ -95,32 +99,33 @@
 }
 
 /******LOADER******************/
+/**
 .loader {
   width: 40px;
   aspect-ratio: 1;
-  background: linear-gradient(45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #F1BBBB 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
+  background:
+    linear-gradient( 45deg,#0065fc 50%,#0000 0),
+    linear-gradient(-45deg,#F1BBBB 50%,#0000 0),
+    linear-gradient( 45deg,#0000 50%,#9356DC 0),
+    linear-gradient(-45deg,#0000 50%,#FF00AA 0),
+    #00AAFF;
   background-size: 200% 200%;
   background-repeat: no-repeat;
-  animation: l3 2.5s infinite;
+  animation: l3 2.5s infinite; 
 }
-
+/**
 @keyframes l3 {
-  0% {
-    background-position: 100% 0, 0 0, 0 100%, 100% 100%;
-  }
-  15%, 25% {
-    background-position: 100% 0, 0 0, 0 100%, 0 0;
-  }
-  40%, 50% {
-    background-position: 100% 0, 0 0, 100% 0, 0 0;
-  }
-  65%, 75% {
-    background-position: 100% 0, 100% 100%, 100% 0, 0 0;
-  }
-  90%, 100% {
-    background-position: 0 100%, 100% 100%, 100% 0, 0 0;
-  }
+  0%   {background-position:100% 0,0    0   ,0 100%,100% 100%}
+  15%,
+  25%  {background-position:100% 0,0    0   ,0 100%,0    0   }
+  40%,
+  50%  {background-position:100% 0,0    0   ,100% 0,0    0   }
+  65%,
+  75%  {background-position:100% 0,100% 100%,100% 0,0    0   }
+  90%,
+  100% {background-position:0 100%,100% 100%,100% 0,0    0   }
 }
+/
 /*-----------police d'ecriture--------*/
 .Heading {
   font-weight: bold;
@@ -172,12 +177,6 @@ h1 {
   padding-bottom: 20px;
 }
 
-.Accueil {
-  padding-right: 10%;
-  font-family: "fontstack", sans-serif;
-  font-weight: bold;
-}
-
 h2 {
   font-size: 20px;
   padding-left: 30px;
@@ -198,7 +197,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  font-family: "font-stack", sans-serif;
+  font-family: "fontstack", sans-serif;
   margin-bottom: 0px;
 }
 
@@ -242,7 +241,7 @@ p {
 }
 
 .content {
-  font-family: "Roboto", sans-serif;
+  font-family: "fontstack", sans-serif;
   padding-left: 30px;
   font-size: 20px;
   font-weight: lighter;
@@ -281,8 +280,9 @@ p {
 
 /*---------------------------------------------*/
 .Accueil {
-  padding-right: 10%;
-  font-size: 16px;
+  padding-right: 5%;
+  font-size: 14px;
+  width: 100%;
   font-family: "fontstack", sans-serif;
   font-weight: bold;
 }
@@ -320,7 +320,10 @@ span.new {
   width: 60px;
 }
 
-.texte-restaurant-bloc-1, .texte-restaurant-bloc-2, .texte-restaurant-bloc-3, .texte-restaurant-bloc-4 {
+.texte-restaurant-bloc-1,
+.texte-restaurant-bloc-2,
+.texte-restaurant-bloc-3,
+.texte-restaurant-bloc-4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -330,10 +333,13 @@ span.new {
   width: 100%;
 }
 
-.card__mot1, .card__mot2, .card__mot3, .card__mot4 {
+.card__mot1,
+.card__mot2,
+.card__mot3,
+.card__mot4 {
   padding-left: 15px;
   color: black;
-  font-family: "font-stack", sans-serif;
+  font-family: "fontstack", sans-serif;
 }
 
 .text-position {
@@ -378,16 +384,6 @@ span.new {
 }
 
 /*--------------------footer--------------------*/
-.ohmyfood {
-  padding-top: 30px;
-  padding-left: 20px;
-  font-family: "shrikhand";
-  font-size: large;
-  padding-bottom: 20px;
-}
-
-/*---------------------------check----------------------*/
-/*------------------------------------------------------*/
 .footer {
   background-color: #303030;
   color: white;
@@ -419,35 +415,6 @@ span.new {
 .E-mail {
   color: white;
   text-decoration: none;
-}
-
-.coeur1 {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  padding-right: 15px;
-  padding-top: 20px;
-}
-
-.coeur2 {
-  z-index: 1;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  padding-right: 15px;
-  padding-top: 20px;
-}
-
-.coeur:hover .coeur2 {
-  color: #FF79DA;
-  background: linear-gradient(45deg, #9356DC 0%, #9356DC 25%, #FF79DA 50%, #9356DC 75%, #FF79DA 100%);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-.coeur:hover .coeur1 {
-  color: transparent;
 }
 
 @media screen and (min-width: 768px) {
