@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .button {
   display: flex;
-  margin-left: 10%;
-  font-family: "MyWebFont", sans-serif;
+  margin-left: 3rem;
+  font-family: "fontstack", sans-serif;
   width: 70%;
-  height: 50px;
+  height: 3rem;
   color: white;
   font-weight: bold;
   align-items: center;
@@ -145,8 +145,14 @@ body {
   height: auto;
 }
 
+.cards {
+  padding-bottom: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .card {
-  padding-bottom: 80px;
+  margin-bottom: 3rem;
 }
 
 main {
@@ -167,19 +173,20 @@ span {
 /*------------titres-----------------*/
 h1 {
   font-family: "Shrikhand", cursive;
+  font-size: 1.5em;
 }
 
 .ohmyfood {
   padding-top: 30px;
-  padding-left: 1rem;
+  padding-left: 0px;
+  padding-right: 20px;
   font-family: "shrikhand";
-  font-size: large;
   padding-bottom: 20px;
 }
 
 h2 {
-  font-size: 20px;
-  padding-left: 30px;
+  font-size: 14px;
+  padding-left: 15%;
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: "fontstack", sans-serif;
@@ -188,10 +195,9 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 2rem;
   font-family: "fontstack", sans-serif;
 }
 
@@ -207,6 +213,15 @@ p {
   font-weight: lighter;
   font-style: normal;
   margin-top: 0px;
+}
+
+/*---------------------------------------------*/
+.Accueil {
+  padding-left: 2rem;
+  font-size: 12px;
+  width: 100%;
+  font-family: "fontstack", sans-serif;
+  font-weight: bold;
 }
 
 /*------------------logo------------*/
@@ -243,7 +258,7 @@ p {
 .content {
   font-family: "fontstack", sans-serif;
   padding-left: 30px;
-  font-size: 20px;
+  font-size: 1em;
   font-weight: lighter;
   padding-bottom: 20px;
 }
@@ -253,8 +268,10 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  justify-content: center;
+  width: 80%;
   border: none;
+  margin-left: 3rem;
   font-size: 1rem;
   height: 3rem;
   margin-bottom: 30px;
@@ -272,19 +289,11 @@ p {
   justify-content: center;
   align-items: center;
   color: white;
+  margin-right: 3rem;
   background-color: #9356DC;
-  height: 25px;
-  border-radius: 50%;
-  width: 25px;
-}
-
-/*---------------------------------------------*/
-.Accueil {
-  padding-right: 5%;
-  font-size: 14px;
-  width: 100%;
-  font-family: "fontstack", sans-serif;
-  font-weight: bold;
+  height: 1.5rem;
+  border-radius: 100%;
+  width: 2em;
 }
 
 /*--------------------cards------------------------*/
@@ -337,7 +346,7 @@ span.new {
 .card__mot2,
 .card__mot3,
 .card__mot4 {
-  padding-left: 15px;
+  padding-left: 2rem;
   color: black;
   font-family: "fontstack", sans-serif;
 }
@@ -419,24 +428,24 @@ span.new {
 }
 
 @media screen and (min-width: 768px) {
+  .homepage {
+    background-color: red;
+  }
   * {
     box-sizing: border-box;
   }
-  .bloc {
-    width: 100%;
-  }
   h2 {
-    margin-left: 35%;
+    padding-left: 40%;
   }
   h3 {
     margin-left: 5%;
   }
   p.content {
-    margin-left: 25%;
+    text-align: center;
   }
   .button {
     width: 25%;
-    margin-left: 35%;
+    margin-left: 40%;
   }
   .btns {
     display: flex;
@@ -454,7 +463,19 @@ span.new {
     grid-template-columns: 500px 500px;
     grid-template-rows: 300px;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+  }
+  .texte-restaurant-bloc-1 {
+    height: 40%;
+  }
+  .image-1, .image-2, .image-3, .image-4 {
+    width: 90%;
+  }
+  .image-1, .image-3 {
+    margin-left: 20px;
+  }
+  .texte-restaurant-bloc-1, .texte-restaurant-bloc-3 {
+    margin-left: 20px;
   }
   .footer {
     display: flex;
@@ -466,5 +487,21 @@ span.new {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .ohmyfood {
+    padding-top: 30px;
+    padding-right: 40px;
+    font-family: "shrikhand";
+    font-size: large;
+    padding-bottom: 20px;
+  }
+  .Accueil {
+    padding-right: 10%;
+    font-family: "fontstack", sans-serif;
+    font-weight: bold;
+  }
+  .texte-restaurant-bloc-1, .texte-restaurant-bloc-2, .texte-restaurant-bloc-3, .texte-restaurant-bloc-4 {
+    height: 80px;
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

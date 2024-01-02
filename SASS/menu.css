@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .button {
   display: flex;
-  margin-left: 10%;
-  font-family: "MyWebFont", sans-serif;
+  margin-left: 3rem;
+  font-family: "fontstack", sans-serif;
   width: 70%;
-  height: 50px;
+  height: 3rem;
   color: white;
   font-weight: bold;
   align-items: center;
@@ -477,7 +477,7 @@ main {
     box-sizing: border-box;
   }
   .bloc {
-    width: 50%;
+    width: 100%;
   }
   .texte-restaurant-bloc-1 {
     display: flex;

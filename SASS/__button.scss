@@ -1,11 +1,12 @@
 @import '__variables';
 
+
 .button {
     display: flex;
-    margin-left: 10%;
-    font-family:'MyWebFont', sans-serif;
+    margin-left:3rem;
+    font-family:'fontstack',sans-serif;
     width: 70%;
-    height:50px;
+    height:3rem;
     color:$fondwhite;
     font-weight: bold;
     align-items: center;
