@@ -18,6 +18,13 @@ $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $blues: #3e9cbf;
 $foot: #303030;
+$bbleu:#0065fc;
+$bbleuclair:#DEEBFF;
+$fondgris:#F2F2F2;
+$grey:#d3cfd5;
+$fondwhite:#ffff;
+$foot:#303030;
+$lightgray:#ebe8ed;
 
 * {
   box-sizing: border-box;
@@ -402,7 +409,7 @@ span.new {
 //***************media-query******/
 @media screen and (min-width: 768px) {
   .homepage{
-    background-color:red;
+    background-color:$fondgris;
   }
 
  * {
@@ -478,10 +485,7 @@ span.new {
     font-family: "fontstack", sans-serif;
     font-weight: bold;
   }
-card{
-  
 
-}
 .texte-restaurant-bloc-1,.texte-restaurant-bloc-2,.texte-restaurant-bloc-3,.texte-restaurant-bloc-4{
 height:80px ;
 width:90%;
