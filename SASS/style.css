@@ -468,13 +468,6 @@ span.new {
     font-size: 16px;
     height: 4rem;
   }
-  .cards {
-    display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 300px;
-    justify-content: center;
-    gap: 20px;
-  }
   .texte-restaurant-bloc-1 {
     height: 40%;
   }
@@ -528,10 +521,16 @@ span.new {
     border-radius: 100%;
     width: 4em;
   }
+  .cards {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    gap: 20px;
+  }
   .card {
     width: 100%;
-    padding-right: 10%;
-    padding-left: 10%;
+    margin: 0px;
   }
   .mobile {
     margin-right: 1.2rem;
@@ -544,5 +543,6 @@ span.new {
   }
   footer {
     margin-right: 3rem;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
