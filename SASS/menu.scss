@@ -38,7 +38,6 @@ $font-stack: 'Roboto', sans-serif;
   padding: 10%;
 }
 
-
 /*les titres*/
 h1 {
   font-family: 'Shrikhand';
@@ -80,12 +79,11 @@ p {
 
 .trait {
   content: "";
-  width: 3rem;
+  width: 4rem;
   height: 0.15rem;
   background-color: $tertiaire;
-  position: absolute;
   margin: 0px;
-
+ padding-left:2rem;
 }
 
 span {

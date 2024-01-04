@@ -111,11 +111,11 @@ p {
 
 .trait {
   content: "";
-  width: 3rem;
+  width: 4rem;
   height: 0.15rem;
   background-color: #99E2D0;
-  position: absolute;
   margin: 0px;
+  padding-left: 2rem;
 }
 
 span {
