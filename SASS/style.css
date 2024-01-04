@@ -54,17 +54,6 @@
   transition: all 400ms;
 }
 
-@font-face {
-  font-family: "fontstack";
-  src: url("WebFont.eot");
-  src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
-}
-* {
-  box-sizing: border-box;
-}
-
-/************************************/
-/*loader spinner*/
 .animation {
   position: fixed;
   display: grid;
@@ -95,7 +84,6 @@
   animation-delay: 5s;
 }
 
-/******LOADER******************/
 .loader {
   width: 40px;
   aspect-ratio: 1;
@@ -122,6 +110,15 @@
     background-position: 0 100%, 100% 100%, 100% 0, 0 0;
   }
 }
+@font-face {
+  font-family: "fontstack";
+  src: url("WebFont.eot");
+  src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
+}
+* {
+  box-sizing: border-box;
+}
+
 /*-----------police d'ecriture--------*/
 .Heading {
   font-weight: bold;
