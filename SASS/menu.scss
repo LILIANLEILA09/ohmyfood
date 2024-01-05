@@ -4,6 +4,7 @@
 @import '__variables';
 @import '__button';
 @import '__coeur';
+@import '__keyframes';
 
 @font-face {
   font-family: 'fontstack';
@@ -367,90 +368,7 @@ main {
 }
 
 /*---------------------DEFIL----------------------------------*/
-.entree-1,
-.entree-2,
-.entree-3,
-.entree-3-2 {
-  animation: appear 1s;
-  opacity: 0;
-  width: 100%;
-  animation-fill-mode: forwards;
 
-}
-
-.entree-1 {
-  animation-delay: 1500ms;
-}
-
-.entree-2 {
-  animation-delay: 1800ms;
-}
-
-.entree-3 {
-  animation-delay: 2s;
-}
-
-.entree-3-2 {
-  animation-delay: 2100ms;
-}
-
-.plat-1,
-.plat-2,
-.plat-3 {
-  animation: appear 2200ms;
-  opacity: 0;
-  width: 100%;
-  animation-fill-mode: forwards;
-  
-
-}
-
-.plat-1 {
-  animation-delay: 2400ms;
-}
-
-.plat-2 {
-  animation-delay: 2900ms;
-}
-
-.plat-3 {
-  animation-delay: 3300ms;
-}
-
-.dessert-1,
-.dessert-2,
-.dessert-3 {
-  animation: appear 3200ms;
-  opacity: 0;
-  width: 100%;
-  animation-fill-mode: forwards;
-
-}
-
-.dessert-1 {
-  animation-delay: 3900ms;
-}
-
-.dessert-2 {
-  animation-delay: 4500ms;
-}
-
-.dessert-3 {
-  animation-delay: 4900ms;
-}
-
-@keyframes appear {
-  0% {
-    transform: translateY(50%);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-}
 .texte-restaurant-bloc-1 {
   display: flex;
   font-family: 'fontstack', sans-serif;
@@ -459,11 +377,10 @@ main {
   border-radius: 50px 50px 0px 0px;
   background-color: $gray;
   margin-top: -50px;
-
-  
- 
-
 }
+
+
+
 //***************media-query******/
 
 @media screen and (min-width: 768px) {
