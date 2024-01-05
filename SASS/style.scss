@@ -19,13 +19,13 @@ $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $blues: #3e9cbf;
 $foot: #303030;
-$bbleu:#0065fc;
-$bbleuclair:#DEEBFF;
-$fondgris:#F2F2F2;
-$grey:#d3cfd5;
-$fondwhite:#ffff;
-$foot:#303030;
-$lightgray:#ebe8ed;
+$bbleu: #0065fc;
+$bbleuclair: #DEEBFF;
+$fondgris: #F2F2F2;
+$grey: #d3cfd5;
+$fondwhite: #ffff;
+$foot: #303030;
+$lightgray: #ebe8ed;
 
 * {
   box-sizing: border-box;
@@ -53,13 +53,14 @@ body {
 
 .cards {
   padding-bottom: 50px;
-  padding-left:2rem;
-  padding-right:2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.card{
-margin-bottom:3rem;
+.card {
+  margin-bottom: 3rem;
 }
+
 main {
   background-color: $fondwhite;
 
@@ -75,27 +76,28 @@ span {
   font-size: 16px;
   font-weight: bold;
 }
-p.content{
- text-align:center;
+
+p.content {
+  text-align: center;
 }
 
 /*------------titres-----------------*/
 h1 {
   font-family: 'Shrikhand', cursive;
-  font-size:1.5em;
+  font-size: 1.5em;
 }
 
 .ohmyfood {
   padding-top: 30px;
-  padding-left:2rem;
-  padding-right:20px;
+  padding-left: 2rem;
+  padding-right: 20px;
   font-family: 'shrikhand';
   padding-bottom: 20px;
 }
 
 
 h2 {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: 'fontstack', sans-serif;
@@ -105,9 +107,9 @@ h2 {
 }
 
 h3 {
-  font-size:1rem;
+  font-size: 1rem;
   font-weight: bold;
-  padding-left:3rem;
+  padding-left: 3rem;
   font-family: 'fontstack', sans-serif;
 }
 
@@ -124,14 +126,16 @@ p {
   font-style: normal;
   margin-top: 0px;
 }
+
 /*---------------------------------------------*/
 .Accueil {
-  padding-left:2rem;
-  font-size:12px;
+  padding-left: 2rem;
+  font-size: 12px;
   width: 100%;
   font-family: 'fontstack', sans-serif;
   font-weight: bold;
 }
+
 /*------------------logo------------*/
 .logo {
   display: flex;
@@ -167,7 +171,7 @@ p {
 .content {
   font-family: 'fontstack', sans-serif;
   padding-left: 30px;
-  font-size:1em;
+  font-size: 1em;
   font-weight: lighter;
   padding-bottom: 20px;
 }
@@ -178,11 +182,11 @@ p {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  width:80%;
+  width: 80%;
   border: none;
-  margin-left:2rem;
-  font-size:1rem;
-  height:3rem;
+  margin-left: 2rem;
+  font-size: 1rem;
+  height: 3rem;
   margin-bottom: 30px;
   background-color: $fondgris;
   border-radius: 50px 50px 50px;
@@ -199,11 +203,11 @@ p {
   justify-content: center;
   align-items: center;
   color: $fondwhite;
-  margin-right:3rem;
+  margin-right: 3rem;
   background-color: $primaire;
-  height:1.5rem;
-  border-radius:100%;
-  width:2em;
+  height: 1.5rem;
+  border-radius: 100%;
+  width: 2em;
 }
 
 
@@ -259,16 +263,17 @@ span.new {
 .card__mot2,
 .card__mot3,
 .card__mot4 {
-  padding-left:2rem;
+  padding-left: 2rem;
   color: black;
-  font-family:'fontstack', sans-serif;
+  font-family: 'fontstack', sans-serif;
 
 }
+
 .text-position {
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
 }
 
 
@@ -310,7 +315,7 @@ span.new {
 /*--------------------footer--------------------*/
 
 .footer {
-  background-color:$foot;
+  background-color: $foot;
   color: $fondwhite;
   height: 250px;
   width: 100%;
@@ -324,7 +329,7 @@ span.new {
 }
 
 .footer-2 {
-  padding-left:2rem;
+  padding-left: 2rem;
   padding-top: 10px;
 }
 
@@ -334,36 +339,39 @@ span.new {
 }
 
 .footer-4 {
-  padding-left:2rem;
+  padding-left: 2rem;
   padding-top: 10px;
 }
 
 .E-mail {
   color: $fondwhite;
-  padding-right:1rem;
+  padding-right: 1rem;
   text-decoration: none;
 }
 
 
 //***************media-query******/
 @media screen and (min-width: 768px) {
-  .homepage{
-    background-color:$fondgris;
+  .homepage {
+    background-color: $fondgris;
   }
 
- * {
+  * {
     box-sizing: border-box;
   }
+
   h2 {
-   padding-left:20px;
+    padding-left: 20px;
   }
+
   h3 {
-   margin-left: 5%;
-   font-size: 20px;
+    margin-left: 5%;
+    font-size: 20px;
   }
+
   p.content {
-   text-align: center;
-   font-size:1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .btns {
@@ -372,33 +380,42 @@ span.new {
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    width:90%;
+    width: 90%;
     padding-bottom: 3rem;
   }
+
   .btn {
     width: 35%;
-    height:50px;
+    height: 50px;
   }
-  .button{
-  margin-left:40%;
-  width:25%;
-  font-size:16px;
-  height:4rem;
+
+  .button {
+    margin-left: 40%;
+    width: 25%;
+    font-size: 16px;
+    height: 4rem;
   }
- 
+
   .texte-restaurant-bloc-1 {
     height: 40%;
   }
- .image-1,.image-2,.image-3,.image-4{
-  width:90%;
- }
 
- .image-1,.image-3{
-  margin-left: 20px;
- }
- .texte-restaurant-bloc-1,.texte-restaurant-bloc-3{
-  margin-left: 20px;
- }
+  .image-1,
+  .image-2,
+  .image-3,
+  .image-4 {
+    width: 90%;
+  }
+
+  .image-1,
+  .image-3 {
+    margin-left: 20px;
+  }
+
+  .texte-restaurant-bloc-1,
+  .texte-restaurant-bloc-3 {
+    margin-left: 20px;
+  }
 
   .footer {
     display: flex;
@@ -406,11 +423,13 @@ span.new {
     align-items: center;
     height: 100px;
   }
+
   .footer1-2-3-4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   .ohmyfood {
     padding-top: 30px;
     padding-right: 40px;
@@ -418,53 +437,66 @@ span.new {
     font-size: large;
     padding-bottom: 20px;
   }
+
   .Accueil {
-    padding-left:0rem;
-    font-size:1rem;
+    padding-left: 0rem;
+    font-size: 1rem;
     width: 100%;
     font-family: 'fontstack', sans-serif;
     font-weight: bold;
   }
 
-.texte-restaurant-bloc-1,.texte-restaurant-bloc-2,.texte-restaurant-bloc-3,.texte-restaurant-bloc-4{
-height:80px ;
-width:90%;
-}
-.btnrounded {
+  .texte-restaurant-bloc-1,
+  .texte-restaurant-bloc-2,
+  .texte-restaurant-bloc-3,
+  .texte-restaurant-bloc-4 {
+    height: 80px;
+    width: 90%;
+  }
+
+  .btnrounded {
     display: flex;
     justify-content: center;
     align-items: center;
     color: $fondwhite;
-    font-family: 'fontstack',sans-serif;
-    margin-right:1.2rem;
+    font-family: 'fontstack', sans-serif;
+    margin-right: 1.2rem;
     background-color: $primaire;
-    height:2.5rem;
-    border-radius:100%;
-    width:4em;
+    height: 2.5rem;
+    border-radius: 100%;
+    width: 4em;
   }
+
   .cards {
     display: grid;
     grid-template-columns: 400px 400px;
-    grid-template-rows:300px;
+    grid-template-rows: 300px;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
   }
- .card{
-    width:100%;
-   
+
+  .card {
+    width: 100%;
+
     margin: 0px;
- }
- .mobile{
-margin-right: 1.2rem;
- }
- .list{
+  }
+
+  .mobile {
     margin-right: 1.2rem;
- }
- .store{
+  }
+
+  .list {
     margin-right: 1.2rem;
- }
- ;footer{
+  }
+
+  .store {
+    margin-right: 1.2rem;
+  }
+
+  ;
+
+  footer {
     margin-right: 3rem;
-  width:100%;
- }
+    width: 100%;
+  }
 }

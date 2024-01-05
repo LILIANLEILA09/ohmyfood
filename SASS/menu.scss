@@ -78,9 +78,10 @@ p {
   white-space: nowrap;
   overflow: hidden;
 }
+
 .ohmyfood {
   padding-top: 30px;
-  padding-left:1rem;
+  padding-left: 1rem;
   padding-right: 1rem;
   font-family: 'shrikhand';
   font-size: large;
@@ -93,7 +94,7 @@ p {
   height: 0.15rem;
   background-color: $tertiaire;
   margin: 0px;
-  padding-left:2rem;
+  padding-left: 2rem;
 }
 
 span {
@@ -152,10 +153,11 @@ span {
   width: 65px;
   border-radius: 0 20px 20px 0;
   transition-duration: 0.55s;
- 
+
 }
-.check{
-  display:flex;
+
+.check {
+  display: flex;
   justify-content: space-between;
   border: 0;
   top: 0px;
@@ -177,7 +179,7 @@ span {
 /*------------------------------------------*/
 .price {
   border: 0;
-  position:absolute;
+  position: absolute;
   right: 0px;
   margin-right: 10px;
   text-overflow: ellipsis;
@@ -185,8 +187,9 @@ span {
   overflow: hidden;
   border-radius: 0 20px 20px 0;
   transition-duration: 0.55s;
-  
+
 }
+
 .composition:hover {
   cursor: pointer;
 
@@ -319,11 +322,11 @@ main {
 
 .footer-1 {
   padding-top: 10px;
-  padding-left:1rem;
+  padding-left: 1rem;
 }
 
 .footer-2 {
-  padding-left:1rem;
+  padding-left: 1rem;
   padding-top: 10px;
 }
 
@@ -366,80 +369,84 @@ main {
 
   .bloc {
     width: 100%;
-  
+
   }
 
-.texte-restaurant-bloc-1 {
-  display: flex;
-  font-family: 'fontstack', sans-serif;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 50px 50px 0px 0px;
-  background-color: $gray;
-  margin-top: -50px;
-  background-color:$fondgris;
-  width:80%;
-  margin-left: 10%;
+  .texte-restaurant-bloc-1 {
+    display: flex;
+    font-family: 'fontstack', sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px 50px 0px 0px;
+    background-color: $gray;
+    margin-top: -50px;
+    background-color: $fondgris;
+    width: 80%;
+    margin-left: 10%;
 
-}
-.entree-1,
-.entree-2,
-.entree-3,
-.entree-4,
-.entree-3-2,
-.entree-4-3{
-  animation: appear 1s;
-  opacity: 0;
-  width: 70%;
-  animation-fill-mode: forwards;
-  margin-left:18%;
-}
+  }
 
-.plat-1,
-.plat-2,
-.plat-3 {
-  animation: appear 2200ms;
-  opacity: 0;
-  width: 70%;
-  animation-fill-mode: forwards;
-  margin-left: 18%;
+  .entree-1,
+  .entree-2,
+  .entree-3,
+  .entree-4,
+  .entree-3-2,
+  .entree-4-3 {
+    animation: appear 1s;
+    opacity: 0;
+    width: 70%;
+    animation-fill-mode: forwards;
+    margin-left: 18%;
+  }
 
-}
-.dessert-1,
-.dessert-2,
-.dessert-3 {
-  animation: appear 3200ms;
-  opacity: 0;
-  width: 70%;
-  animation-fill-mode: forwards;
-  margin-left: 18%;
+  .plat-1,
+  .plat-2,
+  .plat-3 {
+    animation: appear 2200ms;
+    opacity: 0;
+    width: 70%;
+    animation-fill-mode: forwards;
+    margin-left: 18%;
 
-}
-h5{
-  margin-left: 20%;
-}
-.trait{
-  margin-left:20% ;
-}
-main{
-  width:80%;
-  background-color:$fondgris;
-  margin-left:10% ;
-}
+  }
 
-.footer {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  height: 100px;
-  width: 100%;
+  .dessert-1,
+  .dessert-2,
+  .dessert-3 {
+    animation: appear 3200ms;
+    opacity: 0;
+    width: 70%;
+    animation-fill-mode: forwards;
+    margin-left: 18%;
 
-}
+  }
 
-.footer1-2-3-4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-}
+  h5 {
+    margin-left: 20%;
+  }
 
+  .trait {
+    margin-left: 20%;
+  }
+
+  main {
+    width: 80%;
+    background-color: $fondgris;
+    margin-left: 10%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+
+  }
+
+  .footer1-2-3-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
