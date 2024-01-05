@@ -5,6 +5,7 @@
 @import '__button';
 @import '__coeur';
 @import '__keyframes';
+@import '__boutton';
 
 @font-face {
   font-family: 'fontstack';
@@ -340,28 +341,6 @@ main {
   font-family: 'shrikhand';
   font-size: large;
   padding-bottom: 20px;
-}
-
-.boutton {
-  display: flex;
-  margin-left: 35%;
-  font-family: 'fontstack', sans-serif;
-  width: 30%;
-  height: 50px;
-  color: $fondwhite;
-  font-weight: bold;
-  align-items: center;
-  margin-top: 15%;
-  border-radius: 50px 50px 50px;
-  background: linear-gradient($primaire, $secondaire);
-  box-shadow: 10px 10px 5px $grey;
-  justify-content: center;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.13);
-    background: $secondaire;
-  }
 }
 
 /*---------------------DEFIL----------------------------------*/

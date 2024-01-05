@@ -133,6 +133,27 @@
     opacity: 1;
   }
 }
+.boutton {
+  display: flex;
+  margin-left: 35%;
+  font-family: "fontstack", sans-serif;
+  width: 30%;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 15%;
+  border-radius: 50px 50px 50px;
+  background: linear-gradient(#9356DC, #FF79DA);
+  box-shadow: 10px 10px 5px #d3cfd5;
+  justify-content: center;
+  cursor: pointer;
+}
+.boutton:hover {
+  transform: scale(1.13);
+  background: #FF79DA;
+}
+
 @font-face {
   font-family: "fontstack";
   src: url("WebFont.eot");
@@ -439,27 +460,6 @@ main {
   font-family: "shrikhand";
   font-size: large;
   padding-bottom: 20px;
-}
-
-.boutton {
-  display: flex;
-  margin-left: 35%;
-  font-family: "fontstack", sans-serif;
-  width: 30%;
-  height: 50px;
-  color: white;
-  font-weight: bold;
-  align-items: center;
-  margin-top: 15%;
-  border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 10px 10px 5px #d3cfd5;
-  justify-content: center;
-  cursor: pointer;
-}
-.boutton:hover {
-  transform: scale(1.13);
-  background: #FF79DA;
 }
 
 /*---------------------DEFIL----------------------------------*/
