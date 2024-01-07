@@ -125,14 +125,13 @@
   box-sizing: border-box;
 }
 
-/*-----------police d'ecriture--------*/
+/*----------------------------mobile first-----------------------------*/
 .Heading {
   font-weight: lighter;
   font-family: "font-stack", sans-serif;
   margin: 10px;
 }
 
-/*-----------la page-------------------*/
 .html {
   width: 100%;
   margin: 0px;
@@ -173,7 +172,6 @@ p.content {
   text-align: center;
 }
 
-/*------------titres-----------------*/
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 1.5em;
@@ -188,7 +186,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: "fontstack", sans-serif;
@@ -218,7 +216,6 @@ p {
   margin-top: 0px;
 }
 
-/*---------------------------------------------*/
 .Accueil {
   padding-left: 2rem;
   font-size: 12px;
@@ -227,7 +224,6 @@ p {
   font-weight: bold;
 }
 
-/*------------------logo------------*/
 .logo {
   display: flex;
   flex-direction: column;
@@ -239,7 +235,6 @@ p {
   background-color: white;
 }
 
-/*--------------localisation----------*/
 .localisation {
   display: flex;
   justify-content: center;
@@ -252,7 +247,6 @@ p {
   font-weight: bold;
 }
 
-/*-----------homepage--------------------*/
 .homepage {
   padding-bottom: 10%;
   background-color: #F2F2F2;
@@ -266,7 +260,6 @@ p {
   padding-bottom: 20px;
 }
 
-/*---------------section buttons--------------------*/
 .btn {
   display: flex;
   justify-content: space-between;
@@ -299,7 +292,6 @@ p {
   width: 2em;
 }
 
-/*--------------------cards------------------------*/
 .image-1 {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
@@ -360,7 +352,6 @@ span.new {
   align-items: center;
 }
 
-/*----------------------------------------------*/
 .image-2 {
   background-image: url(../Assets/Assets/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
@@ -395,7 +386,6 @@ span.new {
   cursor: pointer;
 }
 
-/*--------------------footer--------------------*/
 .footer {
   background-color: #303030;
   color: white;
@@ -430,7 +420,37 @@ span.new {
   text-decoration: none;
 }
 
+.image-2 {
+  height: 200px;
+  width: 100%;
+}
+
+.image-3 {
+  height: 200px;
+  width: 100%;
+}
+
+.image-4 {
+  height: 200px;
+  width: 100%;
+}
+
+/*---------------- bouton responsive------------------*/
+@media screen and (min-width: 425px) {
+  .button {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .button {
+    margin-left: 30%;
+  }
+}
+/*--------------------media-query 768px--------------------------*/
 @media screen and (min-width: 768px) {
+  .button {
+    margin-left: 35%;
+  }
   .homepage {
     background-color: #F2F2F2;
   }
@@ -547,8 +567,44 @@ span.new {
     width: 100%;
   }
 }
-/****************media query 1440**********/
+/*----------------------------- media query 1024px---------------*/
+@media screen and (min-width: 1024px) {
+  .button {
+    margin-left: 38%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    gap: 80px;
+  }
+  .image-1 {
+    height: 200px;
+    width: 100%;
+  }
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .button {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/*-------------------------media query 1440px------------------*/
 @media screen and (min-width: 1440px) {
+  .button {
+    margin-left: 43%;
+    width: 300px;
+    height: 4em;
+  }
   .cards {
     display: grid;
     grid-template-columns: 600px 600px;
@@ -564,7 +620,6 @@ span.new {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
     width: 100%;
     padding-bottom: 3rem;
   }
@@ -586,65 +641,5 @@ span.new {
   }
   h1 {
     font-size: 3em;
-  }
-}
-h2 {
-  font-size: 1em;
-}
-
-/****media query 1024*************/
-@media screen and (min-width: 1024px) {
-  .image-1 {
-    height: 200px;
-    width: 100%;
-  }
-  .button {
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-.image-2 {
-  height: 200px;
-  width: 100%;
-}
-
-.image-3 {
-  height: 200px;
-  width: 100%;
-}
-
-.image-4 {
-  height: 200px;
-  width: 100%;
-}
-
-/*----------------gestion du bouton-------------------*/
-@media screen and (min-width: 425px) {
-  .button {
-    margin-left: 20%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .button {
-    margin-left: 30%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .button {
-    margin-left: 35%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .button {
-    margin-left: 38%;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .button {
-    margin-left: 43%;
-    width: 300px;
-    height: 4em;
   }
 }/*# sourceMappingURL=style.css.map */
