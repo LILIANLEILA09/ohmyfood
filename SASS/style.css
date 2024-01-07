@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .button {
   display: flex;
-  margin-left: 3rem;
+  margin-left: 4rem;
+  position: relative;
   font-family: "fontstack", sans-serif;
-  width: 70%;
+  width: 240px;
   height: 3rem;
   color: white;
   font-weight: bold;
@@ -54,62 +55,67 @@
   transition: all 400ms;
 }
 
-.animation {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #99E2D0;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  inset: 0rem;
-  z-index: 1;
-  opacity: 0, 9;
-}
+/**
+.animation{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color:$tertiaire;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    inset: 0rem;
+    z-index: 1;
+    opacity: 0, 9;
+  }
 
-@keyframes dissapears {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-.animation {
-  animation: dissapears 200ms;
-  animation-fill-mode: forwards;
-  transform-origin: top;
-  animation-delay: 5s;
-}
+  @keyframes dissapears {
+    0% {
+        transform: scale(1);
+    }
 
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  background: linear-gradient(45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #F1BBBB 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
-  animation: l3 2.5s infinite;
-}
+    100% {
+        transform: scale(0);
+    }
+  }
 
-@keyframes l3 {
-  0% {
-    background-position: 100% 0, 0 0, 0 100%, 100% 100%;
+  .animation {
+    animation: dissapears 200ms;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    animation-delay: 5s;
   }
-  15%, 25% {
-    background-position: 100% 0, 0 0, 0 100%, 0 0;
+
+
+  .loader {
+    width: 40px;
+    aspect-ratio: 1;
+    background:
+      linear-gradient( 45deg,#0065fc 50%,#0000 0),
+      linear-gradient(-45deg,#F1BBBB 50%,#0000 0),
+      linear-gradient( 45deg,#0000 50%,#9356DC 0),
+      linear-gradient(-45deg,#0000 50%,#FF00AA 0),
+      #00AAFF;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: l3 2.5s infinite; 
   }
-  40%, 50% {
-    background-position: 100% 0, 0 0, 100% 0, 0 0;
+
+  @keyframes l3 {
+    0%   {background-position:100% 0,0    0   ,0 100%,100% 100%}
+    15%,
+    25%  {background-position:100% 0,0    0   ,0 100%,0    0   }
+    40%,
+    50%  {background-position:100% 0,0    0   ,100% 0,0    0   }
+    65%,
+    75%  {background-position:100% 0,100% 100%,100% 0,0    0   }
+    90%,
+    100% {background-position:0 100%,100% 100%,100% 0,0    0   }
   }
-  65%, 75% {
-    background-position: 100% 0, 100% 100%, 100% 0, 0 0;
-  }
-  90%, 100% {
-    background-position: 0 100%, 100% 100%, 100% 0, 0 0;
-  }
-}
+
+**/
 @font-face {
   font-family: "fontstack";
   src: url("WebFont.eot");
@@ -121,7 +127,7 @@
 
 /*-----------police d'ecriture--------*/
 .Heading {
-  font-weight: bold;
+  font-weight: lighter;
   font-family: "font-stack", sans-serif;
   margin: 10px;
 }
@@ -270,10 +276,10 @@ p {
   border: none;
   margin-left: 2rem;
   font-size: 1rem;
-  height: 3rem;
+  height: 3.5rem;
   margin-bottom: 30px;
   background-color: #F2F2F2;
-  border-radius: 50px 50px 50px;
+  border-radius: 15px 15px 15px;
   box-shadow: 10px 10px 5px #d3cfd5;
 }
 .btn:hover {
@@ -298,7 +304,7 @@ p {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height: 200px;
+  height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -360,7 +366,7 @@ span.new {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 200px;
+  height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -371,7 +377,7 @@ span.new {
   background-image: url(../Assets/Assets/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height: 200px;
+  height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -382,7 +388,7 @@ span.new {
   background-image: url(../Assets/Assets/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
-  height: 200px;
+  height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
   position: relative;
@@ -440,26 +446,24 @@ span.new {
   }
   p.content {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1em;
   }
   .btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+    padding-right: 10%;
+    width: 100%;
     padding-bottom: 3rem;
   }
   .btn {
-    width: 35%;
+    width: 100%;
     height: 50px;
   }
   .button {
-    margin-left: 40%;
-    width: 25%;
+    width: 250px;
     font-size: 16px;
-    height: 4rem;
+    height: 3rem;
   }
   .texte-restaurant-bloc-1 {
     height: 40%;
@@ -468,15 +472,17 @@ span.new {
   .image-2,
   .image-3,
   .image-4 {
-    width: 90%;
+    width: 100%;
   }
   .image-1,
   .image-3 {
-    margin-left: 20px;
+    margin-left: 0px;
   }
   .texte-restaurant-bloc-1,
+  .texte-restaurant-bloc-2,
   .texte-restaurant-bloc-3 {
-    margin-left: 20px;
+    margin-left: 0px;
+    margin-bottom: 30px;
   }
   .footer {
     display: flex;
@@ -498,7 +504,7 @@ span.new {
   }
   .Accueil {
     padding-left: 0rem;
-    font-size: 1rem;
+    font-size: 10px;
     width: 100%;
     font-family: "fontstack", sans-serif;
     font-weight: bold;
@@ -508,7 +514,8 @@ span.new {
   .texte-restaurant-bloc-3,
   .texte-restaurant-bloc-4 {
     height: 80px;
-    width: 90%;
+    width: 100%;
+    gap: 50px;
   }
   .btnrounded {
     display: flex;
@@ -518,16 +525,9 @@ span.new {
     font-family: "fontstack", sans-serif;
     margin-right: 1.2rem;
     background-color: #9356DC;
-    height: 2.5rem;
+    height: 1.5rem;
     border-radius: 100%;
-    width: 4em;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 300px;
-    justify-content: center;
-    gap: 20px;
+    width: 2.5em;
   }
   .card {
     width: 100%;
@@ -545,5 +545,107 @@ span.new {
   footer {
     margin-right: 3rem;
     width: 100%;
+  }
+}
+/****************media query 1440**********/
+@media screen and (min-width: 1440px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    gap: 80px;
+  }
+  .card {
+    width: 100%;
+    margin: 0px;
+  }
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  .btn {
+    width: 100%;
+    height: 60px;
+    margin: 20px;
+  }
+  .Accueil {
+    padding-left: 0rem;
+    font-size: 1rem;
+    width: 100%;
+    font-family: "fontstack", sans-serif;
+    font-weight: bold;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 3.5rem;
+  }
+}
+/****media query 1024*************/
+@media screen and (min-width: 1024px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    gap: 80px;
+  }
+  .image-1 {
+    height: 200px;
+    width: 100%;
+  }
+  .button {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.image-2 {
+  height: 200px;
+  width: 100%;
+}
+
+.image-3 {
+  height: 200px;
+  width: 100%;
+}
+
+.image-4 {
+  height: 200px;
+  width: 100%;
+}
+
+/*----------------gestion du bouton-------------------*/
+@media screen and (min-width: 425px) {
+  .button {
+    margin-left: 20%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .button {
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button {
+    margin-left: 35%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button {
+    margin-left: 38%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .button {
+    margin-left: 43%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -449,4 +449,30 @@ main {
     justify-content: space-between;
     align-items: center;
   }
+
+  .boutton {
+    display: flex;
+    margin-left:35%;
+    font-family: 'fontstack', sans-serif;
+    width:30%;
+    height:45px;
+  }
 }
+//***************media-query******/
+
+@media screen and (min-width: 1024px) {
+  * {
+    box-sizing: border-box;
+  }
+  .boutton {
+    display: flex;
+    margin-left:35%;
+    font-family: 'fontstack', sans-serif;
+    width:30%;
+    height:60px;
+  }
+
+
+}
+
+

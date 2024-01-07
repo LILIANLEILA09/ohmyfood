@@ -1,10 +1,16 @@
+@import '__variables';
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$blues: #3e9cbf;
+$foot: #303030;
 
 .boutton {
     display: flex;
-    margin-left: 35%;
+    margin-left:30%;
     font-family: 'fontstack', sans-serif;
-    width: 30%;
-    height: 50px;
+    width:40%;
+    height:45px;
     color: $fondwhite;
     font-weight: bold;
     align-items: center;
@@ -13,11 +19,12 @@
     background: linear-gradient($primaire, $secondaire);
     box-shadow: 10px 10px 5px $grey;
     justify-content: center;
-    cursor: pointer;
-  
+     
     &:hover {
-      transform: scale(1.13);
-      background: $secondaire;
+      cursor: pointer;
+     background-color:$secondaire;
+   
     }
   }
-  
+   
+

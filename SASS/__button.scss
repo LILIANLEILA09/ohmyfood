@@ -3,9 +3,10 @@
 
 .button {
     display: flex;
-    margin-left:3rem;
+    margin-left:4rem;
+    position:relative;
     font-family:'fontstack',sans-serif;
-    width: 70%;
+    width: 240px;
     height:3rem;
     color:$fondwhite;
     font-weight: bold;
