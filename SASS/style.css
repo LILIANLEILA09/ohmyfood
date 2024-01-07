@@ -580,23 +580,20 @@ span.new {
     font-family: "fontstack", sans-serif;
     font-weight: bold;
   }
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 3.5rem;
+  h3 {
+    margin-top: 40px;
+    font-size: 2em;
+  }
+  h1 {
+    font-size: 3em;
   }
 }
+h2 {
+  font-size: 1em;
+}
+
 /****media query 1024*************/
 @media screen and (min-width: 1024px) {
-  .cards {
-    display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 300px;
-    justify-content: center;
-    gap: 80px;
-  }
   .image-1 {
     height: 200px;
     width: 100%;
@@ -647,5 +644,7 @@ span.new {
 @media screen and (min-width: 1440px) {
   .button {
     margin-left: 43%;
+    width: 300px;
+    height: 4em;
   }
 }/*# sourceMappingURL=style.css.map */
