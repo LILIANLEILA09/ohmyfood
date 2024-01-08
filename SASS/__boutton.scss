@@ -6,25 +6,25 @@ $blues: #3e9cbf;
 $foot: #303030;
 
 .boutton {
-    display: flex;
-    margin-left:30%;
-    font-family: 'fontstack', sans-serif;
-    width:40%;
-    height:45px;
-    color: $fondwhite;
-    font-weight: bold;
-    align-items: center;
-    margin-top: 15%;
-    border-radius: 50px 50px 50px;
-    background: linear-gradient($primaire, $secondaire);
-    box-shadow: 10px 10px 5px $grey;
-    justify-content: center;
-     
-    &:hover {
-      cursor: pointer;
-     background-color:$secondaire;
+  display: flex;
+  margin-left:30%;
+  margin-top:80px;
+  position:relative;
+  font-family:'fontstack',sans-serif;
+  width: 200px;
+  height:3rem;
+  color:$fondwhite;
+  font-weight: bold;
+  align-items: center;
+  border-radius: 50px 50px 50px;
+  background: linear-gradient($primaire,$secondaire);
+  box-shadow: 10px 10px 5px $grey;
+  justify-content: center;
+  transition: transform 450ms, background-color 300ms;
+  &:hover {
+  transform: scale(1.13); 
+  background:$secondaire;
+}
+}
+  
    
-    }
-  }
-   
-

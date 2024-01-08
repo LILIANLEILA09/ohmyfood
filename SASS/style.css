@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .button {
   display: flex;
-  margin-left: 4rem;
+  margin-left: 15%;
   position: relative;
   font-family: "fontstack", sans-serif;
-  width: 240px;
+  width: 250px;
   height: 3rem;
   color: white;
   font-weight: bold;
@@ -144,7 +144,7 @@ body {
 }
 
 .cards {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -159,7 +159,8 @@ main {
 
 .bloc {
   background-color: #F2F2F2;
-  padding-top: 10px;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 span {
@@ -198,12 +199,13 @@ h2 {
 h3 {
   font-size: 1rem;
   font-weight: bold;
-  padding-left: 3rem;
+  padding-left: 2rem;
+  padding-top: 20px;
   font-family: "fontstack", sans-serif;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "fontstack", sans-serif;
   margin-bottom: 0px;
 }
@@ -296,6 +298,7 @@ p {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: bottom;
+  object-fit: cover;
   height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
@@ -341,7 +344,7 @@ span.new {
 .card__mot2,
 .card__mot3,
 .card__mot4 {
-  padding-left: 2rem;
+  padding-left: 1rem;
   color: black;
   font-family: "fontstack", sans-serif;
 }
@@ -357,6 +360,7 @@ span.new {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  object-fit: cover;
   height: 150px;
   width: 100%;
   border-radius: 15px 15px 0 0;
@@ -370,6 +374,7 @@ span.new {
   background-position: bottom;
   height: 150px;
   width: 100%;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
   position: relative;
   cursor: pointer;
@@ -381,6 +386,7 @@ span.new {
   background-position: bottom;
   height: 150px;
   width: 100%;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
   position: relative;
   cursor: pointer;
@@ -421,17 +427,17 @@ span.new {
 }
 
 .image-2 {
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
 .image-3 {
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
 .image-4 {
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 
@@ -577,11 +583,7 @@ span.new {
     grid-template-columns: 400px 400px;
     grid-template-rows: 300px;
     justify-content: center;
-    gap: 80px;
-  }
-  .image-1 {
-    height: 200px;
-    width: 100%;
+    gap: 50px;
   }
   .btns {
     display: flex;
@@ -601,25 +603,31 @@ span.new {
 /*-------------------------media query 1440px------------------*/
 @media screen and (min-width: 1440px) {
   .button {
-    margin-left: 43%;
+    margin-left: 42%;
     width: 300px;
     height: 4em;
+  }
+  .bloc {
+    background-color: #F2F2F2;
+    padding-top: 10px;
   }
   .cards {
     display: grid;
     grid-template-columns: 600px 600px;
-    grid-template-rows: 300px;
+    grid-template-rows: 200px;
     justify-content: center;
     gap: 80px;
+    padding-left: 0px;
   }
   .card {
-    width: 100%;
+    width: 600px;
     margin: 0px;
   }
   .btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 30px;
     width: 100%;
     padding-bottom: 3rem;
   }
@@ -638,8 +646,10 @@ span.new {
   h3 {
     margin-top: 40px;
     font-size: 2em;
+    margin-left: 100px;
+    margin-bottom: 40px;
   }
   h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 }/*# sourceMappingURL=style.css.map */

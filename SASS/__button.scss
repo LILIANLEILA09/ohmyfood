@@ -1,23 +1,24 @@
 @import '__variables';
 
+$primaire: #9356DC;
 
 .button {
-    display: flex;
-    margin-left:4rem;
-    position:relative;
-    font-family:'fontstack',sans-serif;
-    width: 240px;
-    height:3rem;
-    color:$fondwhite;
-    font-weight: bold;
-    align-items: center;
-    border-radius: 50px 50px 50px;
-    background: linear-gradient($primaire,$secondaire);
-    box-shadow: 10px 10px 5px $grey;
-    justify-content: center;
-    transition: transform 450ms, background-color 300ms;
-    &:hover {
-    transform: scale(1.13); 
-    background:$secondaire;
-  }
+  display: flex;
+  margin-left:15%;
+  position:relative;
+  font-family:'fontstack',sans-serif;
+  width: 250px;
+  height:3rem;
+  color:$fondwhite;
+  font-weight: bold;
+  align-items: center;
+  border-radius: 50px 50px 50px;
+  background: linear-gradient($primaire,$secondaire);
+  box-shadow: 10px 10px 5px $grey;
+  justify-content: center;
+  transition: transform 450ms, background-color 300ms;
+  &:hover {
+  transform: scale(1.13); 
+  background:$secondaire;
+}
 }

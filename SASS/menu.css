@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .button {
   display: flex;
-  margin-left: 4rem;
+  margin-left: 15%;
   position: relative;
   font-family: "fontstack", sans-serif;
-  width: 240px;
+  width: 250px;
   height: 3rem;
   color: white;
   font-weight: bold;
@@ -137,21 +137,23 @@
 .boutton {
   display: flex;
   margin-left: 30%;
+  margin-top: 80px;
+  position: relative;
   font-family: "fontstack", sans-serif;
-  width: 40%;
-  height: 45px;
+  width: 200px;
+  height: 3rem;
   color: white;
   font-weight: bold;
   align-items: center;
-  margin-top: 15%;
   border-radius: 50px 50px 50px;
   background: linear-gradient(#9356DC, #FF79DA);
   box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
+  transition: transform 450ms, background-color 300ms;
 }
 .boutton:hover {
-  cursor: pointer;
-  background-color: #FF79DA;
+  transform: scale(1.13);
+  background: #FF79DA;
 }
 
 @font-face {
