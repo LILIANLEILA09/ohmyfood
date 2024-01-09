@@ -55,62 +55,66 @@
   transition: all 400ms;
 }
 
-.animation {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #99E2D0;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  inset: 0rem;
-  z-index: 1;
-  opacity: 0, 9;
-}
+/***
+.animation{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color:$tertiaire;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    inset: 0rem;
+    z-index: 1;
+    opacity: 0, 9;
+  }
 
-@keyframes dissapears {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-.animation {
-  animation: dissapears 200ms;
-  animation-fill-mode: forwards;
-  transform-origin: top;
-  animation-delay: 5s;
-}
+  @keyframes dissapears {
+    0% {
+        transform: scale(1);
+    }
 
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  background: linear-gradient(45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #F1BBBB 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
-  animation: l3 2.5s infinite;
-}
+    100% {
+        transform: scale(0);
+    }
+  }
 
-@keyframes l3 {
-  0% {
-    background-position: 100% 0, 0 0, 0 100%, 100% 100%;
+  .animation {
+    animation: dissapears 200ms;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    animation-delay: 5s;
   }
-  15%, 25% {
-    background-position: 100% 0, 0 0, 0 100%, 0 0;
+
+
+  .loader {
+    width: 40px;
+    aspect-ratio: 1;
+    background:
+      linear-gradient( 45deg,#0065fc 50%,#0000 0),
+      linear-gradient(-45deg,#F1BBBB 50%,#0000 0),
+      linear-gradient( 45deg,#0000 50%,#9356DC 0),
+      linear-gradient(-45deg,#0000 50%,#FF00AA 0),
+      #00AAFF;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: l3 2.5s infinite; 
   }
-  40%, 50% {
-    background-position: 100% 0, 0 0, 100% 0, 0 0;
+
+  @keyframes l3 {
+    0%   {background-position:100% 0,0    0   ,0 100%,100% 100%}
+    15%,
+    25%  {background-position:100% 0,0    0   ,0 100%,0    0   }
+    40%,
+    50%  {background-position:100% 0,0    0   ,100% 0,0    0   }
+    65%,
+    75%  {background-position:100% 0,100% 100%,100% 0,0    0   }
+    90%,
+    100% {background-position:0 100%,100% 100%,100% 0,0    0   }
   }
-  65%, 75% {
-    background-position: 100% 0, 100% 100%, 100% 0, 0 0;
-  }
-  90%, 100% {
-    background-position: 0 100%, 100% 100%, 100% 0, 0 0;
-  }
-}
+  **/
 @font-face {
   font-family: "fontstack";
   src: url("WebFont.eot");
@@ -245,7 +249,7 @@ p {
 }
 
 .homepage {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   background-color: #F2F2F2;
 }
 
@@ -452,17 +456,16 @@ span.new {
   .button {
     margin-left: 35%;
   }
-  .homepage {
-    background-color: #F2F2F2;
-  }
   * {
     box-sizing: border-box;
+  }
+  .homepage {
+    background-color: #F2F2F2;
   }
   h2 {
     padding-left: 20px;
   }
   h3 {
-    margin-left: 5%;
     font-size: 20px;
   }
   p.content {
@@ -473,7 +476,7 @@ span.new {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 10%;
+    padding-right: 5%;
     width: 100%;
     padding-bottom: 3rem;
   }
@@ -563,73 +566,43 @@ span.new {
   .store {
     margin-right: 1.2rem;
   }
-  footer {
-    margin-right: 3rem;
-    width: 100%;
+  h3 {
+    margin-left: 60px;
   }
 }
-/*----------------------------- media query 1024px---------------*/
 @media screen and (min-width: 1024px) {
   .button {
     margin-left: 38%;
   }
+  * {
+    box-sizing: border-box;
+  }
   .cards {
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 500px 500px;
     grid-template-rows: 300px;
     justify-content: center;
     gap: 50px;
   }
-  .btns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 5%;
-    width: 100%;
-    padding-bottom: 3rem;
-  }
-  .button {
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-/*-------------------------media query 1440px------------------*/
-@media screen and (min-width: 1440px) {
-  .button {
-    margin-left: 42%;
-    width: 300px;
-    height: 4em;
-  }
   .bloc {
-    background-color: #F2F2F2;
-    padding-top: 10px;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: 600px 600px;
-    grid-template-rows: 200px;
-    justify-content: center;
-    gap: 80px;
-    padding-left: 0px;
-  }
-  .card {
-    width: 600px;
-    margin: 0px;
+    width: 100%;
   }
   .btns {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 30px;
+    padding-left: 6%;
+    padding-right: 10%;
     width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
-  .btn {
-    width: 100%;
-    height: 60px;
-    margin: 20px;
+  h3 {
+    margin-left: 6%;
+    font-size: 1rem;
+  }
+  h1 {
+    font-family: "Shrikhand", cursive;
+    font-size: 2em;
   }
   .Accueil {
     padding-left: 0rem;
@@ -638,13 +611,19 @@ span.new {
     font-family: "fontstack", sans-serif;
     font-weight: bold;
   }
-  h3 {
-    margin-top: 40px;
-    font-size: 2em;
-    margin-left: 100px;
-    margin-bottom: 40px;
+  h2 {
+    padding-left: 20px;
+    font-size: 2rem;
   }
-  h1 {
-    font-size: 4em;
+  h4 {
+    font-size: 1em;
+    font-family: "fontstack", sans-serif;
+    margin-bottom: 0px;
+  }
+  p {
+    padding-bottom: 20px;
+  }
+  .image-1, .image-2, .image-3, .image-4 {
+    height: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
