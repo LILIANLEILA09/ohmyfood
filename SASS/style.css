@@ -623,7 +623,10 @@ span.new {
   p {
     padding-bottom: 20px;
   }
-  .image-1, .image-2, .image-3, .image-4 {
+  .image-1,
+  .image-2,
+  .image-3,
+  .image-4 {
     height: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
