@@ -428,9 +428,6 @@ span.new {
     height: 3rem;
   }
 
-  .texte-restaurant-bloc-1 {
-    height: 40%;
-  }
 
   .image-1,
   .image-2,
@@ -444,13 +441,7 @@ span.new {
     margin-left: 0px;
   }
 
-  .texte-restaurant-bloc-1,
-  .texte-restaurant-bloc-2,
-  .texte-restaurant-bloc-3 {
-    margin-left: 0px;
-    margin-bottom: 30px;
-  }
-
+ 
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -484,9 +475,10 @@ span.new {
   .texte-restaurant-bloc-2,
   .texte-restaurant-bloc-3,
   .texte-restaurant-bloc-4 {
-    height: 80px;
+    height:30%;
     width: 100%;
     gap: 50px;
+    padding-top:20px;
   }
 
   .btnrounded {
@@ -517,10 +509,6 @@ span.new {
 
   .store {
     margin-right: 1.2rem;
-  }
-
-  h3 {
-    margin-left: 60px;
   }
 
 }
@@ -559,8 +547,8 @@ span.new {
   }
 
   h3 {
-    font-size: 1rem;
-      padding-left:40px;
+    font-size: 1.5rem;
+      padding-left:95px;
   }
 
   h1 {
