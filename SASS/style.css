@@ -1,24 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.search {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  background-color: #686868;
+  color: #fff;
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  padding: 0px 24px;
+  border-radius: 100px;
+  cursor: pointer;
+  filter: brightness(1);
+}
+
+.search:hover {
+  transition-duration: 0.25s;
+  filter: brightness(1.75);
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+}
+
 .button {
   display: flex;
-  margin-left: 15%;
-  position: relative;
-  font-family: "fontstack", sans-serif;
-  width: 250px;
-  height: 3rem;
-  color: white;
-  font-weight: bold;
-  align-items: center;
-  border-radius: 50px 50px 50px;
-  background: linear-gradient(#9356DC, #FF79DA);
-  box-shadow: 10px 10px 5px #d3cfd5;
   justify-content: center;
-  transition: transform 450ms, background-color 300ms;
 }
-.button:hover {
-  transform: scale(1.13);
-  background: #FF79DA;
+
+.phrase {
+  font-family: "fontstack", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Use the text as a mask for the background. */
@@ -133,13 +145,13 @@
 
 .html {
   width: 100%;
+  height: 100%;
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  width: 100%;
-  height: auto;
+  margin: 0px;
 }
 
 .cards {
@@ -191,7 +203,6 @@ h2 {
   padding-bottom: 40px;
   font-family: "fontstack", sans-serif;
   font-weight: bold;
-  margin-top: 0px;
   text-align: center;
 }
 
@@ -248,7 +259,7 @@ p {
   font-weight: bold;
 }
 
-.fontgris {
+.homepage {
   padding-bottom: 5%;
   background-color: #F2F2F2;
 }
@@ -440,27 +451,17 @@ span.new {
   width: 100%;
 }
 
-/*---------------- bouton responsive------------------*/
-@media screen and (min-width: 425px) {
-  .button {
-    margin-left: 20%;
-  }
-}
-@media screen and (min-width: 600px) {
-  .button {
-    margin-left: 30%;
-  }
-}
 /*--------------------media-query 768px--------------------------*/
 @media screen and (min-width: 768px) {
-  .button {
-    margin-left: 35%;
-  }
   * {
     box-sizing: border-box;
   }
   .homepage {
     background-color: #F2F2F2;
+    width: 100%;
+  }
+  .bloc {
+    width: 100%;
   }
   h2 {
     padding-left: 20px;
@@ -483,11 +484,6 @@ span.new {
   .btn {
     width: 100%;
     height: 50px;
-  }
-  .button {
-    width: 250px;
-    font-size: 16px;
-    height: 3rem;
   }
   .image-1,
   .image-2,
@@ -531,7 +527,7 @@ span.new {
     height: 30%;
     width: 100%;
     gap: 50px;
-    padding-top: 20px;
+    margin-bottom: 10%;
   }
   .btnrounded {
     display: flex;
@@ -560,21 +556,20 @@ span.new {
   }
 }
 @media screen and (min-width: 1024px) {
-  .button {
-    margin-left: 38%;
-  }
   * {
     box-sizing: border-box;
   }
   .cards {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 400px 400px;
     grid-template-rows: 300px;
     justify-content: center;
     gap: 50px;
   }
   .bloc {
     width: 100%;
+    height: 100%;
+    margin: 0px;
   }
   .btns {
     display: flex;
@@ -617,5 +612,14 @@ span.new {
   .image-3,
   .image-4 {
     height: 200px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 580px 580px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    gap: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -27,6 +27,8 @@ $fondwhite: #ffff;
 $foot: #303030;
 $lightgray: #ebe8ed;
 $gray:#EAEAEA;
+
+
 * {
   box-sizing: border-box;
 }
@@ -43,13 +45,13 @@ $gray:#EAEAEA;
 
 .html {
   width: 100%;
+  height: 100%;
   margin: 0px;
   padding: 0px;
 }
 
 body {
-  width: 100%;
-  height: auto;
+ margin: 0px;
 }
 
 .cards {
@@ -83,6 +85,7 @@ p.content {
   text-align: center;
 }
 
+
 h1 {
   font-family: 'Shrikhand', cursive;
   font-size: 1.5em;
@@ -102,7 +105,6 @@ h2 {
   padding-bottom: 40px;
   font-family: 'fontstack', sans-serif;
   font-weight: bold;
-  margin-top: 0px;
   text-align: center;
 }
 
@@ -119,7 +121,6 @@ h4 {
   font-size: 1rem;
   font-family: 'fontstack', sans-serif;
   margin-bottom: 0px;
-
 }
 
 p {
@@ -138,19 +139,16 @@ p {
   font-family: 'fontstack', sans-serif;
   font-weight: bold;
 }
-
-
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+position:relative;
   width: 100%;
   height: 100%;
   background-color: $fondwhite;
 }
-
 
 .localisation {
   display: flex;
@@ -164,10 +162,8 @@ p {
   font-weight: bold;
 
 }
-
-
-.fontgris {
-  padding-bottom: 5%;
+.homepage{
+  padding-bottom:5%;
   background-color: $fondgris;
 }
 
@@ -364,27 +360,10 @@ span.new {
   width: 100%;
 }
 
-/*---------------- bouton responsive------------------*/
-
-@media screen and (min-width: 425px) {
-  .button {
-    margin-left: 20%;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .button {
-    margin-left: 30%;
-  }
-}
-
-
 /*--------------------media-query 768px--------------------------*/
 
 @media screen and (min-width: 768px) {
-  .button {
-    margin-left: 35%;
-  }
+ 
 
   * {
     box-sizing: border-box;
@@ -392,8 +371,13 @@ span.new {
 
   .homepage {
     background-color: $fondgris;
+    width: 100%;
   }
 
+.bloc{
+width: 100%;
+
+}
 
   h2 {
     padding-left: 20px;
@@ -422,11 +406,7 @@ span.new {
     height: 50px;
   }
 
-  .button {
-    width: 250px;
-    font-size: 16px;
-    height: 3rem;
-  }
+ 
 
 
   .image-1,
@@ -478,7 +458,7 @@ span.new {
     height:30%;
     width: 100%;
     gap: 50px;
-    padding-top:20px;
+    margin-bottom: 10%;
   }
 
   .btnrounded {
@@ -516,17 +496,15 @@ span.new {
 //********media query 1024px**************
 
 @media screen and (min-width:1024px) {
-  .button {
-    margin-left: 38%;
-  }
-
+ 
+ 
   * {
     box-sizing: border-box;
   }
 
   .cards {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 400px 400px;
     grid-template-rows: 300px;
     justify-content: center;
     gap: 50px;
@@ -534,6 +512,8 @@ span.new {
 
   .bloc {
     width: 100%;
+    height: 100%;
+    margin: 0px;
   }
 
   .btns {
@@ -586,4 +566,16 @@ span.new {
   .image-4 {
     height: 200px;
   }
+}
+//***********media query 1440px****************
+@media screen and (min-width:1440px) {
+
+  .cards {
+    display: grid;
+    grid-template-columns: 580px 580px;
+    grid-template-rows: 300px;
+    justify-content: center;
+    gap: 50px;
+  }
+  
 }
