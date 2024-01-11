@@ -55,62 +55,66 @@
   transition: all 400ms;
 }
 
-.animation {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #99E2D0;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  inset: 0rem;
-  z-index: 1;
-  opacity: 0, 9;
-}
+/********
+.animation{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color:$tertiaire;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    inset: 0rem;
+    z-index: 1;
+    opacity: 0, 9;
+  }
 
-@keyframes dissapears {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-.animation {
-  animation: dissapears 200ms;
-  animation-fill-mode: forwards;
-  transform-origin: top;
-  animation-delay: 5s;
-}
+  @keyframes dissapears {
+    0% {
+        transform: scale(1);
+    }
 
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  background: linear-gradient(45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #F1BBBB 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
-  animation: l3 2.5s infinite;
-}
+    100% {
+        transform: scale(0);
+    }
+  }
 
-@keyframes l3 {
-  0% {
-    background-position: 100% 0, 0 0, 0 100%, 100% 100%;
+  .animation {
+    animation: dissapears 200ms;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    animation-delay: 5s;
   }
-  15%, 25% {
-    background-position: 100% 0, 0 0, 0 100%, 0 0;
+
+
+  .loader {
+    width: 40px;
+    aspect-ratio: 1;
+    background:
+      linear-gradient( 45deg,#0065fc 50%,#0000 0),
+      linear-gradient(-45deg,#F1BBBB 50%,#0000 0),
+      linear-gradient( 45deg,#0000 50%,#9356DC 0),
+      linear-gradient(-45deg,#0000 50%,#FF00AA 0),
+      #00AAFF;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: l3 2.5s infinite; 
   }
-  40%, 50% {
-    background-position: 100% 0, 0 0, 100% 0, 0 0;
+
+  @keyframes l3 {
+    0%   {background-position:100% 0,0    0   ,0 100%,100% 100%}
+    15%,
+    25%  {background-position:100% 0,0    0   ,0 100%,0    0   }
+    40%,
+    50%  {background-position:100% 0,0    0   ,100% 0,0    0   }
+    65%,
+    75%  {background-position:100% 0,100% 100%,100% 0,0    0   }
+    90%,
+    100% {background-position:0 100%,100% 100%,100% 0,0    0   }
   }
-  65%, 75% {
-    background-position: 100% 0, 100% 100%, 100% 0, 0 0;
-  }
-  90%, 100% {
-    background-position: 0 100%, 100% 100%, 100% 0, 0 0;
-  }
-}
+  *****/
 @font-face {
   font-family: "fontstack";
   src: url("WebFont.eot");
@@ -237,14 +241,14 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: #ebe8ed;
-  border-top: 2px solid #ebe8ed;
+  background-color: #EAEAEA;
+  border-top: 2px solid #d3cfd5;
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
 }
 
-.homepage {
+.fontgris {
   padding-bottom: 5%;
   background-color: #F2F2F2;
 }

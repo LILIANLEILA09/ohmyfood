@@ -26,7 +26,7 @@ $grey: #d3cfd5;
 $fondwhite: #ffff;
 $foot: #303030;
 $lightgray: #ebe8ed;
-
+$gray:#EAEAEA;
 * {
   box-sizing: border-box;
 }
@@ -157,8 +157,8 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  background-color: $lightgray;
-  border-top: 2px solid $lightgray;
+  background-color:$gray;
+  border-top: 2px solid $grey;
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
@@ -166,7 +166,7 @@ p {
 }
 
 
-.homepage {
+.fontgris {
   padding-bottom: 5%;
   background-color: $fondgris;
 }
