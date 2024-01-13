@@ -29,12 +29,14 @@ $foot: #303030;
 .boutton {
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 10%;
+  padding-right: 5%;
  
 }
 .phrase{
   font-family: 'fontstack',sans-serif;
   display: flex;
+  font-weight: bold;
   justify-content: center;
   align-items: center;
 }
