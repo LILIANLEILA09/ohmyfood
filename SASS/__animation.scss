@@ -1,9 +1,20 @@
+@import '__variables';
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;
+$blues: #3e9cbf;
 
+$bbleu: #0065fc;
+$bbleuclair: #DEEBFF;
+$fondgris: #F2F2F2;
+$grey: #d3cfd5;
+
+/**
 .animation{
     position: fixed;
     display: grid;
     place-items: center;
-    background-color:$tertiaire;
+    background-color:$bbleuclair;
     height: 100vh;
     top: 0;
     bottom: 0;
@@ -36,10 +47,10 @@
     width: 40px;
     aspect-ratio: 1;
     background:
-      linear-gradient( 45deg,#0065fc 50%,#0000 0),
-      linear-gradient(-45deg,#F1BBBB 50%,#0000 0),
-      linear-gradient( 45deg,#0000 50%,#9356DC 0),
-      linear-gradient(-45deg,#0000 50%,#FF00AA 0),
+      linear-gradient( 45deg,#99E2D0 50%,#0000 0),
+      linear-gradient(-45deg,#0065fc 50%,#0000 0),
+      linear-gradient( 45deg,#FF79DA 50%,#9356DC 0),
+      linear-gradient(-45deg,#0000 050%,#FF00AA 0),
       #00AAFF;
     background-size: 200% 200%;
     background-repeat: no-repeat;
@@ -58,4 +69,4 @@
     100% {background-position:0 100%,100% 100%,100% 0,0    0   }
   }
   
-
+**/
