@@ -5,7 +5,7 @@ $secondaire: #FF79DA;
 $fondwhite:#FFFF;
 
 .search {
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +30,9 @@ $fondwhite:#FFFF;
  
 }
 .phrase{
-  font-family: 'fontstack',sans-serif;
   display: flex;
+  font-family:'fonstack',sans-serif;
+  color:#FFFF;
   justify-content: center;
   align-items: center;
 }

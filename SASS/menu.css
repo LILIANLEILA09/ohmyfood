@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .search {
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +28,9 @@
 }
 
 .phrase {
-  font-family: "fontstack", sans-serif;
   display: flex;
+  font-family: "fonstack", sans-serif;
+  color: white;
   justify-content: center;
   align-items: center;
 }
@@ -230,7 +231,7 @@ h5 {
 p {
   font-family: "fontstack", sans-serif;
   margin-left: 20px;
-  font-size: 1rem;
+  font-size: 1em;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -307,7 +308,7 @@ span {
   height: 100%;
   width: 65px;
   border-radius: 0 20px 20px 0;
-  transition-duration: 0.55s;
+  cursor: pointer;
 }
 
 .check {
@@ -318,6 +319,7 @@ span {
   right: -65px;
   height: 100%;
   width: 65px;
+  cursor: pointer;
 }
 
 .icone {
@@ -335,7 +337,8 @@ span {
   border: 0;
   position: absolute;
   right: 0px;
-  margin-right: 10px;
+  padding-top: 5px;
+  margin-right: 20px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
