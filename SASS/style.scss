@@ -48,7 +48,8 @@ a {
 
 body {
   margin: 0px;
-
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .cards {
@@ -144,8 +145,7 @@ p {
   align-items: center;
   position: relative;
   width: 100%;
-  height: 100%;
-  background-color: $fondwhite;
+  background-color:$fondwhite;
 }
 
 .localisation {
