@@ -57,6 +57,7 @@ h4 {
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'fontstack', sans-serif;
+  font-size: 1em;
   padding-top: 0.4rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -73,7 +74,8 @@ h5 {
 p {
   font-family: 'fontstack', sans-serif;
   margin-left: 20px;
-  font-size:1em;
+  font-size:1.3em;
+  font-weight: lighter;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -108,8 +110,8 @@ span {
   width: 90%;
   border: none;
   font-size: 1rem;
-  height: 4rem;
-  background-color: $fondwhite;
+  height: 5rem;
+  background-color:$fondwhite;
   border-radius: 20px 20px 20px;
   box-shadow: 10px 10px 5px $grey;
 
@@ -182,6 +184,7 @@ span {
   border: 0;
   position:absolute;
   right:0px;
+  font-family: 'fontstack',sans-serif;
   padding-top:5px;
   margin-right: 20px;
   text-overflow: ellipsis;

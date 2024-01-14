@@ -31,8 +31,8 @@ $fondwhite:#FFFF;
 }
 .phrase{
   display: flex;
-  font-family:'fonstack',sans-serif;
-  color:#FFFF;
+  font-family:'fontstack',sans-serif;
+  color:$fondwhite;
   justify-content: center;
   align-items: center;
 }
