@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .search {
   height: 60px;
   display: flex;
@@ -124,11 +122,6 @@
     background-position: 0 100%, 100% 100%, 100% 0, 0 0;
   }
 }
-@font-face {
-  font-family: "fontstack";
-  src: url("WebFont.eot");
-  src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
-}
 * {
   box-sizing: border-box;
 }
@@ -231,8 +224,8 @@ p {
 }
 
 .Accueil {
-  padding-left: 2rem;
-  font-size: 1em;
+  padding-left: 1rem;
+  font-size: 14px;
   width: 100%;
   font-family: "fontstack", sans-serif;
   font-weight: bold;
@@ -652,7 +645,6 @@ span.new {
   }
 }
 .search {
-  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
