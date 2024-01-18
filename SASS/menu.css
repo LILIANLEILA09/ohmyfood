@@ -1,10 +1,16 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+.button {
+  display: flex;
+  justify-content: center;
+}
+
 .search {
-  height: 60px;
+  width: 218px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
   background-color: #686868;
   color: #fff;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -20,17 +26,14 @@
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-}
-
 .phrase {
   display: flex;
-  font-family: "fontstack", sans-serif;
-  color: white;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
 /* Use the text as a mask for the background. */
@@ -181,11 +184,6 @@
   align-items: center;
 }
 
-@font-face {
-  font-family: "fontstack";
-  src: url("WebFont.eot");
-  src: url("WebFont.eot?iefix") format("eot"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg");
-}
 * {
   box-sizing: border-box;
 }
@@ -212,8 +210,9 @@ h4 {
   margin-left: 20px;
   margin-bottom: 0px;
   margin-top: 0px;
-  font-family: "fontstack", sans-serif;
-  font-size: 1em;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
   padding-top: 0.4rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -221,20 +220,22 @@ h4 {
 }
 
 h5 {
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: lighter;
   font-size: 1.5rem;
   margin-bottom: 5px;
+  padding-left: 0.5em;
 }
 
 body {
   margin: 0px;
+  font-family: "Roboto", sans-serif;
   margin-left: 0px;
   margin-right: 0px;
 }
 
 p {
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-left: 20px;
   font-size: 1.3em;
   font-weight: lighter;
@@ -257,13 +258,13 @@ p {
   width: 4rem;
   height: 0.15rem;
   background-color: #99E2D0;
-  margin: 0px;
-  padding-left: 2rem;
+  margin: 10px;
+  padding-left: 5rem;
 }
 
 span {
   margin-right: 20px;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*------------------------ANIMATION BTN CHECK A ADDAPTER-------------------------------*/
@@ -347,7 +348,7 @@ p {
   border: 0;
   position: absolute;
   right: 0px;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-top: 5px;
   margin-right: 20px;
   text-overflow: ellipsis;
@@ -467,10 +468,12 @@ main {
 }
 
 .card__mot1 {
-  padding-left: 15px;
+  padding-left: 1.5em;
   color: black;
   text-decoration: none;
-  font-family: "font-stack", sans-serif;
+  font-size: 1.5em;
+  padding-top: 20px;
+  font-family: "shrikhand", sans-serif;
   cursor: pointer;
 }
 
@@ -479,7 +482,7 @@ main {
   color: white;
   max-width: 100%;
   height: 220px;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-1 {
@@ -510,7 +513,7 @@ main {
 /*---------------------DEFIL----------------------------------*/
 .texte-restaurant-bloc-1 {
   display: flex;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   justify-content: space-between;
   align-items: center;
   border-radius: 50px 50px 0px 0px;
@@ -527,7 +530,7 @@ main {
   }
   .texte-restaurant-bloc-1 {
     display: flex;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     justify-content: space-between;
     align-items: center;
     border-radius: 50px 50px 0px 0px;
@@ -595,7 +598,7 @@ main {
   .boutton {
     display: flex;
     margin-left: 35%;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 30%;
     height: 45px;
   }
@@ -607,7 +610,7 @@ main {
   .boutton {
     display: flex;
     margin-left: 35%;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     width: 30%;
     height: 60px;
   }

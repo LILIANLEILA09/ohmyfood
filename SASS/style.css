@@ -1,9 +1,14 @@
+.button {
+  display: flex;
+  justify-content: center;
+}
+
 .search {
-  height: 60px;
+  width: 218px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
   background-color: #686868;
   color: #fff;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -19,17 +24,14 @@
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-}
-
 .phrase {
   display: flex;
-  font-family: "fontstack", sans-serif;
-  color: white;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: white;
 }
 
 /* Use the text as a mask for the background. */
@@ -66,62 +68,67 @@
   transition: all 400ms;
 }
 
-.animation {
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background-color: #DEEBFF;
-  height: 100vh;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  inset: 0rem;
-  z-index: 1;
-  opacity: 0, 9;
-}
+/**
+.animation{
+    position: fixed;
+    display: grid;
+    place-items: center;
+    background-color:$bbleuclair;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    inset: 0rem;
+    z-index: 1;
+    opacity: 0, 9;
+  }
 
-@keyframes dissapears {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-.animation {
-  animation: dissapears 200ms;
-  animation-fill-mode: forwards;
-  transform-origin: top;
-  animation-delay: 5s;
-}
+  @keyframes dissapears {
+    0% {
+        transform: scale(1);
+    }
 
-.loader {
-  width: 40px;
-  aspect-ratio: 1;
-  background: linear-gradient(45deg, #99E2D0 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, #FF79DA 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
-  animation: l3 2.5s infinite;
-}
+    100% {
+        transform: scale(0);
+    }
+  }
 
-@keyframes l3 {
-  0% {
-    background-position: 100% 0, 0 0, 0 100%, 100% 100%;
+  .animation {
+    animation: dissapears 200ms;
+    animation-fill-mode: forwards;
+    transform-origin: top;
+    animation-delay: 5s;
   }
-  15%, 25% {
-    background-position: 100% 0, 0 0, 0 100%, 0 0;
+
+
+  .loader {
+    width: 40px;
+    aspect-ratio: 1;
+    background:
+      linear-gradient( 45deg,#99E2D0 50%,#0000 0),
+      linear-gradient(-45deg,#0065fc 50%,#0000 0),
+      linear-gradient( 45deg,#FF79DA 50%,#9356DC 0),
+      linear-gradient(-45deg,#0000 050%,#FF00AA 0),
+      #00AAFF;
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    animation: l3 2.5s infinite; 
   }
-  40%, 50% {
-    background-position: 100% 0, 0 0, 100% 0, 0 0;
+
+  @keyframes l3 {
+    0%   {background-position:100% 0,0    0   ,0 100%,100% 100%}
+    15%,
+    25%  {background-position:100% 0,0    0   ,0 100%,0    0   }
+    40%,
+    50%  {background-position:100% 0,0    0   ,100% 0,0    0   }
+    65%,
+    75%  {background-position:100% 0,100% 100%,100% 0,0    0   }
+    90%,
+    100% {background-position:0 100%,100% 100%,100% 0,0    0   }
   }
-  65%, 75% {
-    background-position: 100% 0, 100% 100%, 100% 0, 0 0;
-  }
-  90%, 100% {
-    background-position: 0 100%, 100% 100%, 100% 0, 0 0;
-  }
-}
+
+**/
 * {
   box-sizing: border-box;
 }
@@ -151,6 +158,12 @@ body {
   margin-right: 0px;
 }
 
+.phrase {
+  font-size: "Roboto", sans-serif;
+  color: white;
+  font-weight: bolder;
+}
+
 .cards {
   padding-bottom: 0px;
   padding-left: 2rem;
@@ -172,7 +185,7 @@ main {
 }
 
 span {
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -198,8 +211,8 @@ h2 {
   font-size: 1.5rem;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: "fontstack", sans-serif;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
   text-align: center;
 }
 
@@ -213,12 +226,12 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 0px;
 }
 
 p {
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: lighter;
   font-style: normal;
@@ -229,7 +242,7 @@ p {
   padding-left: 1rem;
   font-size: 14px;
   width: 100%;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 
@@ -248,6 +261,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  font-family: "Roboto", sans-serif;
   background-color: #EAEAEA;
   border-top: 2px solid #d3cfd5;
   padding-bottom: 10px;
@@ -261,7 +275,7 @@ p {
 }
 
 .content {
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-left: 30px;
   font-size: 1em;
   font-weight: lighter;
@@ -314,7 +328,7 @@ p {
 
 span.new {
   background-color: #99E2D0;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: forestgreen;
   position: absolute;
   border-radius: 3px;
@@ -340,6 +354,7 @@ span.new {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Roboto" sans-serif;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
   height: 80px;
@@ -352,7 +367,7 @@ span.new {
 .card__mot4 {
   padding-left: 1rem;
   color: black;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .text-position {
@@ -403,7 +418,7 @@ span.new {
   color: white;
   height: 250px;
   width: 100%;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer-1 {
@@ -511,7 +526,7 @@ span.new {
     padding-left: 0rem;
     font-size: 10px;
     width: 100%;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
   }
   .texte-restaurant-bloc-1,
@@ -528,7 +543,7 @@ span.new {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-right: 1.2rem;
     background-color: #9356DC;
     height: 2rem;
@@ -582,7 +597,7 @@ span.new {
     padding-left: 0rem;
     font-size: 0.9em;
     width: 80%;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
   }
   h2 {
@@ -591,7 +606,7 @@ span.new {
   }
   h4 {
     font-size: 1.5em;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 0px;
   }
   p {
@@ -628,7 +643,7 @@ span.new {
   }
   h4 {
     font-size: 1.5em;
-    font-family: "fontstack", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-top: 20px;
   }
   p {
@@ -637,6 +652,7 @@ span.new {
   }
   .Accueil {
     padding-left: 0rem;
+    font-family: "Roboto", sans-serif;
     font-size: 1.5em;
     width: 80%;
   }
@@ -658,5 +674,4 @@ p.content {
 
 h2 {
   padding-left: 20px;
-  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
