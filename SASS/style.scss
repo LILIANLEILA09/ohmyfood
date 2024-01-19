@@ -1,9 +1,10 @@
+
+
+$primaire: #9356DC;
 @import '__variables';
 @import '__button';
 @import '__coeur';
 @import '__animation';
-
-$primaire: #9356DC;
 $secondaire: #FF79DA;
 $tertiaire: #99E2D0;
 $blues: #3e9cbf;
@@ -17,6 +18,7 @@ $foot: #303030;
 $lightgray: #ebe8ed;
 $gray: #EAEAEA;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 * {
   box-sizing: border-box;
@@ -112,7 +114,7 @@ h2 {
 
 
 h3 {
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   margin-left: 30px;
   padding-top: 20px;
