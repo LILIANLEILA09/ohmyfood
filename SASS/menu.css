@@ -153,7 +153,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
+  width: 186px;
   background-color: #686868;
   color: #fff;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -177,7 +177,7 @@
 }
 
 .phrase {
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   font-weight: bold;
   justify-content: center;
@@ -198,8 +198,8 @@
 h1 {
   font-family: "Shrikhand";
   font-weight: bold;
-  font-size: 2rem;
-  padding-left: 5px;
+  font-size: 24px;
+  margin-right: 40px;
   padding-top: 40px;
   padding-bottom: 20px;
   font-weight: bold;
@@ -222,9 +222,9 @@ h4 {
 h5 {
   font-family: "Roboto", sans-serif;
   font-weight: lighter;
-  font-size: 1.5rem;
+  font-size: 16px;
   margin-bottom: 5px;
-  padding-left: 0.5em;
+  padding-left: 20px;
 }
 
 body {
@@ -237,7 +237,6 @@ body {
 p {
   font-family: "Roboto", sans-serif;
   margin-left: 20px;
-  font-size: 1.3em;
   font-weight: lighter;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -253,13 +252,17 @@ p {
   padding-bottom: 20px;
 }
 
+.entree-1, .entree-2, .entree-3, .plat-1, .plat-2, .plat-3, .dessert-1, .dessert-2, .dessert-3 {
+  padding-left: 20px;
+  width: 100%;
+}
+
 .trait {
   content: "";
   width: 4rem;
   height: 0.15rem;
   background-color: #99E2D0;
-  margin: 10px;
-  padding-left: 5rem;
+  margin-left: 20px;
 }
 
 span {
@@ -336,7 +339,6 @@ span {
   margin-left: 18px;
 }
 
-.price,
 p {
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -350,7 +352,7 @@ p {
   right: 0px;
   font-family: "Roboto", sans-serif;
   padding-top: 5px;
-  margin-right: 20px;
+  margin-right: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -468,10 +470,10 @@ main {
 }
 
 .card__mot1 {
-  padding-left: 1.5em;
+  padding-left: 1em;
   color: black;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1em;
   padding-top: 20px;
   font-family: "shrikhand", sans-serif;
   cursor: pointer;
@@ -516,14 +518,18 @@ main {
   font-family: "Roboto", sans-serif;
   justify-content: space-between;
   align-items: center;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 35px 35px 0px 0px;
   background-color: #F6F6F6;
   margin-top: -50px;
+  margin-left: 2px;
 }
 
 @media screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
+  }
+  .coeur1, .coeur2 {
+    margin-left: 20px;
   }
   .bloc {
     width: 100%;
@@ -574,7 +580,7 @@ main {
     margin-left: 20%;
   }
   .trait {
-    margin-left: 20%;
+    margin-left: 23%;
   }
   main {
     width: 80%;
@@ -595,6 +601,11 @@ main {
     justify-content: space-between;
     align-items: center;
   }
+  .texte-restaurant-bloc-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .boutton {
     display: flex;
     margin-left: 35%;
@@ -607,11 +618,39 @@ main {
   * {
     box-sizing: border-box;
   }
+  .texte-restaurant-bloc-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .boutton {
     display: flex;
     margin-left: 35%;
     font-family: "Roboto", sans-serif;
     width: 30%;
     height: 60px;
+  }
+}
+@media screen and (min-width: 1439.99px) {
+  * {
+    box-sizing: border-box;
+  }
+  .card__mot1 {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 20px;
+    font-family: "shrikhand", sans-serif;
+    cursor: pointer;
+  }
+  .texte-restaurant-bloc-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .coeur1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=menu.css.map */

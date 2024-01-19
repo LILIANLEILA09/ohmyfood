@@ -136,7 +136,7 @@
 /*----------------------------mobile first-----------------------------*/
 .Heading {
   font-weight: lighter;
-  font-family: "font-stack", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0%;
   margin: 0%;
 }
@@ -196,7 +196,7 @@ p.content {
 
 h1 {
   font-family: "Shrikhand", cursive;
-  font-size: 1.5em;
+  font-size: 24px;
 }
 
 .ohmyfood {
@@ -221,7 +221,7 @@ h3 {
   font-weight: bold;
   margin-left: 30px;
   padding-top: 20px;
-  font-family: "fontstack", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 h4 {
@@ -267,10 +267,11 @@ p {
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
+  box-shadow: 2px 2px 2px 2px #d3cfd5;
 }
 
 .homepage {
-  padding-bottom: 5%;
+  padding-bottom: 10%;
   background-color: #F2F2F2;
 }
 
