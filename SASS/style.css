@@ -30,7 +30,7 @@
   justify-content: center;
   align-items: center;
   font-size: 15px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: white;
 }
@@ -101,7 +101,7 @@
 
 .loader {
   width: 40px;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   background: linear-gradient(45deg, #99E2D0 50%, rgba(0, 0, 0, 0) 0), linear-gradient(-45deg, #0065fc 50%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, #FF79DA 50%, #9356DC 0), linear-gradient(-45deg, rgba(0, 0, 0, 0) 50%, #FF00AA 0), #00AAFF;
   background-size: 200% 200%;
   background-repeat: no-repeat;
@@ -154,11 +154,7 @@ body {
   margin-right: 0px;
 }
 
-.phrase {
-  font-size: "Roboto", sans-serif;
-  color: white;
-  font-weight: bolder;
-}
+
 
 .cards {
   padding-bottom: 0px;
@@ -351,7 +347,7 @@ span.new {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Roboto" sans-serif;
+  font-family: 'Roboto' ,sans-serif;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
   height: 80px;
