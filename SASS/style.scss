@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 $primaire: #9356DC;
 @import '__variables';
@@ -18,15 +18,26 @@ $foot: #303030;
 $lightgray: #ebe8ed;
 $gray: #EAEAEA;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
 * {
   box-sizing: border-box;
 }
 
-
-
 /*----------------------------mobile first-----------------------------*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+
+}
+
+p.content {
+  font-size: 1em;
+}
+
+h2 {
+  padding-left: 20px;
+}
 
 
 .Heading {
@@ -159,13 +170,15 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width:100%;
+  height: 60px;
   font-family: 'Roboto',sans-serif;
   background-color: $gray;
   border-top: 2px solid $grey;
   padding-bottom: 10px;
   padding-top: 10px;
   font-weight: bold;
-  box-shadow: 2px 2px 2px 2px $grey;
+  box-shadow: 3px 3px 3px 3px $grey;
 }
 
 .homepage {
@@ -205,15 +218,20 @@ p {
 
 .btnrounded {
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: $fondwhite;
-  margin-right: 3rem;
+  justify-content: center;
+  position: relative;
+  left: -10px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  color:$fondwhite;
   background-color: $primaire;
-  height: 1.5rem;
-  border-radius: 100%;
-  width: 2em;
+  padding: 1%;
+  min-width: 24px;
+  min-height: 24px;
 }
+
 
 .image-1 {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -464,19 +482,6 @@ span.new {
     margin-bottom: 10%;
   }
 
-  .btnrounded {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $fondwhite;
-    font-family: 'Roboto', sans-serif;
-    margin-right: 1.2rem;
-    background-color: $primaire;
-    height: 2rem;
-    border-radius: 100%;
-    width: 3em;
-  }
-
   .card {
     width: 100%;
     margin: 0px;
@@ -493,9 +498,16 @@ span.new {
   .store {
     margin-right: 1.2rem;
   }
+  .localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+  
 
 }
-
+}
 //********media query 868px**************
 
 @media screen and (min-width:868px) {
@@ -590,12 +602,6 @@ span.new {
     margin-left: 5%;
   }
 
-
-  .btnrounded {
-    height: 2.5rem;
-    width: 3em;
-  }
-
   h4 {
     font-size: 1.5em;
     font-family: 'Roboto', sans-serif;
@@ -618,21 +624,33 @@ span.new {
     font-size: 1.5rem;
     margin-left: 5%;
   }
-
+  .btnrounded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    color:$fondwhite;
+    background-color: $primaire;
+    padding: 1%;
+    min-width: 24px;
+    min-height: 24px;
+  }
 }
 
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
 
+//***********media query 1024px****************
+@media screen and (min-width:1024px) {
+  .localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width:100%;
+    height: 80px;
+  }
 }
 
-p.content {
-  font-size: 1em;
-}
-
-h2 {
-  padding-left: 20px;
-}
