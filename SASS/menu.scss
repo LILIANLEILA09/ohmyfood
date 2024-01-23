@@ -138,8 +138,24 @@ span {
   overflow: hidden;
   /* After animation */
 }
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
 
-.true {
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.true{
+  position: absolute;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
   border: 0;
   position:absolute;
   top: 0px;
@@ -149,6 +165,30 @@ span {
   width: 65px;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color:$tertiaire;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $tertiaire;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
 }
 
 .check {
@@ -526,7 +566,5 @@ main {
   position: absolute;
   justify-content: center;
   align-items: center;
- 
-
 }
 }
