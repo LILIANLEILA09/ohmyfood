@@ -40,7 +40,8 @@ h1 {
 }
 
 h4 {
-  margin-left: 20px;
+  width: 100%;
+  margin-left: 10px;
   margin-bottom: 0px;
   margin-top: 0px;
   font-weight: bold;
@@ -69,11 +70,11 @@ body {
 
 p {
   font-family: 'Roboto', sans-serif;
-  margin-left: 20px;
+  margin-left: 10px;
   font-weight: lighter;
-  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  overflow: ellipsis;
 }
 
 .ohmyfood {
@@ -85,8 +86,8 @@ p {
   padding-bottom: 20px;
 }
 .entree-1,.entree-2,.entree-3,.entree-4,.plat-1,.plat-2,.plat-3,.dessert-1,.dessert-2,.dessert-3{
-  padding-left:20px;
-  width:90%;
+ 
+ margin-left: 16px;
 }
 .trait {
   content: "";
@@ -117,8 +118,11 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width:370px;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow: ellipsis;
 }
-
 
 .text {
   display: flex;
@@ -127,6 +131,7 @@ span {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  width: 100%;
 }
 
 /*--------------------------exemple------------
@@ -225,7 +230,7 @@ p {
   right: 0px;
   font-family: 'Roboto', sans-serif;
   padding-top: 5px;
-  margin-right: 10px;
+  margin-right: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
