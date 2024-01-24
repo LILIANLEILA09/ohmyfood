@@ -170,6 +170,7 @@ body {
 }
 
 .phrase {
+  font-size: "Roboto", sans-serif;
   color: white;
   font-weight: bolder;
 }
@@ -371,6 +372,7 @@ span.new {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Roboto" sans-serif;
   border-radius: 0px 0px 20px 20px;
   background-color: white;
   height: 80px;
