@@ -73,7 +73,7 @@
 .entree-1,
 .entree-2,
 .entree-3,
-.entree-3-2 {
+.entree-4 {
   animation: appear 1s;
   opacity: 0;
   width: 100%;
@@ -92,7 +92,7 @@
   animation-delay: 2s;
 }
 
-.entree-3-2 {
+.entree-4 {
   animation-delay: 2100ms;
 }
 
@@ -209,7 +209,6 @@ h4 {
   margin-top: 0px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
   padding-top: 0.4rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -235,9 +234,9 @@ p {
   font-family: "Roboto", sans-serif;
   margin-left: 10px;
   font-weight: lighter;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  overflow: ellipsis;
 }
 
 .ohmyfood {
@@ -249,7 +248,16 @@ p {
   padding-bottom: 20px;
 }
 
-.entree-1, .entree-2, .entree-3, .entree-4, .plat-1, .plat-2, .plat-3, .dessert-1, .dessert-2, .dessert-3 {
+.entree-1,
+.entree-2,
+.entree-3,
+.entree-4,
+.plat-1,
+.plat-2,
+.plat-3,
+.dessert-1,
+.dessert-2,
+.dessert-3 {
   margin-left: 16px;
 }
 
@@ -282,10 +290,10 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 370px;
+  width: 90%;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  overflow: ellipsis;
 }
 
 .text {
@@ -294,8 +302,9 @@ span {
   align-self: start;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  width: 100%;
 }
 
 /*--------------------------exemple------------
@@ -305,19 +314,6 @@ span {
   position: relative;
   overflow: hidden;
   /* After animation */
-}
-
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
 }
 
 .true {
@@ -336,29 +332,16 @@ span {
   cursor: pointer;
 }
 
-.slider:before {
+.price {
+  border: 0;
   position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #99E2D0;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #99E2D0;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  right: 0px;
+  font-family: "Roboto", sans-serif;
+  margin-right: 5px;
+  transition-duration: 0.55s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .check {
@@ -382,27 +365,7 @@ input:checked + .slider:before {
   margin-left: 18px;
 }
 
-p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 /*------------------------------------------*/
-.price {
-  border: 0;
-  position: absolute;
-  right: 0px;
-  font-family: "Roboto", sans-serif;
-  padding-top: 5px;
-  margin-right: 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  border-radius: 0 20px 20px 0;
-  transition-duration: 0.55s;
-}
-
 .composition:hover {
   cursor: pointer;
 }
@@ -485,7 +448,7 @@ main {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 300px;
+  height: 250px;
   cursor: pointer;
 }
 
@@ -494,7 +457,7 @@ main {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 300px;
+  height: 250px;
   cursor: pointer;
 }
 
@@ -503,7 +466,7 @@ main {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 300px;
+  height: 250px;
   cursor: pointer;
 }
 
@@ -572,7 +535,8 @@ main {
   * {
     box-sizing: border-box;
   }
-  .coeur1, .coeur2 {
+  .coeur1,
+  .coeur2 {
     margin-left: 20px;
   }
   .bloc {

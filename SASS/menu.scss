@@ -31,8 +31,8 @@ $color: #89c8fa;
 h1 {
   font-family: 'Shrikhand';
   font-weight: bold;
-  font-size:24px;
-    margin-right:40px;
+  font-size: 24px;
+  margin-right: 40px;
   padding-top: 40px;
   padding-bottom: 20px;
   font-weight: bold;
@@ -45,8 +45,7 @@ h4 {
   margin-bottom: 0px;
   margin-top: 0px;
   font-weight: bold;
-  font-family:'Roboto',sans-serif;
-  font-size:18px;
+  font-family: 'Roboto', sans-serif;
   padding-top: 0.4rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -54,16 +53,16 @@ h4 {
 }
 
 h5 {
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: lighter;
-  font-size:16px;
+  font-size: 16px;
   margin-bottom: 5px;
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 body {
   margin: 0px;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin-left: 0px;
   margin-right: 0px;
 }
@@ -72,9 +71,9 @@ p {
   font-family: 'Roboto', sans-serif;
   margin-left: 10px;
   font-weight: lighter;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  overflow: ellipsis;
 }
 
 .ohmyfood {
@@ -85,27 +84,38 @@ p {
   font-size: large;
   padding-bottom: 20px;
 }
-.entree-1,.entree-2,.entree-3,.entree-4,.plat-1,.plat-2,.plat-3,.dessert-1,.dessert-2,.dessert-3{
- 
- margin-left: 16px;
+
+.entree-1,
+.entree-2,
+.entree-3,
+.entree-4,
+.plat-1,
+.plat-2,
+.plat-3,
+.dessert-1,
+.dessert-2,
+.dessert-3 {
+
+  margin-left: 16px;
 }
+
 .trait {
   content: "";
   width: 4rem;
   height: 0.15rem;
-  background-color:$tertiaire;
-  margin-LEFT:20px;
+  background-color: $tertiaire;
+  margin-LEFT: 20px;
 }
 
 span {
   margin-right: 20px;
-  font-family:'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*------------------------ANIMATION BTN CHECK A ADDAPTER-------------------------------*/
 .composition {
   margin-top: 30px;
-  width: 90%;
+  width:90%;
   border: none;
   font-size: 1rem;
   height: 5rem;
@@ -118,10 +128,10 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width:370px;
+  width: 90%;
+  text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  overflow: ellipsis;
 }
 
 .text {
@@ -130,8 +140,9 @@ span {
   align-self: start;
   text-overflow: ellipsis;
   white-space: nowrap;
+    text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  width: 100%;
 }
 
 /*--------------------------exemple------------
@@ -142,26 +153,14 @@ span {
   overflow: hidden;
   /* After animation */
 }
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.true{
+.true {
   position: absolute;
   cursor: pointer;
   -webkit-transition: .4s;
   transition: .4s;
   border: 0;
-  position:absolute;
+  position: absolute;
   top: 0px;
   right: -65px;
   background-color: $tertiaire;
@@ -169,30 +168,20 @@ span {
   width: 65px;
   border-radius: 0 20px 20px 0;
   cursor: pointer;
+
 }
 
-.slider:before {
+.price {
+  border: 0;
   position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-input:checked + .slider {
-  background-color:$tertiaire;
-}
+  right: 0px;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 5px;
+  transition-duration: 0.55s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 
-input:focus + .slider {
-  box-shadow: 0 0 1px $tertiaire;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
 }
 
 .check {
@@ -212,32 +201,14 @@ input:checked + .slider:before {
   background-color: $fondwhite;
   width: 30px;
   height: 30px;
-  margin-top:30px;
+  margin-top: 30px;
   margin-left: 18px;
 
 }
 
-p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
 
 /*------------------------------------------*/
-.price {
-  border: 0;
-  position: absolute;
-  right: 0px;
-  font-family: 'Roboto', sans-serif;
-  padding-top: 5px;
-  margin-right: 5px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  border-radius: 0 20px 20px 0;
-  transition-duration: 0.55s;
 
-}
 
 .composition:hover {
   cursor: pointer;
@@ -251,7 +222,7 @@ p {
 
 /*-----------------------------------------------*/
 .composition .check .icone {
-  color:$fondwhite;
+  color: $fondwhite;
   transform: rotate(220deg);
   transition-duration: 0.6s;
 }
@@ -284,7 +255,7 @@ main {
   width: 100%;
   height: 100%;
   padding-top: 5px;
-  padding-bottom:8%;
+  padding-bottom: 8%;
 }
 
 /*entéte ohmyfood et la fleche retour*/
@@ -295,7 +266,7 @@ main {
   align-items: center;
   width: 100%;
   height: 90px;
-  background-color:$fondwhite;
+  background-color: $fondwhite;
 }
 
 .logo {
@@ -309,7 +280,7 @@ main {
 
 /*icone fleche retour*/
 
-.Go-back{
+.Go-back {
   color: black;
   margin-bottom: -5px;
   padding-left: 10px;
@@ -331,7 +302,7 @@ main {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 300px;
+  height: 250px;
   cursor: pointer;
 }
 
@@ -340,7 +311,7 @@ main {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height:300px;
+  height: 250px;
   cursor: pointer;
 }
 
@@ -349,7 +320,7 @@ main {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height:300px;
+  height: 250px;
   cursor: pointer;
 }
 
@@ -360,10 +331,10 @@ main {
 }
 
 .card__mot1 {
-  padding-left:1em;
+  padding-left: 1em;
   color: black;
   text-decoration: none;
-  font-size:20px;
+  font-size: 20px;
   padding-top: 20px;
   font-family: 'shrikhand', sans-serif;
   cursor: pointer;
@@ -413,7 +384,7 @@ main {
   align-items: center;
   border-radius: 35px 35px 0px 0px;
   background-color: $gray;
-  margin-top:-50px;
+  margin-top: -50px;
   margin-left: 2px;
 }
 
@@ -425,9 +396,12 @@ main {
   * {
     box-sizing: border-box;
   }
-  .coeur1,.coeur2 {
+
+  .coeur1,
+  .coeur2 {
     margin-left: 20px;
   }
+
   .bloc {
     width: 100%;
 
@@ -512,7 +486,8 @@ main {
     justify-content: space-between;
     align-items: center;
   }
-  .texte-restaurant-bloc-1{
+
+  .texte-restaurant-bloc-1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -533,11 +508,13 @@ main {
   * {
     box-sizing: border-box;
   }
-  .texte-restaurant-bloc-1{
+
+  .texte-restaurant-bloc-1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .boutton {
     display: flex;
     margin-left: 35%;
@@ -546,6 +523,7 @@ main {
     height: 60px;
   }
 }
+
 //***************media-query******/
 
 @media screen and (min-width:1439.99px) {
@@ -553,23 +531,25 @@ main {
     box-sizing: border-box;
   }
 
-.card__mot1 {
-   
-  color: black;
-  text-decoration: none;
-  font-size: 1em;
-  padding-top: 20px;
-  font-family: 'shrikhand', sans-serif;
-  cursor: pointer;
-}
-.texte-restaurant-bloc-1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.coeur1 {
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-}
+  .card__mot1 {
+
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+    padding-top: 20px;
+    font-family: 'shrikhand', sans-serif;
+    cursor: pointer;
+  }
+
+  .texte-restaurant-bloc-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .coeur1 {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
 }
