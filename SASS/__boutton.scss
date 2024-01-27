@@ -6,12 +6,19 @@ $blues: #3e9cbf;
 $foot: #303030;
 
 
-.search {
+
+.boutton {
+  display: flex;
+ justify-content: center;
+ } 
+ .search {
+  width:150px;
   height: 50px;
   display: flex;
   justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   align-items: center;
-  width:140px;
   background-color: #686868;
   color: #fff;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -20,25 +27,49 @@ $foot: #303030;
   cursor: pointer;
   filter: brightness(1);
 }
-.search:hover {
-  transition-duration: 0.25s;
-  filter: brightness(1.75);
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
-}
+ .search:hover {
+   transition-duration: 0.25s;
+   filter: brightness(1.75);
+   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+ }
+ 
+ .phrase{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size:15px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   color:$fondwhite;
+ }
 
+/****
 .boutton {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
-  padding-right: 5%;
- 
-}
-.phrase{
-  font-family: 'Roboto',sans-serif;
-  display: flex;
-  font-weight: bold;
-  justify-content: center;
   align-items: center;
+  width: 160px;
+  height: 35px;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  background-color: #686868;
+  color:$fondwhite;
+  background-image: linear-gradient(0deg,$primaire,$secondaire);
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  cursor: pointer;
+  filter: brightness(1);
+&:hover {
+  transition-duration: 0.25s;
+  filter: brightness(1.75);
+  box-shadow: 5px 5px grey;
 }
-
-   
+}
+.commander {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+**/
