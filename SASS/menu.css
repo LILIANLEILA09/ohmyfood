@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
-
 .button {
   display: flex;
   justify-content: center;
@@ -64,7 +63,6 @@
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
-
 .coeur:hover .coeur1 {
   color: transparent;
   transform: scale(1);
@@ -144,13 +142,11 @@
     transform: translateY(50%);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
 .boutton {
   display: flex;
   justify-content: center;
@@ -189,6 +185,36 @@
   color: white;
 }
 
+/****
+.boutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 35px;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  background-color: #686868;
+  color:$fondwhite;
+  background-image: linear-gradient(0deg,$primaire,$secondaire);
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  cursor: pointer;
+  filter: brightness(1);
+&:hover {
+  transition-duration: 0.25s;
+  filter: brightness(1.75);
+  box-shadow: 5px 5px grey;
+}
+}
+.commander {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+}
+**/
 .html {
   width: 100%;
   margin: 0px;
@@ -235,9 +261,10 @@ h4 {
 }
 
 .ohmyfood {
+  mask-position: absolute;
   padding-left: 30px;
   padding-top: 20px;
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
 }
 
 .palette {
@@ -315,9 +342,7 @@ h4 {
   flex-direction: column;
 }
 
-.entrees,
-.plats,
-.desserts {
+.entrees, .plats, .desserts {
   width: 100%;
 }
 
@@ -614,15 +639,9 @@ h3.menu-dessert {
   align-items: center;
 }
 
-.menu__table1 div:first-child,
-.menu__table2 div:first-child,
-.menu__table3 div:first-child,
-.menu__table4 div:first-child,
-.menu__table5 div:first-child,
-.menu__table6 div:first-child,
-.menu__table7 div:first-child,
-.menu__table8 div:first-child,
-.menu__table9 div:first-child,
+.menu__table1 div:first-child, .menu__table2 div:first-child, .menu__table3 div:first-child,
+.menu__table4 div:first-child, .menu__table5 div:first-child, .menu__table6 div:first-child,
+.menu__table7 div:first-child, .menu__table8 div:first-child, .menu__table9 div:first-child,
 .menu__table3-2 div:first-child {
   text-overflow: ellipsis;
   overflow: hidden;
@@ -705,13 +724,11 @@ p.prix {
     transform: translateY(50%);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
 .menu__entree-1,
 .menu__entree-2,
 .menu__entree-3,
@@ -788,13 +805,11 @@ p.prix {
     transform: translateY(50%);
     opacity: 0;
   }
-
   100% {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
@@ -802,13 +817,11 @@ p.prix {
     align-items: center;
     height: 100px;
   }
-
   .footer1-2-3-4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
   .ohmyfood {
     padding-top: 30px;
     padding-right: 40px;
@@ -817,72 +830,49 @@ p.prix {
     padding-bottom: 20px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .menu-titre {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   h2.palette {
     padding-right: 10px;
   }
-
   .coeur {
     padding-right: 25%;
     padding-bottom: 10px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   main {
     width: 80%;
     background-color: #F2F2F2;
     margin-left: 10%;
   }
-
-  .menu__entree-1,
-  .menu__entree-2,
-  .menu__entree-3,
-  .menu__entree-4,
-  .menu__plat-1,
-  .menu__plat-2,
-  .menu__plat-3,
-  .menu__dessert-1,
-  .menu__dessert-2,
-  .menu__dessert-3 {
+  .menu__entree-1, .menu__entree-2, .menu__entree-3, .menu__entree-4, .menu__plat-1,
+  .menu__plat-2, .menu__plat-3, .menu__dessert-1, .menu__dessert-2, .menu__dessert-3 {
     width: 60%;
   }
-
   .menu-titre {
     width: 80%;
     background-color: #F2F2F2;
     margin-left: 10%;
   }
-
   section {
     margin-left: 27%;
   }
-
-  h3.menu-entree,
-  h3.menu-plat,
-  h3.menu-dessert {
+  h3.menu-entree, h3.menu-plat, h3.menu-dessert {
     margin-left: 27%;
   }
-
   .trait {
     margin-left: 23%;
   }
-
   .menu-title {
     margin-left: 10%;
     margin-right: 10%;
   }
-
   h2.palette {
     margin-left: 33%;
   }
-}
-
-/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=menu.css.map */
