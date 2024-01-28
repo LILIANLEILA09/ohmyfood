@@ -474,7 +474,7 @@ p.prix {
   justify-content: end;
   padding-bottom: 40px;
 }
-//-------------------------------LE FOOTER 375------------------------------------------------
+
 .footer {
   background-color: $foot;
   color: $fondwhite;
@@ -628,7 +628,7 @@ p.prix {
     font-size: large;
     padding-bottom: 20px;
   }
-  //--------------------------------FIN FOOTER--------------------------
+
 }
   @media screen and (min-width: 1024px) {
   .menu-titre{
@@ -667,13 +667,9 @@ h3.menu-entree,h3.menu-plat,h3.menu-dessert{
   margin-left: 27%;
 }
 .trait{
-  margin-left: 23%;
+  margin-left: 22%;
+  width: 5rem;
 }
-//-------------------------------FOOTER 1024---------------------------------
-
-//------------------------------FIN FOOTER-------------------------------------
-
-
 
 .menu-title{
   margin-left: 10%;

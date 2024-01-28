@@ -866,7 +866,8 @@ p.prix {
     margin-left: 27%;
   }
   .trait {
-    margin-left: 23%;
+    margin-left: 22%;
+    width: 5rem;
   }
   .menu-title {
     margin-left: 10%;
