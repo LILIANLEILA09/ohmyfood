@@ -36,8 +36,6 @@ main {
   box-sizing: border-box;
 }
 
-
-
 h1 {
   margin-top: 15px;
   position: relative;
@@ -103,7 +101,6 @@ h4 {
   margin-bottom: 0px;
 }
 
-//--------------------------------LES IMAGES MENU-------------------------------
 .menu1-image {
   background-image: url(../Assets/Assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
@@ -137,7 +134,6 @@ h4 {
   height: 300px;
 }
 
-//-----------------------------GLOBALMENU-------------------------------
 
 .global_menu {
   display: flex;
@@ -605,9 +601,9 @@ p.prix {
     opacity: 1;
   }
 }
-//-------------------MEDIA QUERY---------------------------------
+//-------------------MEDIA QUERY*************//
 @media screen and (min-width: 768px) {
-  //---------------------------FOOTER 768------------------------------
+ 
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -628,8 +624,10 @@ p.prix {
     font-size: large;
     padding-bottom: 20px;
   }
-
 }
+
+/**********media query 1024px**********/
+
   @media screen and (min-width: 1024px) {
   .menu-titre{
     display:flex;
