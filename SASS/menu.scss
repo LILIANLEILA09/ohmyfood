@@ -19,7 +19,7 @@ $fondwhite: #ffff;
 $gray: #F6F6F6;
 $color: #89c8fa;
 
-//-------------------------MOBILE FIRST-----------------------------------------
+
 .html {
   width: 100%;
   margin: 0px;
@@ -36,7 +36,7 @@ main {
   box-sizing: border-box;
 }
 
-//------------------------------LES TITRES------------------------
+
 
 h1 {
   margin-top: 15px;
@@ -64,14 +64,10 @@ h4 {
   margin-left: 4px;
 }
 
-
-
-
-//-----------------------HAUT DE LA PAGE---------------------------
-
 .ohmyfood {
-  width: 160px;
-  position: relative;
+  mask-position: absolute ;
+  padding-left:30px ;
+  padding-top: 20px;
   font-family: 'Shrikhand';
 }
 
@@ -143,7 +139,7 @@ h4 {
 
 //-----------------------------GLOBALMENU-------------------------------
 
-.globalmenu {
+.global_menu {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -157,28 +153,10 @@ h4 {
   width: 100%;
 }
 
-.trait-1 {
+.trait {
   content: "";
   width: 4rem;
-  height: 0.25rem;
-  background-color:$tertiaire;
-  position: absolute;
-  margin-left: 1rem;
-}
-
-.trait-2 {
-  content: "";
-  width: 3rem;
-  height: 0.25rem;
-  background-color:$tertiaire;
-  position: absolute;
-  margin-left: 1rem;
-}
-
-.trait-3 {
-  content: "";
-  width: 3rem;
-  height: 0.25rem;
+  height:0.20rem;
   background-color:$tertiaire;
   position: absolute;
   margin-left: 1rem;
@@ -186,7 +164,6 @@ h4 {
 
 h3.menu-entree {
   margin-bottom: 5px;
-  margin-top: 35px;
   opacity: 60%;
   font-size: 20px;
   padding-left: 1rem;
@@ -233,7 +210,7 @@ h3.menu-entree {
 .menu__entree-3 {
   height: 5rem;
   width: auto;
-  background-color: white;
+  background-color:$fondwhite;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 10px 5px 5px #a9af90;
   cursor: pointer;
@@ -249,7 +226,7 @@ h3.menu-entree {
   animation: quarterspin 1s ease-in-out;
 }
 
-.menu__entree-3-2 {
+.menu__entree-4 {
   height: 5rem;
   width: auto;
   background-color:$fondwhite;
@@ -261,10 +238,10 @@ h3.menu-entree {
   cursor: pointer;
   overflow: hidden;
 }
-.menu__entree-3-2:hover .true {
+.menu__entree-4:hover .true {
   margin-right: 0px;
 }
-.menu__entree-3-2:hover i {
+.menu__entree-4:hover i {
   animation: quarterspin 1s ease-in-out;
 }
 
@@ -497,50 +474,42 @@ p.prix {
   justify-content: end;
   padding-bottom: 40px;
 }
+//-------------------------------LE FOOTER 375------------------------------------------------
+.footer {
+  background-color: $foot;
+  color: $fondwhite;
+  height:200px;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 
-//-------------------------------LE FOOTER-------------------------------
-
-a.mail {
-  color: white;
-}
-.footer-title {
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  font-family: 'shrikhand';
-  font-size: large;
-}
-
-footer {
-  background-color: #303030;
-  color:$fondwhite;
-  height: 225px;
-}
-
-a.mail {
-  color:$fondwhite;
 }
 
 .footer-1 {
-  padding-left: 20px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 2rem;
 }
 
 .footer-2 {
-  padding-left: 20px;
-  padding-bottom: 10px;
+  padding-left: 2rem;
+  padding-top: 10px;
 }
 
 .footer-3 {
-  padding-left: 20px;
-  padding-bottom: 10px;
+  padding-left: 2rem;
+  padding-top: 10px;
 }
 
 .footer-4 {
-  padding-left: 20px;
-  cursor: pointer;
+  padding-left: 2rem;
+  padding-top: 10px;
 }
 
+.E-mail {
+  color: $fondwhite;
+  padding-right: 1rem;
+  text-decoration: none;
+}
+//------------------------------FIN FOOTER-------------------------------
 //------------------------------LES KEYFRAMES----------------------------
 
 @keyframes appear {
@@ -559,7 +528,7 @@ a.mail {
 .menu__entree-1,
 .menu__entree-2,
 .menu__entree-3,
-.menu__entree-3-2 {
+.menu__entree-4 {
   animation: appear 1s;
   opacity: 0;
   width: 100%;
@@ -579,7 +548,7 @@ a.mail {
   animation-delay: 2s;
 }
 
-.menu__entree-3-2 {
+.menu__entree-4 {
   animation-delay: 2100ms;
 }
 
@@ -638,28 +607,31 @@ a.mail {
   }
 }
 //-------------------MEDIA QUERY---------------------------------
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
+  //---------------------------FOOTER 768------------------------------
   .footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     height: 100px;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-  
   }
-  
+
   .footer1-2-3-4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .footer{
-    height:100px;
-  
-    
+
+  .ohmyfood {
+    padding-top: 30px;
+    padding-right: 40px;
+    font-family: 'shrikhand';
+    font-size: large;
+    padding-bottom: 20px;
   }
+  //--------------------------------FIN FOOTER--------------------------
+}
+  @media screen and (min-width: 1024px) {
   .menu-titre{
     display:flex;
     justify-content: center;
@@ -695,30 +667,15 @@ section{
 h3.menu-entree,h3.menu-plat,h3.menu-dessert{
   margin-left: 27%;
 }
-.trait-1,.trait-2,.trait-3{
+.trait{
   margin-left: 23%;
 }
-.footer {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  height: 100px;
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
+//-------------------------------FOOTER 1024---------------------------------
 
-}
+//------------------------------FIN FOOTER-------------------------------------
 
-.footer1-2-3-4 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.footer{
-  height:150px;
 
-  
-}
+
 .menu-title{
   margin-left: 10%;
   margin-right: 10%;
@@ -726,7 +683,4 @@ h3.menu-entree,h3.menu-plat,h3.menu-dessert{
 h2.palette{
   margin-left: 33%;
 }
-}
-@media screen and (min-width: 1440px) {
-  
 }
